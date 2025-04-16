@@ -4,16 +4,19 @@ http://local.magento.it/
 
 http://local.magento.it/admin
 
+```bash
 w.sgro81
 PippoBaudo1234
-
+```
 
 ## rabbit
 
 http://local.magento.it:15672/
 
+```bash
 xl3kbe3755646 
 UTj4dglHayyFeFzf
+```
 
 ## create symbolic link php 
 
@@ -44,7 +47,6 @@ composer install --no-dev
 php -dmemory_limit=3G bin/magento setup:install --base-url='http://local.magento.it/' --db-host='mariadb' --db-name='magento' --db-user='root' --db-password='root' --admin-firstname='Admin' --admin-lastname='Admin' --admin-email='w.sgro@gmail.com' --admin-user='w.sgro81' --admin-password='PippoBaudo1234' --language='it_IT' --currency='EUR' --timezone='Europe/Rome' --use-rewrites='1' --backend-frontname='admin' --search-engine=elasticsearch7 --elasticsearch-host=elasticsearch --elasticsearch-port=9200
 ```
 
-
 ##  compile 
 
 ```bash
@@ -53,24 +55,15 @@ composer dump-autoload
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento set:up
 php  -d "memory_limit=-1" -d "display_errors=on"  bin/magento deploy:mode:set developer 
 #php bin/magento deploy:mode:set production --skip-compilation
-
 php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile
-#
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f  
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
 #
-
-
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:reind
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:info
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:reset
-php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:reind
-
-
-php -d "memory_limit=-1" bin/magento indexer:info
-php -d "memory_limit=-1" bin/magento indexer:status
-php -d "memory_limit=-1" bin/magento indexer:show-mode
-#
+php -d "memory_limit=-1" -d "display_errors=on"  bin/magento indexer:status
+php -d "memory_limit=-1" -d "display_errors=on"  bin/magento indexer:show-mode
 php -d "memory_limit=-1" bin/magento indexer:set-mode schedule
 ```
 
@@ -80,10 +73,11 @@ php -d "memory_limit=-1" bin/magento indexer:set-mode schedule
 bin/magento sampledata:deploy
 ```
 
-
 ## product test
 
-http://local.magento.it/joust-duffle-bag.html
+http://local.magento.it/it/lorem.html
+
+http://local.magento.it/it/lastampa.html
 
 
 ## issue
@@ -93,18 +87,17 @@ Catalog Search index process error during indexation process:
 Processed schema file: public_html/vendor/magento/module-elasticsearch/etc/esconfig.xsd
 complex type 'mixedDataType': The content model is not determinist.
 
-
+```bash
 remove one line check it
 vendor/magento/module-elasticsearch/etc/esconfig.xsd
 <xs:element type="xs:string" name="default" minOccurs="1" maxOccurs="1" />
-
+```
 
 ## smtp mailtrap
 
+```bash
 wilson.sgro@libero.it
 ^Pa7hnP&l!+S'oV
-
-
 
 Host
 
@@ -124,7 +117,7 @@ PLAIN, LOGIN and CRAM-MD5
 TLS
 
 Optional (STARTTLS on all ports)
-
+```
 
 ## rabbitmq
 
@@ -134,7 +127,6 @@ rabbitmqctl set_user_tags xl3kbe3755646 administrator
 rabbitmqctl add_vhost xl3kbe3755646
 rabbitmqctl set_permissions -p xl3kbe3755646 xl3kbe3755646 ".*" ".*" ".*"
 ```
-
 
 ## redis
 
@@ -194,22 +186,23 @@ rabbitmqctl set_permissions -p xl3kbe3755646 xl3kbe3755646 ".*" ".*" ".*"
 
 ## apply patch
 
+```bash
 composer require cweagans/composer-patches
 
 git add vendor/magento/module-elasticsearch/etc/esconfig.xsd --force
 
-
 composer -v install
-
-
+```
 
 ## custome login frontend
 
-6gbMG0VUiHRxPhF
+```bash
 wilson.sgro81@gmail.com
-
-
+6gbMG0VUiHRxPhF
+```
 
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
+
+https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze/

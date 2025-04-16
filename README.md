@@ -137,6 +137,7 @@ Optional (STARTTLS on all ports)
 ## rabbitmq
 
 ```bash
+docker compose exec rabbitmq bash
 rabbitmqctl add_user xl3kbe3755646 UTj4dglHayyFeFzf
 rabbitmqctl set_user_tags xl3kbe3755646 administrator
 rabbitmqctl add_vhost xl3kbe3755646

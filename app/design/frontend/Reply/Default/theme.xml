@@ -1,0 +1,10 @@
+<!--
+/**
+ * @category    Magento 2
+ * @copyright   Copyright (c) 2020 Basiliko (https://www.basiliko.net)
+ */
+-->
+<theme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/theme.xsd">
+    <title>Reply</title>
+    <parent>Magento/luma</parent>
+</theme>

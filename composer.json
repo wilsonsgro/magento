@@ -20,10 +20,12 @@
         }
     },
     "require": {
+        "artera/magento-2-language-pack-italiano": "^100.2",
         "cweagans/composer-patches": "^1.7",
         "laminas/laminas-serializer": "^2.16",
         "magento/composer-root-update-plugin": "~2.0",
         "magento/product-community-edition": "2.4.6-p7",
+        "mageplaza/magento-2-french-language-pack": "^1.0",
         "mageplaza/magento-2-product-slider": "^4.0",
         "mageplaza/magento-2-social-login": "^4.1",
         "mageplaza/module-delete-orders": "^4.0",

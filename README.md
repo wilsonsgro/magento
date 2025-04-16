@@ -58,6 +58,7 @@ php  -d "memory_limit=-1" -d "display_errors=on"  bin/magento deploy:mode:set de
 php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f  
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
+php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
 #
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:reind
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:info
@@ -91,6 +92,21 @@ complex type 'mixedDataType': The content model is not determinist.
 remove one line check it
 vendor/magento/module-elasticsearch/etc/esconfig.xsd
 <xs:element type="xs:string" name="default" minOccurs="1" maxOccurs="1" />
+```
+
+
+Missing languages when installing / upgrading
+
+https://github.com/magento/magento2/issues/35655
+
+```bash
+bin/magento info:language:list
+
+php -a
+
+print_r(\ResourceBundle::getLocales(''));
+
+apk add apk add icu-data-full
 ```
 
 ## smtp mailtrap
@@ -206,3 +222,6 @@ wilson.sgro81@gmail.com
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
 
 https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze/
+
+
+icu-data-full

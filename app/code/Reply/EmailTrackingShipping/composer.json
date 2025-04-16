@@ -1,0 +1,21 @@
+{
+    "name": "reply/emailtrackingshipping",
+    "description": "email tracking shipping",
+    "type": "magento2-module",
+    "version": "4.0.4",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "Reply",
+        "email": "w.sgro@bitmama.it"
+      }
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "Reply\\EmailTrackingShipping\\": ""
+      }
+    }
+  }

@@ -1,0 +1,87 @@
+{
+    "name": "magento/project-community-edition",
+    "description": "eCommerce Platform for Growth (Community Edition)",
+    "type": "project",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "laminas/laminas-dependency-plugin": true,
+            "magento/magento-composer-installer": true,
+            "magento/inventory-composer-installer": true,
+            "cweagans/composer-patches": true,
+            "magento/composer-dependency-version-audit-plugin": false,
+            "magento/composer-root-update-plugin": true,
+            "php-http/discovery": true
+        }
+    },
+    "require": {
+        "cweagans/composer-patches": "^1.7",
+        "laminas/laminas-serializer": "^2.16",
+        "magento/composer-root-update-plugin": "~2.0",
+        "magento/product-community-edition": "2.4.6-p7",
+        "mageplaza/magento-2-product-slider": "^4.0",
+        "mageplaza/magento-2-social-login": "^4.1",
+        "mageplaza/module-delete-orders": "^4.0",
+        "mageplaza/module-google-recaptcha": "^4.0",
+        "mageplaza/module-smtp": "^4.6",
+        "zf1/zend-reflection": "^1.12"
+    },
+    "require-dev": {
+        "symfony/finder": "^5.2"
+    },
+    "conflict": {
+        "gene/bluefoot": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Magento\\Framework\\": "lib/internal/Magento/Framework/",
+            "Magento\\Setup\\": "setup/src/Magento/Setup/",
+            "Magento\\": "app/code/Magento/"
+        },
+        "psr-0": {
+            "": [
+                "app/code/",
+                "generated/code/"
+            ]
+        },
+        "files": [
+            "app/etc/NonComposerComponentRegistration.php"
+        ],
+        "exclude-from-classmap": [
+            "**/dev/**",
+            "**/update/**",
+            "**/Test/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Magento\\Sniffs\\": "dev/tests/static/framework/Magento/Sniffs/",
+            "Magento\\Tools\\": "dev/tools/Magento/Tools/",
+            "Magento\\Tools\\Sanity\\": "dev/build/publication/sanity/Magento/Tools/Sanity/",
+            "Magento\\TestFramework\\Inspection\\": "dev/tests/static/framework/Magento/TestFramework/Inspection/",
+            "Magento\\TestFramework\\Utility\\": "dev/tests/static/framework/Magento/TestFramework/Utility/"
+        }
+    },
+    "version": "2.4.6",
+    "minimum-stability": "stable",
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    },
+    "extra": {
+        "magento-force": "override",
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "magento/module-elasticsearch": {
+            "MIXEDDATATYPE: complex type mixedDataType: The content model is not determinist": "patches/composer/elasticsearch-mixeddatatype.patch"
+            }
+        }
+    }
+}

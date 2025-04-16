@@ -1,0 +1,13 @@
+diff --git a/vendor/magento/module-elasticsearch/etc/esconfig.xsd b/vendor/magento/module-elasticsearch/etc/esconfig.xsd
+index d1442b0..c58762d 100644
+--- a/vendor/magento/module-elasticsearch/etc/esconfig.xsd
++++ b/vendor/magento/module-elasticsearch/etc/esconfig.xsd
+@@ -17,7 +17,7 @@
+ </xs:complexType>
+ <xs:complexType name="mixedDataType">
+     <xs:choice maxOccurs="unbounded" minOccurs="1">
+-        <xs:element type="xs:string" name="default" minOccurs="1" maxOccurs="1" />
++        <!--<xs:element type="xs:string" name="default" minOccurs="1" maxOccurs="1" />-->
+         <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+     </xs:choice>
+ </xs:complexType>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2021 Amasty (https://www.amasty.com)
+ * @package Amasty_BannersLite
+ */
+-->
+<config
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<general>
+			<custom_name_courier>
+				<name_courier>
+					<item1>
+						<sigla>BRT</sigla>
+						<name>Bartolini</name>
+						<url></url>
+					</item1>
+					<item2>
+						<sigla>PDB</sigla>
+						<name>Poste Delivery Business</name>
+						<url></url>
+					</item2>
+					<item3>
+						<sigla>LIC</sigla>
+						<name>Liccardi</name>
+						<url></url>
+					</item3>
+					<item4>
+						<sigla>GLS</sigla>
+						<name>Gls</name>
+						<url></url>
+					</item4>
+				</name_courier>
+			</custom_name_courier>
+		</general>
+	</default>
+</config>

@@ -15,6 +15,12 @@
 <?php
     $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
     $_product = $block->getProduct();
+    $extensionAttributes = $_product->getExtensionAttributes();
+    if (is_callable([$extensionAttributes, 'setTheKillers'])) {
+        $_product->getExtensionAttributes()->setTheKillers('ciao');
+    }
+    $extensionAttributes2 = $_product->getExtensionAttributes();
+ 
 ?>
 <?php if ($_additional = $block->getAdditionalData()) :?>
     <div class="additional-attributes-wrapper table-wrapper">

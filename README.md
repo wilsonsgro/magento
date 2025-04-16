@@ -59,6 +59,9 @@ php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f  
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
+
+php -d "memory_limit=-1" -d "display_errors=on"  bin/magento c:c
+php -d "memory_limit=-1" -d "display_errors=on"  bin/magento c:f
 #
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:reind
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento ind:info
@@ -225,4 +228,6 @@ https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prod
 https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze/
 
 
-icu-data-full
+[extension-attributes-magento-2](https://www.mgt-commerce.com/tutorial/extension-attributes-magento-2/)
+
+[example-simple-extension-attributes](https://github.com/yireo-training/magento2-example-simple-extension-attributes)

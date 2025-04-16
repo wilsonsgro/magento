@@ -83,6 +83,9 @@
         "patches": {
             "magento/module-elasticsearch": {
             "MIXEDDATATYPE: complex type mixedDataType: The content model is not determinist": "patches/composer/elasticsearch-mixeddatatype.patch"
+            },
+            "magento/framework": {
+            "CALENDAR: Warning: Trying to access array offset in... -> Calendar.php": "patches/composer/calendar.patch"
             }
         }
     }

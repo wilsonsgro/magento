@@ -1,0 +1,15 @@
+diff --git a/vendor/magento/framework/View/Element/Html/Calendar.php b/vendor/magento/framework/View/Element/Html/Calendar.php
+index 884488d..e20c788 100644
+--- a/vendor/magento/framework/View/Element/Html/Calendar.php
++++ b/vendor/magento/framework/View/Element/Html/Calendar.php
+@@ -111,8 +111,8 @@ class Calendar extends \Magento\Framework\View\Element\Template
+         $this->assignFieldsValues($localeData);
+ 
+         // get "am" & "pm" words
+-        $this->assign('am', $this->encoder->encode($localeData['calendar']['gregorian']['AmPmMarkers']['0']));
+-        $this->assign('pm', $this->encoder->encode($localeData['calendar']['gregorian']['AmPmMarkers']['1']));
++        $this->assign('am', $this->encoder->encode($localeData['calendar']['gregorian']['AmPmMarkers']['0'] ?? null));
++        $this->assign('pm', $this->encoder->encode($localeData['calendar']['gregorian']['AmPmMarkers']['1'] ?? null));
+ 
+         // get first day of week and weekend days
+         $this->assign(

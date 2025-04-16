@@ -207,6 +207,7 @@ composer require cweagans/composer-patches
 git add vendor/magento/module-elasticsearch/etc/esconfig.xsd --force
 
 composer -v install
+composer update --lock
 ```
 
 ## custome login frontend

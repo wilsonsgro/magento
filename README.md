@@ -94,7 +94,6 @@ vendor/magento/module-elasticsearch/etc/esconfig.xsd
 <xs:element type="xs:string" name="default" minOccurs="1" maxOccurs="1" />
 ```
 
-
 Missing languages when installing / upgrading
 
 https://github.com/magento/magento2/issues/35655

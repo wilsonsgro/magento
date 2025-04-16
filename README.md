@@ -33,13 +33,13 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b3
 php composer-setup.php --version=2.2.21
 
 cp composer.phar /usr/bin/composer
-
 ```
+
 ## install from compser.json
 
 ```bash
 composer install --no-dev
-```bash
+```
 
 ## setup install empty project
 

@@ -18,6 +18,13 @@ xl3kbe3755646
 UTj4dglHayyFeFzf
 ```
 
+## commands docker
+
+```bash
+ docker compose exec php bash
+ docker compose exec rabbitmq bash
+ docker compose exec redis redis-cli flushall 
+```
 ## create symbolic link php 
 
 ```bash
@@ -101,6 +108,18 @@ Missing languages when installing / upgrading
 
 https://github.com/magento/magento2/issues/35655
 
+
+Elasticsearch
+
+{"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"Unknown filter type [phonetic] for [phonetic]"}],"type":"illegal_argument_exception","reason":"Unknown filter type [phonetic] for [phonetic]"},"status":400}
+
+```bash
+sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
+sudo service elasticsearch restart
+```
+
+https://stackoverflow.com/questions/72210945/illegal-argument-exception-reasonunknown-filter-type-phonetic-for-phonet
+
 ```bash
 bin/magento info:language:list
 
@@ -145,6 +164,7 @@ rabbitmqctl add_user xl3kbe3755646 UTj4dglHayyFeFzf
 rabbitmqctl set_user_tags xl3kbe3755646 administrator
 rabbitmqctl add_vhost xl3kbe3755646
 rabbitmqctl set_permissions -p xl3kbe3755646 xl3kbe3755646 ".*" ".*" ".*"
+
 ```
 
 ## redis
@@ -220,6 +240,34 @@ composer update --lock
 wilson.sgro81@gmail.com
 6gbMG0VUiHRxPhF
 ```
+
+## elasticsearch
+
+```bash
+curl -GET http://elasticsearch:9200
+curl -GET http://127.0.0.1:9200
+curl -GET http://127.0.0.1:9200/_cat/shards?v=true&s=state
+
+
+curl -GET http://127.0.0.1:9200/_cluster/stats
+curl -GET http://elasticsearch:9200
+```
+
+```bash
+from blacktop/elasticsearch:7.10
+RUN mkdir -p /usr/share/elasticsearch/jdk/bin
+RUN ln -s /usr/lib/jvm/java-11-openjdk/bin/java  /usr/share/elasticsearch/jdk/bin/java 
+RUN  /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
+```
+
+```bash
+/usr/share/elasticsearch/bin/elasticsearch-plugin  install analysis-phonetic
+```
+
+## portaniner
+
+>[portainer](https://127.0.0.1:9443)
+
 
 ##  teach
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccdcbe997dc3e9fb264988a4acdfb7c9",
+    "content-hash": "c3406160876f2ae8b29db518df276385",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -19299,6 +19299,67 @@
                 "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
             },
             "time": "2024-12-30T11:07:19+00:00"
+        },
+        {
+            "name": "olegkoval/magento2-regenerate-url-rewrites",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/olegkoval/magento2-regenerate_url_rewrites.git",
+                "reference": "9a0a82b237aeaf7f77b69a6449a58a063651e72c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/olegkoval/magento2-regenerate_url_rewrites/zipball/9a0a82b237aeaf7f77b69a6449a58a063651e72c",
+                "reference": "9a0a82b237aeaf7f77b69a6449a58a063651e72c",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "OlegKoval\\RegenerateUrlRewrites\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Oleg Koval",
+                    "email": "olegkoval.ca@gmail.com"
+                }
+            ],
+            "description": "Add into Magento 2 a CLI feature which allow to regenerate a Url Rewrites of products and categories",
+            "homepage": "https://github.com/olegkoval/magento2-regenerate_url_rewrites",
+            "keywords": [
+                "extension",
+                "magento",
+                "magento 2 extension",
+                "magento 2 module",
+                "magento2 extension",
+                "magento2 module",
+                "module"
+            ],
+            "support": {
+                "issues": "https://github.com/olegkoval/magento2-regenerate_url_rewrites/issues",
+                "source": "https://github.com/olegkoval/magento2-regenerate_url_rewrites/tree/1.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.com/donate/?hosted_button_id=995MLRKBNY9QQ",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/olegkoval",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2025-04-17T08:44:17+00:00"
         },
         {
             "name": "opensearch-project/opensearch-php",

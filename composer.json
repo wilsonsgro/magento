@@ -51,6 +51,7 @@
         "mageplaza/module-delete-orders": "^4.0",
         "mageplaza/module-google-recaptcha": "^4.0",
         "mageplaza/module-smtp": "^4.6",
+        "olegkoval/magento2-regenerate-url-rewrites": "^1.7",
         "smile/elasticsuite": "~2.11.0",
         "zf1/zend-reflection": "^1.12"
     },
@@ -103,10 +104,10 @@
         "composer-exit-on-patch-failure": true,
         "patches": {
             "magento/module-elasticsearch": {
-            "MIXEDDATATYPE: complex type mixedDataType: The content model is not determinist": "patches/composer/elasticsearch-mixeddatatype.patch"
+                "MIXEDDATATYPE: complex type mixedDataType: The content model is not determinist": "patches/composer/elasticsearch-mixeddatatype.patch"
             },
             "magento/framework": {
-            "CALENDAR: Warning: Trying to access array offset in... -> Calendar.php": "patches/composer/calendar.patch"
+                "CALENDAR: Warning: Trying to access array offset in... -> Calendar.php": "patches/composer/calendar.patch"
             }
         }
     }

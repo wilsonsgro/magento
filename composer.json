@@ -108,6 +108,9 @@
             },
             "magento/framework": {
                 "CALENDAR: Warning: Trying to access array offset in... -> Calendar.php": "patches/composer/calendar.patch"
+            },
+            "smile/elasticsuite": {
+                "SMILE SWATCH: swatches: Array to string conversion": "patches/composer/elasticsearch-swatch.patch"
             }
         }
     }

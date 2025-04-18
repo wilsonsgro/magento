@@ -66,6 +66,7 @@ php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f  
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
+
 php -d "memory_limit=-1" bin/magento cron:run
 php -d "memory_limit=-1" bin/magento ind:reind
 
@@ -272,6 +273,24 @@ RUN  /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
 
 >[portainer](https://127.0.0.1:9443)
 
+## regenerate url
+
+```bash
+php bin/magento ok:urlrewrites:regenerate --entity-type=category
+```
+
+https://github.com/olegkoval/magento2-regenerate_url_rewrites
+
+## mariadb
+
+```bash
+SET GLOBAL innodb_buffer_pool_size=1073741824;
+
+
+SELECT @@innodb_buffer_pool_size/1024/1024/1024;
+```
+
+https://stackoverflow.com/questions/68515513/memory-size-allocated-for-the-temporary-table-is-more-than-20-of-innodb-buffer
 
 ##  teach
 

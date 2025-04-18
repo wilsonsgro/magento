@@ -1,0 +1,24 @@
+diff --git a/vendor/smile/elasticsuite/src/module-elasticsuite-swatches/Model/Plugin/ProductImage.php b/vendor/smile/elasticsuite/src/module-elasticsuite-swatches/Model/Plugin/ProductImage.php
+index b0eb4d3..fd2103a 100644
+--- a/vendor/smile/elasticsuite/src/module-elasticsuite-swatches/Model/Plugin/ProductImage.php
++++ b/vendor/smile/elasticsuite/src/module-elasticsuite-swatches/Model/Plugin/ProductImage.php
+@@ -72,13 +72,13 @@ class ProductImage extends \Magento\Swatches\Model\Plugin\ProductImage
+                     $filterArray[$code] = $value;
+                 }
+ 
+-                if (isset($filterArray[$code]) && !is_array($filterArray[$code])) {
+-                    $filterArray[$code] = [$filterArray[$code]];
+-                }
++                // if (isset($filterArray[$code]) && !is_array($filterArray[$code])) {
++                //     $filterArray[$code] = [$filterArray[$code]];
++                // }
+ 
+-                if ($attribute->getId() && $this->canReplaceImageWithSwatch($attribute)) {
+-                    $filterArray[$code][] = $this->swatchHelperData->getOptionIds($attribute, $value);
+-                }
++                // if ($attribute->getId() && $this->canReplaceImageWithSwatch($attribute)) {
++                //     $filterArray[$code][] = $this->swatchHelperData->getOptionIds($attribute, $value);
++                // }
+             }
+         }
+ 

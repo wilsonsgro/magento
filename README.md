@@ -2,6 +2,10 @@
 
 http://local.magento.it/
 
+wilson.sgro81@gmail.com
+6gbMG0VUiHRxPhF
+
+
 http://local.magento.it/admin
 
 ```bash
@@ -68,6 +72,7 @@ php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
 
 php -d "memory_limit=-1" bin/magento cron:run
+
 php -d "memory_limit=-1" bin/magento ind:reind
 
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento c:c
@@ -115,6 +120,23 @@ https://github.com/magento/magento2/issues/35655
 Elasticsearch
 
 {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"Unknown filter type [phonetic] for [phonetic]"}],"type":"illegal_argument_exception","reason":"Unknown filter type [phonetic] for [phonetic]"},"status":400}
+
+
+How to retain RabbitMQ user accounts in Docker
+
+```bash
+services:
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    hostname: rabbitmq                 # <-----
+    volumes:
+      - rabbitdata1:/var/lib/rabbitmq/
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+```
+
+https://stackoverflow.com/questions/61137733/how-to-retain-rabbitmq-user-accounts-in-docker
 
 ```bash
 sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic

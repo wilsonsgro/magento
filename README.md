@@ -66,6 +66,8 @@ php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f  
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
+php -d "memory_limit=-1" bin/magento cron:run
+php -d "memory_limit=-1" bin/magento ind:reind
 
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento c:c
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento c:f
@@ -242,6 +244,8 @@ wilson.sgro81@gmail.com
 ```
 
 ## elasticsearch
+
+http://local.magento.it:8080
 
 ```bash
 curl -GET http://elasticsearch:9200

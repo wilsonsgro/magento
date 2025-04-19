@@ -2,9 +2,12 @@
 
 http://local.magento.it/
 
+https://local.magento.it/
+
+```bash
 wilson.sgro81@gmail.com
 6gbMG0VUiHRxPhF
-
+```
 
 http://local.magento.it/admin
 
@@ -70,6 +73,8 @@ php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f  
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
+php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_GB -f 
+php -d "memory_limit=-1" bin/magento ind:reind
 
 php -d "memory_limit=-1" bin/magento cron:run
 
@@ -314,6 +319,37 @@ SELECT @@innodb_buffer_pool_size/1024/1024/1024;
 
 https://stackoverflow.com/questions/68515513/memory-size-allocated-for-the-temporary-table-is-more-than-20-of-innodb-buffer
 
+
+## n98-magerun2.phar sys:cron:list 
+
+```bash
+php n98-magerun2.phar sys:info
+php n98-magerun2.phar sys:cron:list 
+php n98-magerun2.phar config:data:acl -t
+php n98-magerun2.phar config:data:indexer  -t
+php n98-magerun2.phar db:query "select * from store"
+
+n98-magerun2.phar dev:module:create [-m|--minimal] [--add-blocks] [--add-helpers] [--add-models] [--add-setup] [--add-all] [-e|--enable] [--modman] [--add-readme] [--add-composer] [--add-strict-types] [--author-name [AUTHOR-NAME]] [--author-email [AUTHOR-EMAIL]] [--description [DESCRIPTION]] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [--root-dir [ROOT-DIR]] [--skip-config] [--skip-root-check] [--skip-core-commands [SKIP-CORE-COMMANDS]] [--skip-magento-compatibility-check] [--] <command> <vendorNamespace> <moduleName>
+
+php n98-magerun2.phar dev:module:create --add-all Reply Example
+
+php n98-magerun2.phar maintenance:enable
+
+```
+
+## ssl local
+
+```bash
+apk add openssl;
+mkdir -p /etc/ssl/private
+openssl req -x509 -nodes -days 365 -subj "/C=CA/ST=QC/O=Company, Inc./CN=local.magento.it"  -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt;
+
+
+/etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt;
+
+
+```
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
@@ -324,3 +360,5 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [extension-attributes-magento-2](https://www.mgt-commerce.com/tutorial/extension-attributes-magento-2/)
 
 [example-simple-extension-attributes](https://github.com/yireo-training/magento2-example-simple-extension-attributes)
+
+[phpcodechecker](https://www.bairesdev.com/tools/phpcodechecker/)

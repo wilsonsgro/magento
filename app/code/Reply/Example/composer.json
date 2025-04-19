@@ -1,0 +1,21 @@
+{
+    "name": "reply/example",
+    "description": "exsample test",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "wilson",
+        "email": "wilson.sgro81@gmail.com"
+      }
+    ],
+    "autoload": {
+      "files": [
+        "registration.php"
+      ],
+      "psr-4": {
+        "Reply\\Example\\": ""
+      }
+    }
+  }

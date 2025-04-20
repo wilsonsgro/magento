@@ -2,7 +2,7 @@
 
 http://local.magento.it/
 
-https://local.magento.it/
+https://local.magento.it/it/
 
 ```bash
 wilson.sgro81@gmail.com
@@ -14,6 +14,11 @@ http://local.magento.it/admin
 ```bash
 w.sgro81
 PippoBaudo1234
+```
+
+```bash
+mariateresa
+Mariateresa1234
 ```
 
 ## rabbit
@@ -74,6 +79,7 @@ php -d "memory_limit=-1" bin/magento setup:static-content:deploy it_IT -f
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_US -f 
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy fr_FR -f 
 php -d "memory_limit=-1" bin/magento setup:static-content:deploy en_GB -f 
+
 php -d "memory_limit=-1" bin/magento ind:reind
 
 php -d "memory_limit=-1" bin/magento cron:run
@@ -350,6 +356,13 @@ openssl req -x509 -nodes -days 365 -subj "/C=CA/ST=QC/O=Company, Inc./CN=local.m
 
 ```
 
+## crontab -l
+```bash
+crontab -e
+crond &
+
+crond -f -l 2
+```
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
@@ -362,3 +375,5 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [example-simple-extension-attributes](https://github.com/yireo-training/magento2-example-simple-extension-attributes)
 
 [phpcodechecker](https://www.bairesdev.com/tools/phpcodechecker/)
+
+[cron-in-docker](https://blog.thesparktree.com/cron-in-docker)

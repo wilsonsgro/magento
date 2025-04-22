@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+   
+    <preference for="Reply\Example\Api\ProductRepositoryInterface" type="Reply\Example\Model\Api\ProductRepository"/>
+    <preference for="Reply\Example\Api\RequestItemInterface" type="Reply\Example\Model\Api\RequestItem"/>
+    <preference for="Reply\Example\Api\ResponseItemInterface" type="Reply\Example\Model\Api\ResponseItem"/>
+   
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">

@@ -21,6 +21,25 @@ mariateresa
 Mariateresa1234
 ```
 
+
+## web api
+
+```bash
+curl --request POST \
+  --url https://local.magento.it/rest/it/V1/integration/admin/token \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/11.0.2' \
+  --data '{
+  "username": "w.sgro81",
+  "password": "PippoBaudo1234"
+}'
+
+curl --request GET \
+  --url https://local.magento.it/it/rest/V1/rest_example/getProduct/1 \
+  --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNzQ1MzI5MjYyLCJleHAiOjE3NDUzMzI4NjJ9.IfCngwSy5xnVZdZ_Vl5KwqmpkGo_usHBoKiuCw0V_Zs' \
+  --header 'User-Agent: insomnia/11.0.2'
+```
+
 ## rabbit
 
 http://local.magento.it:15672/

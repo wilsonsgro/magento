@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2797fe949dbc307f99cdf4bc23a46507",
+    "content-hash": "0fb42779c773dba813807c811fce39cc",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -18739,6 +18739,56 @@
             "time": "2023-07-25T03:42:44+00:00"
         },
         {
+            "name": "mageplaza/magento-2-seo-extension",
+            "version": "4.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-seo.git",
+                "reference": "d80dcb3730fa907a0b02364d3b4bda67d0a861b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-seo/zipball/d80dcb3730fa907a0b02364d3b4bda67d0a861b6",
+                "reference": "d80dcb3730fa907a0b02364d3b4bda67d0a861b6",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/module-core": "^1.5.13"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Seo\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Magento 2 SEO extension",
+            "keywords": [
+                "magento 2",
+                "magento 2 seo",
+                "mageplaza",
+                "seo"
+            ],
+            "support": {
+                "source": "https://github.com/mageplaza/magento-2-seo/tree/v4.4.4"
+            },
+            "time": "2025-04-15T06:35:20+00:00"
+        },
+        {
             "name": "mageplaza/magento-2-social-login",
             "version": "4.1.15",
             "source": {
@@ -18936,6 +18986,52 @@
                 "source": "https://github.com/mageplaza/magento-2-google-recaptcha/tree/v4.0.4"
             },
             "time": "2023-06-28T17:03:43+00:00"
+        },
+        {
+            "name": "mageplaza/module-sitemap",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mageplaza/magento-2-google-xml-sitemap.git",
+                "reference": "07dcb364542fb5015bc44738a28804af370ddda6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mageplaza/magento-2-google-xml-sitemap/zipball/07dcb364542fb5015bc44738a28804af370ddda6",
+                "reference": "07dcb364542fb5015bc44738a28804af370ddda6",
+                "shasum": ""
+            },
+            "require": {
+                "mageplaza/magento-2-seo-extension": "^4.2.0",
+                "mageplaza/module-core": "^1.4.12"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Mageplaza\\Sitemap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mageplaza",
+                    "email": "support@mageplaza.com",
+                    "homepage": "https://www.mageplaza.com",
+                    "role": "Technical Support"
+                }
+            ],
+            "description": "Magento 2 Google XML Sitemap extension",
+            "support": {
+                "source": "https://github.com/mageplaza/magento-2-google-xml-sitemap/tree/v4.2.0"
+            },
+            "abandoned": true,
+            "time": "2022-06-24T09:05:23+00:00"
         },
         {
             "name": "mageplaza/module-smtp",

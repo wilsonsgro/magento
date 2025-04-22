@@ -21,7 +21,6 @@ mariateresa
 Mariateresa1234
 ```
 
-
 ## web api
 
 ```bash
@@ -375,6 +374,108 @@ openssl req -x509 -nodes -days 365 -subj "/C=CA/ST=QC/O=Company, Inc./CN=local.m
 
 ```
 
+##  Repository vs Collection
+
+```php
+<?php
+namespace Mageplaza\HelloWorld\Block;
+
+class HelloWorld extends \Magento\Framework\View\Element\Template
+{	
+	protected $_productRepository;
+		
+	public function __construct(
+		\Magento\Backend\Block\Template\Context $context,		
+		\Magento\Catalog\Model\ProductRepository $productRepository,
+		array $data = []
+	)
+	{
+		$this->_productRepository = $productRepository;
+		parent::__construct($context, $data);
+	}
+	
+	public function getProductById($id)
+	{
+		return $this->_productRepository->getById($id);
+	}
+	
+	public function getProductBySku($sku)
+	{
+		return $this->_productRepository->get($sku);
+	}
+}
+```
+
+
+```php
+<?php
+namespace Mageplaza\HelloWorld\Block;
+
+class HelloWorld extends \Magento\Framework\View\Element\Template
+{    
+    protected $_productCollectionFactory;
+        
+    public function __construct(
+        \Magento\Backend\Block\Template\Context $context,        
+        \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory,        
+        array $data = []
+    )
+    {    
+        $this->_productCollectionFactory = $productCollectionFactory;    
+        parent::__construct($context, $data);
+    }
+    
+    public function getProductCollection()
+    {
+        $collection = $this->_productCollectionFactory->create();
+        $collection->addAttributeToSelect('*');
+        $collection->setPageSize(3); // fetching only 3 products
+        return $collection;
+    }
+}
+?>
+```
+
+Non è possibile ottenere un'istanza di collezioni e repository allo stesso modo.
+
+Le collezioni memorizzano lo stato, quindi devono essere trattate come oggetti nuovi; i repository, invece, sono privi di stato, quindi sono oggetti iniettabili.
+
+Questa distinzione è importante perché ci dice che le collezioni devono essere istanziate attraverso un factory, mentre i repository possono essere istanziati attraverso una dependency injection basata su un costruttore.
+
+Tradotto con DeepL.com (versione gratuita)
+
+
+## Understand Core DDD Principles
+
+Domain-Driven Design (DDD) is a methodology for designing and managing the complexity of software projects by focusing on the domain model. Implementing DDD in PHP requires some understanding of DDD principles, which are then translated into code through various design patterns.
+
+Domain Model: Represents the core business concepts, entities, and processes.
+
+Bounded Context: Defines the boundary within which a particular model applies.
+
+Entities and Value Objects: Entities have a unique identity, while value objects do not.
+
+Aggregates: A group of related entities and value objects treated as a single unit.
+
+Repositories: Handle retrieving and persisting aggregates.
+
+https://medium.com/@psfpro/implementing-ddd-in-php-dfae8f3790c2
+
+
+PROs
+
+I repository facilitano l'accesso ai dati.
+I repository consentono di cambiare il livello di accesso ai dati senza influenzare il codice che li utilizza.
+I repository consentono di introdurre miglioramenti delle prestazioni, come la cache (ad esempio, il repository Product visto sopra).
+Le collezioni consentono un maggiore controllo sulla selezione e sul filtraggio dei dati.
+
+
+CONs
+
+I repository offrono un minor controllo sulla selezione e sul filtraggio dei dati.
+Le collezioni sono strettamente legate al livello di persistenza, più accoppiate e meno facili da sostituire.
+
+
 ## crontab -l
 ```bash
 crontab -e
@@ -404,3 +505,6 @@ https://www.bitbull.it/blog/magento-fundamentals-what-differences-between-collec
 
 
 https://deviq.com/design-patterns/repository-pattern
+
+
+https://www.bitbull.it/blog/magento-fundamentals-what-differences-between-collections-and-repositories/

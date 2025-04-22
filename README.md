@@ -377,3 +377,11 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [phpcodechecker](https://www.bairesdev.com/tools/phpcodechecker/)
 
 [cron-in-docker](https://blog.thesparktree.com/cron-in-docker)
+
+
+https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2
+
+https://www.bitbull.it/blog/magento-fundamentals-what-differences-between-collections-and-repositories/
+
+
+https://deviq.com/design-patterns/repository-pattern

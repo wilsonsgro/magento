@@ -90,6 +90,7 @@ php -dmemory_limit=3G bin/magento setup:install --base-url='http://local.magento
 composer install --no-dev
 composer dump-autoload
 php -d "memory_limit=-1" -d "display_errors=on"  bin/magento set:up
+
 php  -d "memory_limit=-1" -d "display_errors=on"  bin/magento deploy:mode:set developer 
 #php bin/magento deploy:mode:set production --skip-compilation
 php -d "memory_limit=-1" -d "display_errors=on" bin/magento set:di:compile

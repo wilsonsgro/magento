@@ -516,3 +516,8 @@ https://www.bitbull.it/blog/magento-fundamentals-what-differences-between-collec
 
 
 https://meetanshi.com/blog/create-custom-product-attribute-using-data-patch-in-magento-2/
+
+
+https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details
+
+https://developer.adobe.com/commerce/frontend-core/guide/

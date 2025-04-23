@@ -18,6 +18,12 @@
  *  @var $viewModel \ExampleCorp\Catalog\ViewModel\CustomViewModel
  */
  $viewModel = $block->getViewModel();
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$storeManager  = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+$storeId = $storeManager->getStore()->getStoreId();
+$storenumber= $objectManager->get('Magento\Variable\Model\Variable')->setStoreId($storeId)->loadByCode('reply_variable');
+$storenumber_plain = $storenumber->getPlainValue();
 ?>
 
 <?php
@@ -40,6 +46,11 @@
                     <td class="col data" data-th="<?= $block->escapeHtmlAttr($_data['label']) ?>"><?= /* @noEscape */ $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
                 </tr>
             <?php endforeach; ?>
+
+             <tr>
+                    <th class="col label" scope="row"><?= "Custom Variable" ?></th>
+                    <td class="col data" data-th="reply_variable"><?= /* @noEscape */  $storenumber_plain ?></td>
+                </tr>
             </tbody>
         </table>
     </div>

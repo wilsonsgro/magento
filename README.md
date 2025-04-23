@@ -550,6 +550,55 @@ edit
 app/design/frontend/Reply/Default/web/images
 app/design/frontend/Reply/Default/Magento_Theme/layout/default.xml
 
+
+## debug fronted
+
+```bash
+bin/magento dev:template-hints:enable
+bin/magento cache:clean config full_page
+
+bin/magento dev:template-hints:disable
+```
+
+https://local.magento.it/it/what-s-new.html?templatehints=magento
+
+
+## Twig better than PHP as a template engine
+
+cat vendor/magento/module-sales/view/frontend/email/creditmemo_new_guest.html
+
+```bash
+<?php echo $var ?>
+<?php echo htmlspecialchars($var, ENT_QUOTES, 'UTF-8') ?>
+```
+
+```bash
+{{ var }}
+{{ var|escape }}
+{{ var|e }}         {# shortcut to escape a variable #}
+```
+
+## Layouts
+
+(1) I layout forniscono le strutture delle pagine Web utilizzando un file XML che identifica tutti i contenitori e i blocchi che compongono la pagina. I dettagli dei file XML di layout sono descritti più avanti in questa sezione.
+
+(2) I contenitori assegnano la struttura del contenuto a una pagina utilizzando i tag container all'interno di un file XML di layout. Un contenitore non ha altro contenuto se non quello degli elementi inclusi. Esempi di contenitori sono l'intestazione, la colonna sinistra, la colonna principale e il piè di pagina.
+
+(3) I blocchi rendono gli elementi dell'interfaccia utente di una pagina utilizzando i tag block all'interno di un file XML di layout. I blocchi utilizzano modelli per generare l'HTML da inserire nel blocco strutturale padre. Esempi di blocchi sono l'elenco delle categorie, il mini-carrello, i tag dei prodotti e l'elenco dei prodotti.
+
+
+block after "-" :  Utilizzare il trattino (-) per posizionare il blocco dopo tutti gli altri elementi del suo livello di annidamento. Per maggiori dettagli, vedere gli attributi before e after.
+
+block  <action method="setClass">
+
+```php
+ $child->setClass($outermostClass);
+```
+
+Il layout di questo file viene applicato solo al prodotto virtuale:
+
+vendor/magento/module-catalog/view/frontend/layout/catalog_product_view_type_virtual.xml
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/

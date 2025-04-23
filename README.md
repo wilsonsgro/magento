@@ -599,6 +599,27 @@ Il layout di questo file viene applicato solo al prodotto virtuale:
 
 vendor/magento/module-catalog/view/frontend/layout/catalog_product_view_type_virtual.xml
 
+
+## Translation dictionaries
+
+<Magento_Checkout_module_dir>/i18n/pt_BR.csv
+<Magento_Checkout_module_dir>/<theme>/i18n/pt_BR.csv
+
+
+Strings added in .js files
+
+```js
+define (['jquery', 'mage/translate'], function ($, $t) {...});
+$.mage.__('<string>');
+$t('<string>');
+$t('Hello %1').replace('%1', yourVariable);
+
+```
+
+
+## Custom form validation rules
+
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
@@ -635,3 +656,6 @@ https://developer.adobe.com/commerce/frontend-core/guide/
 
 
 https://developer.adobe.com/commerce/php/tutorials/backend/
+
+
+https://developer.adobe.com/commerce/frontend-core/guide/translations/theory/

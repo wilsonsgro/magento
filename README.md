@@ -489,12 +489,25 @@ multiselect
 block
 
 ## crontab -l
+
 ```bash
 crontab -e
 crond &
 
 crond -f -l 2
 ```
+
+## Cacheable and uncacheable pages
+
+cacheable="false"
+
+```xml
+<block class="Magento\Customer\Block\Form\Edit" name="customer_edit" template="Magento_Customer::form/edit.phtml" cacheable="false">
+    <container name="form.additional.info" as="form_additional_info"/>
+</block>
+```
+
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/

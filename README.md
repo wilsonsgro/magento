@@ -509,3 +509,6 @@ https://deviq.com/design-patterns/repository-pattern
 
 
 https://www.bitbull.it/blog/magento-fundamentals-what-differences-between-collections-and-repositories/
+
+
+https://meetanshi.com/blog/create-custom-product-attribute-using-data-patch-in-magento-2/

@@ -620,6 +620,13 @@ $t('Hello %1').replace('%1', yourVariable);
 ## Custom form validation rules
 
 
+## Custom Controller
+
+https://local.magento.it/it/reply/debug/index
+https://local.magento.it/it/reply/debug/import
+
+https://local.magento.it/it/reply/index/index
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/

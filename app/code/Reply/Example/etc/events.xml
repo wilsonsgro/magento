@@ -1,3 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="reply_example_display_text">
+        <observer name="reply_display_text" instance="Reply\Example\Observer\ChangeDisplayText" />
+    </event>
 </config>

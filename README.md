@@ -481,6 +481,13 @@ I repository offrono un minor controllo sulla selezione e sul filtraggio dei dat
 Le collezioni sono strettamente legate al livello di persistenza, più accoppiate e meno facili da sostituire.
 
 
+## Adding widget parameters
+
+text
+select
+multiselect
+block
+
 ## crontab -l
 ```bash
 crontab -e
@@ -521,3 +528,6 @@ https://meetanshi.com/blog/create-custom-product-attribute-using-data-patch-in-m
 https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details
 
 https://developer.adobe.com/commerce/frontend-core/guide/
+
+
+https://developer.adobe.com/commerce/php/tutorials/backend/

@@ -1,0 +1,5 @@
+<?php if($block->getData('posts')): ?>
+	<h2 class='posts'><?php echo $block->getData('posts'); ?></h2>
+	<p>This is sample widget. Perform your code here.</p>
+    <h3><?= $escaper->escapeHtml(__('Size:')) ?> <?= $escaper->escapeHtml($block->getData('size')) ?></h3>
+<?php endif; ?>

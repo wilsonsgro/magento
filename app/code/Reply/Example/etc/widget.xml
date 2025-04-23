@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:helloworld:Magento_Widget:etc/widget.xsd">
+	<widget class="Reply\Example\Block\Widget\Posts" id="reply_example_posts">
+		<label>Reply Posts</label>
+		<description>Posts</description>
+		<parameters>
+			<parameter name="posts" sort_order="10" visible="true" xsi:type="text">
+				<label>Custom Posts Label</label>
+			</parameter>
+             <parameter name="size" xsi:type="select" visible="true" required="true" sort_order="20">
+                <label translate="true">Size</label>
+                <options>
+                    <option name="s" value="S">
+                        <label>S</label>
+                    </option>
+                    <option name="m" value="M" selected="true">
+                        <label>M</label>
+                    </option>
+                    <option name="l" value="L">
+                        <label>L</label>
+                    </option>
+                </options>
+            </parameter>
+		</parameters>
+	</widget>
+</widgets>

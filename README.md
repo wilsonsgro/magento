@@ -627,6 +627,8 @@ https://local.magento.it/it/reply/debug/import
 
 https://local.magento.it/it/reply/index/index
 
+https://local.magento.it/it/reply/index/test
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/

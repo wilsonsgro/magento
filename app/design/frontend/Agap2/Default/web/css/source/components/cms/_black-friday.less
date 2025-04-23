@@ -1,0 +1,235 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .cms-black-friday {
+        .breadcrumbs {
+            display: none!important;
+        }
+        #maincontent {
+            width: 100%!important;
+        }
+    }
+
+    .black-friday-button {
+        .pagebuilder-button-primary {
+            margin: 0;
+            border-radius: 25px;
+            height: 50px;
+            padding: 0 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: @color-black;
+            border-color: @color-black;
+            cursor: pointer;
+        }
+    }
+
+    .black-friday-top-banner {
+        img {
+            width: 100%;
+        }
+    }
+
+    .black-friday-countdown-wrapper {
+        padding: 0 20px;
+        .black-friday-countdown-text {
+            margin: 0 auto 15px;
+        }
+        .black-friday-countdown-label {
+            margin-bottom: -8px;
+            p {
+                margin: 0;
+            }
+        }
+        .mp-countdown-title {
+            display: none;
+        }
+    }
+
+    .black-friday-grid-wrapper {
+        padding: 0 20px;
+        margin: 50px auto;
+        display: grid!important;
+        .pagebuilder-column-group {
+            .black-friday-card {
+                &-title, &-subtitle {
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                &-text {
+                    font-weight: @font-weight__light;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .black-friday-bestseller-wrapper {
+        padding: 50px 20px;
+        margin-top: 70px;
+        .black-friday-bestseller-title {
+            h2 {
+                margin-top: 0;
+            }
+        }
+        .black-friday-bestseller-text {
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+        .black-friday-bestseller-products {
+            .product-items {
+                background: @color-white;
+                margin: 30px 0!important;
+                .product-item {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .black-friday-banner-wrapper {
+        margin: 50px 0;
+        padding: 0 20px;
+        .black-friday-banner-title {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .black-friday-button {
+            margin: 20px 0;
+        }
+        .black-friday-banner-banner {
+            margin: 0 -20px;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .black-friday-countdown-wrapper {
+        margin: 30px 0;
+        .black-friday-countdown-text {
+            font-size: 1.8rem;
+            max-width: 400px;
+        }
+        .black-friday-countdown-label {
+            font-size: 1.5rem;
+        }
+    }
+
+    .black-friday-grid-wrapper {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        .pagebuilder-column-group {
+            .black-friday-card {
+                &-title, &-subtitle {
+                    font-size: 2.3rem;
+                }
+                &-text {
+                    max-width: 380px;
+                    margin: 5px auto 0;
+                }
+            }
+            .black-friday-button {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .black-friday-bestseller-wrapper {
+        .black-friday-bestseller-title {
+            h2 {
+                font-size: 2.6rem;
+            }
+        }
+        .black-friday-bestseller-text {
+            max-width: 400px;
+        }
+        .black-friday-bestseller-products {
+            .product-items {
+                padding: 20px 10px;
+            }
+        }
+    }
+
+    .black-friday-banner-wrapper {
+        .black-friday-banner-text {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .black-friday-countdown-wrapper {
+        margin: 50px 0;
+        .black-friday-countdown-text {
+            font-size: 2.8rem;
+            max-width: 630px;
+        }
+        .black-friday-countdown-label {
+            font-size: 2rem;
+        }
+    }
+
+    .black-friday-grid-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 100px;
+        .pagebuilder-column-group {
+            .black-friday-card {
+                &-wrapper {
+                    justify-content: space-between!important;
+                }
+                &-title, &-subtitle {
+                    font-size: 2.5rem;
+                }
+                &-text {
+                    margin-top: 10px;
+                }
+            }
+            .black-friday-button {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .black-friday-bestseller-wrapper {
+        .black-friday-bestseller-title {
+            h2 {
+                font-size: 3.5rem;
+            }
+        }
+        .black-friday-bestseller-text {
+            max-width: 650px;
+        }
+        .black-friday-bestseller-products {
+            .product-items {
+                padding: 25px;
+            }
+        }
+    }
+
+    .black-friday-banner-wrapper {
+        .black-friday-banner-text {
+            font-size: 2.4rem;
+        }
+    }
+
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .black-friday-grid-wrapper {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

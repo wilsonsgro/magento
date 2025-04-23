@@ -1,0 +1,104 @@
+
+& when (@media-common = true) {
+    div#tp-widget-wrapper {
+        display: none !important;
+    }
+    .catalogsearch-result-index {
+        .category-description-image {
+            .category-title-description {
+                width: 100% !important;
+                z-index: 2;
+                .page-title {
+                    .base {
+                        font-size: 25px;
+                        font-weight: 500;
+                        color: @color-black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Mobile
+ */
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+
+/**
+ * Dekstop
+ */
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .block-search {
+        float: right;
+        padding-left: 15px;
+        position: relative;
+        width: 100%;
+        z-index: 110;
+
+        .label {
+            &:extend(.abs-visually-hidden-desktop all);
+        }
+
+        .control {
+            border-top: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        input {
+            .lib-input-placeholder(@form-element-input-placeholder__color);
+            margin: 0;
+            padding-right: 35px;
+            position: static;
+            height: 40px;
+            border-color: #707070
+        }
+
+        .action.search {
+            display: inline-block;
+            .lib-button-icon(
+            @_icon-font-content: @icon-search,
+            @_icon-font-size: 16px,
+            @_icon-font-text-hide: true,
+            @_icon-font-color: @header-icons-color,
+            @_icon-font-color-hover: @header-icons-color-hover,
+            @_icon-font-line-height: 32px
+            );
+            .lib-button-reset();
+            position: absolute;
+            right: @indent__s;
+            top: 0;
+            z-index: 1;
+
+            &:focus {
+                &:before {
+                    .lib-css(color, @color-gray20);
+                }
+            }
+        }
+    }
+    .search-autocomplete{
+        margin-top: 0;
+    }
+
+    .form.search.advanced {
+        &:extend(.abs-forms-general-desktop all);
+    }
+}
+
+.search-autocomplete {
+    dl dd:hover, dl dt:hover, dl dd:hover .product-item, dl dd.selected{
+        background: @color-gray92;
+        background-color: @color-gray92;
+    }
+}
+

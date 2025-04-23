@@ -1,0 +1,183 @@
+& when (@media-common = true) {
+    .thankyou-contact-wrapper {
+        &.hero {
+            .title {
+                color: @color-white;
+            }
+        }
+
+        .thankyou-contact {
+            &-title {
+                color: @color-ami-green;
+            }
+        }
+
+        .client-service {
+            &-wrapper {
+                box-sizing: border-box;
+            }
+
+            &-title {
+                h2 {
+                    color: @color-ami-green;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &-content {
+                p {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: @color-black;
+
+                        &:hover {
+                            text-decoration: underline;
+                            color: @color-ami-yellow;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagebuilder-button-primary {
+            border-radius: 25px;
+            background-color: @color-ami-yellow;
+            border-color: @color-ami-yellow;
+            padding: 14px 25px;
+        }
+
+        .block.recommendations .block-title.title {
+            margin-bottom: 0;
+        }
+
+        .discover-all {
+            .pagebuilder-button-primary {
+                font-size: 18px;
+                margin: 10px 0;
+                text-transform: uppercase;
+                width: 300px;
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .thankyou-contact-wrapper {
+        &.hero {
+            padding: 70px 0;
+            margin: 0 -15px 50px;
+
+            .title {
+                font-size: 24px;
+            }
+        }
+
+        .thankyou-contact {
+            &-title {
+                font-size: 25px;
+            }
+
+            &-wrapper {
+                margin-bottom: 35px;
+            }
+
+            &-content {
+                font-size: 18px;
+            }
+        }
+
+        .thankyou-hero-title {
+            font-size: 24px;
+        }
+
+        .client-service {
+            &-title {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+
+            &-wrapper {
+                margin-bottom: 60px;
+            }
+        }
+
+        .carousel-title {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .discover-all {
+            div[data-content-type="button-item"] {
+                #html-body & {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .thankyou-contact-wrapper {
+        &.hero {
+            padding: 90px 0;
+            margin-bottom: 30px;
+
+            .title {
+                font-size: 35px;
+            }
+        }
+
+        .client-service {
+            &-wrapper {
+                margin: 0 0 40px 60px;
+            }
+
+            &-title {
+                h2 {
+                    font-size: 35px;
+                }
+            }
+
+            &-content {
+                word-break: break-word;
+            }
+        }
+
+        .thankyou-contact {
+            &-wrapper {
+                border-right: 1px solid @color-gray-25;
+                margin-left: 60px;
+            }
+
+            &-content {
+                font-size: 22px;
+            }
+
+            &-title {
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .carousel-title {
+            font-size: 35px;
+            margin: 35px 0;
+        }
+    }
+}

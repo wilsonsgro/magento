@@ -1,0 +1,124 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .header.content {
+        .algolia-search {
+            #search_mini_form {
+                &._active {
+                    .aa-Input {
+                        background: @color-ami-yellow;
+                        border-color: @color-ami-yellow !important;
+                        font-size: 14px;
+                        font-style: italic;
+                        color: @color-white;
+                    }
+                    .aa-InputWrapper {
+                        &:before {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+            #algoliaAutocomplete {
+
+                .aa-Autocomplete {
+                    position: relative;
+
+                    .aa-InputWrapper {
+                        &:before {
+                            color: @color-ami-green;
+                            content: @icon-custom-search;
+                            display: block;
+                            font-family: @font-family-custom-icon;
+                            font-size: 22px;
+                            position: absolute;
+                            right: 12px;
+                            top: 4px;
+                            z-index: 1;
+                        }
+                    }
+
+                    .aa-Input {
+                        border-color: @color-gray-50;
+                        height: 40px;
+                        margin: 0;
+
+                        &:focus {
+                            border-color: @color-gray-50;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .header.content {
+        .algolia-search {
+            #search_mini_form {
+                width: 100%;
+            }
+            #algoliaAutocomplete {
+                .aa-Autocomplete {
+                    width: ~"calc(100% - 12px)";
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .header.content {
+        .algolia-search {
+            grid-column: ~"span 6 / span 6";
+            #search_mini_form {
+                position: relative;
+            }
+            #algoliaAutocomplete {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .header.content {
+        .algolia-search {
+            #algoliaAutocomplete {
+                .aa-Autocomplete {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__lxl) {
+    .header.content {
+        width: 100%;
+
+        .algolia-search {
+            width: 100%;
+
+            #search_mini_form {
+                margin: -8px auto 0;
+            }
+
+            .block.block-content {
+                width: 100%;
+            }
+
+            #algoliaAutocomplete {
+                width: 100%;
+                padding: 15px;
+
+                .aa-Autocomplete {
+                    width: ~"calc(100% - 50px)";
+                }
+            }
+        }
+    }
+}

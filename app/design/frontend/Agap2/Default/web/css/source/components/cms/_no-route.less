@@ -1,0 +1,42 @@
+//
+//  Variables
+//  _____________________________________________
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .cms-no-route {
+        &-text {
+            color: @theme__color__primary;
+        }
+        &-img {
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .cms-page-title {
+        color: @color-gray91;
+        font-size: 35px;
+        font-weight: 200;
+        margin-bottom: 35px;
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .cms-no-route {
+        &-products {
+            .block-products-list {
+                .product-items.products-lists.widget-product-grid {
+                    grid-template-columns: repeat(4, minmax(135px, 1fr));
+                }
+            }
+        }
+    }
+}

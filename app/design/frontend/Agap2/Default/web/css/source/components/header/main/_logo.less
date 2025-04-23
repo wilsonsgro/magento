@@ -1,0 +1,63 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .logo-wrapper {
+        img {
+            max-width: 316px;
+            width: 100%;
+        }
+    }
+
+    .action.nav-toggle {
+        margin-top: -64px;
+        display: block;
+
+        &:before {
+            font-size: 30px;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .logo-wrapper {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        img {
+            margin-top: 20px;
+        }
+    }
+    .action.nav-toggle {
+        margin-top: 0px;
+        display: none;
+    }
+}
+
+//mobile
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__lxl) {
+    .logo-wrapper {
+        display: none;
+
+        img {
+            display: none;
+        }
+    }
+    .action.nav-toggle {
+        margin-top: -66px;
+        margin-left: -12px;
+        display: block;
+        float: left;
+        text-align: center;
+        width: 50px;
+
+        &:before {
+            color: @color-ami-green;
+        }
+    }
+}

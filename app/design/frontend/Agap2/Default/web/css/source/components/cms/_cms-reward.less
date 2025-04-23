@@ -1,0 +1,155 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .cms-page-reward {
+        &-banner-top {
+            margin-bottom: 15px;
+        }
+        &-title {
+            margin: 40px auto;
+            h1,
+            h2 {
+                font-size: 30px;
+                font-weight: @font-weight__bold;
+                color: @color-ami-green;
+                text-align: center;
+                margin: 0;
+            }
+            h1 {
+                color: @color-ami-yellow;
+            }
+        }
+        &-description {
+            font-size: 18px;
+            text-align: center;
+            font-weight: @font-weight__light;
+            max-width: 800px;
+            margin: -15px auto 40px;
+        }
+        &-columns-info {
+            text-align: center;
+            .pagebuilder-column-group {
+                margin: -15px 0 0;
+                .pagebuilder-column {
+                    padding: 15px;
+                }
+            }
+            .info-img {
+                img {
+                    height: 65px !important;
+                    width: auto;
+                }
+            }
+            .info-title {
+                font-size: 12px;
+                font-weight: @font-weight__bold;
+                margin-top: 10px;
+                p {
+                    margin-bottom: 10px;
+                }
+            }
+            .info-description {
+                font-weight: @font-weight__light;
+            }
+            .info-button {
+                .pagebuilder-button-link {
+                    font-size: 12px;
+                    color: @color-ami-yellow;
+                    margin: 0 0 10px 0;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &-faq {
+            text-align: center;
+            margin-bottom: 50px;
+            .cms-faq #faq-element {
+                .collapsible {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 5px 20px;
+                    min-height: 40px;
+                    font-size: 16px;
+                    line-height: 18px;
+                    margin-bottom: 15px;
+                }
+                .content {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-links {
+            margin: 30px 0;
+            [data-content-type="button-item"] {
+                width: 100%;
+                .pagebuilder-button-primary {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: @color-white;
+                    color: @primary__color;
+                    border-color: @primary__color;
+                    border-radius: 0;
+                    width: 100%;
+                    height: 49px;
+                    padding: 0 20px;
+                }
+            }
+        }
+        &-stars {
+            text-align: center;
+        }
+    }
+    .read-more-function {
+        overflow: hidden;
+        -webkit-transition: max-height .8s;
+        -o-transition: max-height .8s;
+        transition: max-height .8s;
+        -moz-transition: max-height .8s;
+        max-height: 250px;
+        position: relative;
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            content: "";
+            background: linear-gradient(to top,#fff 0%,rgba(255,255,255,0) 150%);
+            pointer-events: none;
+        }
+        &.open {
+            &:after {
+                content: none;
+            }
+        }
+    }
+    .readMoreBtn {
+        font-size: 18px;
+        font-weight: @font-weight__heavier;
+        color: @color-ami-yellow;
+        text-decoration: underline;
+        text-align: center;
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .cms-page-reward {
+        &-links {
+            [data-content-type="buttons"] {
+                display: flex;
+                justify-content: space-between;
+                [data-content-type="button-item"] {
+                    width: 48%;
+                }
+            }
+        }
+    }
+}

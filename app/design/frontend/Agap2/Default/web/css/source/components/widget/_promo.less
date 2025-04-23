@@ -1,0 +1,157 @@
+& when (@media-common = true) {
+    .promotion-title-banner {
+        color: @color-white;
+    }
+    .cms-page-view .promo-title,
+    .promo-description {
+        font-weight: 500;
+    }
+    .promotion-page {
+        margin-bottom: 40px;
+        .grid-promo {
+            display: grid;
+            column-gap: 30px;
+            row-gap: 40px;
+            grid-template-columns: repeat(2, 1fr);
+            .grid-card {
+                position: relative;
+                &:hover {
+                    .text-on-hover {
+                        opacity: .7!important;
+                    }
+                    a {
+                        text-decoration: none;
+                        .card-container {
+                            .title_bottom {
+                                text-decoration: none;
+
+                                span {
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.opacity {
+                    opacity : 0;
+                }
+                .text-on-hover {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    opacity: 0;
+                    background-color: #63B04F;
+
+                    strong {
+                        position: absolute;
+                        margin: 0 auto;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        color: white;
+                        text-transform: uppercase;
+                        font-size: 2.5rem;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .card-container {
+                    img {
+                        border-radius: 9px;
+                        border: 1px solid #BFBFBF;
+                        box-sizing: border-box;
+                    }
+                    .title_bottom {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 35px;
+                        background-color: #f4b000;
+                        color: white;
+                        font-size: 11px;
+                        text-align: center;
+                        margin-top: 0;
+                        text-decoration: none;
+                        border-radius: 9px;
+                        span {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    .promotion-title-banner {
+        margin: 0 -15px;
+        min-height: 160px;
+        h1 {
+            font-size: 31px;
+            line-height: 38px;
+            padding: 15px 10%;
+            margin: 0;
+        }
+    }
+    .cms-page-view .promo-title {
+        font-size: 24px;
+        max-width: 85%;
+        margin: 30px auto 30px;
+    }
+    .promo-description {
+        font-size: 20px;
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .promotion-page {
+        .grid-promo {
+            grid-template-columns: repeat(1, 1fr) !important;
+            .grid-card {
+                margin: auto;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .promotion-title-banner {
+        margin-top: -25px;
+        min-height: 230px;
+        h1 {
+            font-size: 49px;
+            line-height: 60px;
+            padding: 15px 25%;
+            margin: 0;
+        }
+    }
+    .cms-page-view .promo-title {
+        font-size: 29px;
+        margin: 50px 0 30px;
+    }
+    .promo-description {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
+    .promotion-title-banner {
+        h1 {
+            padding: 15px 30%;
+        }
+    }
+}

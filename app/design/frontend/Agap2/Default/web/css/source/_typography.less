@@ -1,0 +1,74 @@
+//
+//  theme typography
+//  _____________________________________________
+
+// Icon Custom
+
+@font-family-custom-icon: 'amicafarmacia';
+@icon-custom-phone: '\e800';
+@icon-custom-bag: '\e801';
+@icon-custom-wishlist: '\e802';
+@icon-custom-search: '\e803';
+@icon-custom-truck: '\e804';
+@icon-custom-voice: '\e805';
+@icon-custom-user-o: '\e806';
+@icon-custom-discount: '\e807';
+@icon-custom-trash: '\e808';
+@icon-custom-facebook: '\e809';
+@icon-custom-instagram: '\e80a';
+@icon-custom-youtube: '\e80b';
+@icon-custom-help: '\e80c';
+@icon-custom-pickup-points: '\e80d';
+@icon-custom-payments: '\e80e';
+@icon-custom-deliveries: '\e80f';
+@icon-custom-lp1: '\e810';
+@icon-custom-lp2: '\e811';
+@icon-custom-lp3: '\e812';
+@icon-custom-cancel: '\e813';
+@icon-custom-angle-up: '\e814';
+@icon-custom-angle-down: '\e815';
+
+//
+//  Common
+//  _____________________________________________
+& when (@media-common = true) {
+    @font-face {
+        font-family: @font-family-custom-icon;
+        src: url('@{baseDir}fonts/amicafarmacia/amicafarmacia.eot');
+        src: url('@{baseDir}fonts/amicafarmacia/amicafarmacia.eot') format('embedded-opentype'),
+        url('@{baseDir}fonts/amicafarmacia/amicafarmacia.woff2') format('woff2'),
+        url('@{baseDir}fonts/amicafarmacia/amicafarmacia.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+
+    [class^="icon-custom-"]:before, [class*=" icon-custom-"]:before {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .icon-custom-phone:before { content: @icon-custom-phone; font-family: @font-family-custom-icon; }
+    .icon-custom-bag:before { content: @icon-custom-bag; font-family: @font-family-custom-icon; }
+    .icon-custom-wishlist:before { content: @icon-custom-wishlist; font-family: @font-family-custom-icon; }
+    .icon-custom-search:before { content: @icon-custom-search; font-family: @font-family-custom-icon; }
+    .icon-custom-truck:before { content: @icon-custom-truck; font-family: @font-family-custom-icon; }
+    .icon-custom-voice:before { content: @icon-custom-voice; font-family: @font-family-custom-icon; }
+    .icon-custom-user-o:before { content: @icon-custom-user-o; font-family: @font-family-custom-icon; }
+    .icon-custom-discount:before { content: @icon-custom-discount; font-family: @font-family-custom-icon; }
+    .icon-custom-trash:before { content: @icon-custom-trash; font-family: @font-family-custom-icon; }
+    .icon-custom-facebook:before { content: @icon-custom-facebook; font-family: @font-family-custom-icon; }
+    .icon-custom-instagram:before { content: @icon-custom-instagram; font-family: @font-family-custom-icon; }
+    .icon-custom-youtube:before { content: @icon-custom-youtube; font-family: @font-family-custom-icon; }
+    .icon-custom-help:before { content: @icon-custom-help; font-family: @font-family-custom-icon; }
+    .icon-custom-pickup-points:before { content: @icon-custom-pickup-points; font-family: @font-family-custom-icon; }
+    .icon-custom-payments:before { content: @icon-custom-payments; font-family: @font-family-custom-icon; }
+    .icon-custom-deliveries:before { content: @icon-custom-deliveries; font-family: @font-family-custom-icon; }
+    .icon-custom-lp1:before { content: @icon-custom-lp1; font-family: @font-family-custom-icon; }
+    .icon-custom-lp2:before { content: @icon-custom-lp2; font-family: @font-family-custom-icon; }
+    .icon-custom-lp3:before { content: @icon-custom-lp3; font-family: @font-family-custom-icon; }
+    .icon-custom-cancel:before { content: @icon-custom-cancel; font-family: @font-family-custom-icon; }
+    .icon-custom-angle-up:before { content: @icon-custom-angle-up; font-family: @font-family-custom-icon; }
+    .icon-custom-angle-down:before { content: @icon-custom-angle-down; font-family: @font-family-custom-icon; }
+}
+

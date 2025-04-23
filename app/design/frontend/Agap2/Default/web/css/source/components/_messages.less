@@ -1,0 +1,97 @@
+// Global styles for messages
+.message-global() {
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin: 0 0 20px;
+    color: @color-white;
+    box-sizing: border-box;
+    > *:first-child:before {
+        content: none;
+    }
+    a {
+        color: @color-white;
+        text-decoration: underline;
+
+        &:hover {
+            color: @color-white;
+            text-decoration: none;
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+& when (@media-common = true) {
+    .message {
+        &.error {
+            .message-global;
+            background-color: @color-ami-red;
+        }
+
+        &.success, &.warning, &.info {
+            .message-global;
+            background-color: @color-ami-green;
+        }
+
+        &.notice {
+            .message-global;
+            background-color: @color-ami-yellow;
+        }
+    }
+
+    a#CybotCookiebotDialogPoweredbyCybot,
+    div#CybotCookiebotDialogPoweredByText,
+    #CybotCookiebotDialog.CybotEdge div.CybotCookiebotDialogBodyBottomWrapper {
+        display: none;
+    }
+}
+
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    div#CybotCookiebotDialog {
+        top: unset;
+        bottom: 8px;
+        transform: translateX(-50%);
+    }
+    #CybotCookiebotDialogBody {
+        div.CybotCookiebotScrollContainer {
+            max-height: 8em;
+            min-height: 18vh;
+        }
+
+        #CybotCookiebotDialogBodyContent {
+            line-height: 1.4em;
+            letter-spacing: 0;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+    }
+}
+
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    div#CybotCookiebotDialog {
+        &.CybotCloseButtonEnabled {
+            .CybotCookiebotBannerCloseButton {
+                order: -1;
+                margin-right: 0;
+            }
+        }
+
+        #CybotCookiebotDialogHeaderLogosWrapper {
+            justify-content: center;
+            margin-right: 14px;
+        }
+
+        #CybotCookiebotDialogPoweredbyLink {
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@screen__xs: 480px;
+@screen__s: 640px;
+@screen__ml: 992px;
+@screen__mxl: 1100px;
+@screen__lxl: 1200px;
+@screen__lxxl: 1330px;
+@screen__xl: 1440px;
+@screen__xlxl: 1580px;
+@screen__xxl: 1600px;
+@screen__xxxl: 2000px;
+
+//
+//  Style groups for 'desktop' devices
+//  ---------------------------------------------
+
+& when (@media-target = 'desktop'), (@media-target = 'all') {
+
+    @media all and (min-width: @screen__ml), print {
+        .media-width('min', @screen__ml);
+    }
+
+    @media all and (min-width: @screen__mxl),
+    print {
+        .media-width('min', @screen__mxl);
+    }
+
+    @media all and (min-width: @screen__lxl),
+    print {
+        .media-width('min', @screen__lxl);
+    }
+
+    @media all and (min-width: @screen__lxxl),
+    print {
+        .media-width('min', @screen__lxxl);
+    }
+
+    @media all and (min-width: @screen__xl),
+    print {
+        .media-width('min', @screen__xl);
+    }
+
+    @media all and (min-width: @screen__xlxl),
+    print {
+        .media-width('min', @screen__xlxl);
+    }
+
+    @media all and (min-width: @screen__xxl),
+    print {
+        .media-width('min', @screen__xxl);
+    }
+
+    @media all and (min-width: @screen__xxxl),
+    print {
+        .media-width('min', @screen__xxxl);
+    }
+}
+
+//
+//  Style groups for 'all' devices
+//  ---------------------------------------------
+
+& when (@media-target = 'all') {
+    @media all and (max-width: (@screen__ml - 1)) {
+        .media-width('max', @screen__ml);
+    }
+}
+
+//
+//  Style groups for 'mobile' devices
+//  ---------------------------------------------
+
+& when (@media-target = 'mobile'), (@media-target = 'all') {
+    @media all and (min-width: @screen__l) {
+        .media-width('min', @screen__l);
+    }
+
+    @media all and (max-width: (@screen__lxl - 1)) {
+        .media-width('max', @screen__lxl);
+    }
+
+    @media all and (max-width: (@screen__l - 1)) {
+        .media-width('max', @screen__l);
+    }
+}
+
+& when (@media-target = 'mobile') {
+
+    @media all and (max-width: (@screen__ml)) {
+        .media-width('max', @screen__ml);
+    }
+
+    @media all and (max-width: (@screen__m)) {
+        .media-width('max', @screen__m);
+    }
+
+    @media all and (max-width: (@screen__s)) {
+        .media-width('max', @screen__s);
+    }
+
+    @media all and (max-width: (@screen__s - 1)) {
+        .media-width('max', @screen__s - 1);
+    }
+
+    @media all and (min-width: @screen__xs) {
+        .media-width('min', @screen__xs);
+    }
+
+    @media all and (max-width: (@screen__xs)) {
+        .media-width('max', @screen__xs);
+    }
+}

@@ -1,0 +1,67 @@
+@import "_font-family.less";
+
+@font-family__base: "Lato", Helvetica, Arial, sans-serif;
+
+
+/** headings **/
+@heading__line-height__base: 1.1;
+@heading__font-weight__base: 500;
+
+// h1, .h1
+@h1__font-size: 25px;
+@h1__font-size-desktop: 25px; // extra variable magento
+@h1__margin-bottom__desktop: 10px; // extra variable magento
+@h1__margin-top: 20px;
+@h1__margin-bottom: 10px;
+
+// h2, .h2
+@h2__font-size: 22px;
+@h2__margin-top: 20px;
+@h2__margin-bottom: 10px;
+
+// h3, .h3
+@h3__font-size: 20px;
+@h3__margin-top: 20px;
+@h3__margin-bottom: 10px;
+
+// h4, .h4
+@h4__font-size: 18px;
+@h4__margin-top: 10px;
+@h4__margin-bottom: 10px;
+
+// h5, .h5
+@h5__font-size: 17px;
+@h5__margin-top: 10px;
+@h5__margin-bottom: 10px;
+
+// h6, .h6
+@h6__font-size: 16px;
+@h6__margin-top: 10px;
+@h6__margin-bottom: 10px;
+
+
+/** Base font sizes **/
+@font-size__base: 14px; // base
+@font-size__xl: 16px;
+@font-size__l: 15px;
+@font-size__s: @font-size__base;
+@font-size__xs: 12px;
+
+.text-base {
+    .lib-css(font-size, @font-size__base);
+}
+.text-xl {
+    .lib-css(font-size, @font-size__xl);
+}
+.text-l {
+    .lib-css(font-size, @font-size__l);
+}
+.text-s {
+    .lib-css(font-size, @font-size__s);
+}
+.text-xs {
+    .lib-css(font-size, @font-size__xs);
+}
+
+
+@line-height__base: 1.42857143;

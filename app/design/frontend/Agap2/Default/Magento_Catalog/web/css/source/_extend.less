@@ -1,0 +1,177 @@
+@import "module/_tier-price";
+
+@import "module/_tier-price";
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    // stile per inserimento script promozionale
+    iframe,
+    [id^="retailor_sas_"] {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    [id^="retailor_sas_"] {
+        a {
+            display: block;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        img {
+            border-radius: 12px;
+        }
+    }
+
+    .promo-script-slide {
+        [id^="retailor_sas_"] {
+            img {
+                border-radius: 0;
+            }
+        }
+    }
+
+    .product-label-wrapper {
+        .label {
+            max-width: 150px !important;
+            max-height: 45px !important;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .promo-script-dsk-480 {
+        display: none;
+    }
+
+    [id^="retailor_sas_"] {
+        text-align: center;
+    }
+}
+
+//
+//  Mobile 480
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xs) {
+    .promo-script-mobile-480 {
+        display: none;
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    // stile per inserimento script promozionale
+    .promo-script-dsk {
+        display: none;
+    }
+
+    .promo-script-mobile {
+        &.pdp iframe {
+            display: block;
+            margin: 0 auto 25px;
+        }
+
+        &.category-page {
+            margin-bottom: 40px;
+
+            iframe,
+            [id^="retailor_sas_"] {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    // stile per inserimento script promozionale
+    .promo-script-mobile {
+        display: none;
+    }
+
+    .promo-script-dsk {
+        &.category-page {
+            padding: 0 15px;
+
+            iframe,
+            [id^="retailor_sas_"] {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .category-title-description {
+        order: 2;
+    }
+
+    .category-cms {
+        order: 1;
+    }
+}
+
+//
+//  Desktop 992
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .catalog-category-view {
+        .content-script {
+            height: 100%;
+
+            .category-promo-bar {
+                height: 100%;
+
+                iframe,
+                [id^="retailor_sas_"] {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop 1200
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .catalog-category-view {
+        .content-script {
+            .category-promo-bar {
+                iframe,
+                [id^="retailor_sas_"] {
+                    height: 177px;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop 1200
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
+    .catalog-category-view {
+        .content-script {
+            .category-promo-bar {
+                iframe {
+                    height: revert-layer;
+                }
+            }
+        }
+    }
+}

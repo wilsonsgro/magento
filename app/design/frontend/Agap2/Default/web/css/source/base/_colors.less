@@ -1,0 +1,99 @@
+//
+//  Color variables
+//  _____________________________________________
+
+@color-white: #fff;
+@color-white-2: #F7F7F7;
+@color-white-3: #dfdfdf;
+@color-black: #000;
+@color-black-2: #3B3B3B;
+@color-gray91: #3E3E3E;
+@color-gray92: #f2f2f2;
+@color-gray69: #575756;
+@color-gray68: #505050;
+@color-gray70: #717171;
+@color-gray65: rgba(239,239,239,0.3);
+@color-gray-50: #707070;
+@color-gray45: #706f6f;
+@color-gray40: #999;
+@color-gray-25: #bababa;
+@color-grey-22: #bfbfbf;
+@color-gray20: #cccccc;
+@color-gray15: #dddddd;
+@color-gray10: #f8f8f8;
+@color-grey9: #f3f3f3;
+@color-grey8: #EBEBEB;
+@color-gray5: #e6e6e6;
+@color-gray4: #efefef;
+@color-grey3-5: #e5e5e5;
+@color-gray3: #f9f9f9;
+@color-gray2: #f7f7f7;
+@color-gray1: #f4f4f4;
+
+//others
+@color-yellow: #ffca00;
+
+
+// farmae primary
+@color-blue2: #006EAB;
+@color-blue3: #0772ad;
+@color-blue10: #005482;
+@color-blue11: #006ba9;
+
+// farmae secondary
+@color-green2: #7EAC0A;
+
+@color-red1: #d70c37;
+@color-red2: #a94442;
+@color-red3: #ff0024;
+
+@color-purple: #803588;
+
+// AmicaFarmacia primary
+@color-ami-green: #63B054;
+@color-ami-dark-green: #294634;
+@color-ami-light-green: #e0efdd;
+@color-ami-yellow: #f4b000;
+@color-ami-orange: #fdefd4;
+@color-ami-purple:#F25163;
+@color-ami-purple-light: #F58774;
+
+// AmicaFarmacia secondary
+@color-ami-gray: #464646;
+@color-ami-red: #E73532;
+@color-ami-gray1: #C6C6C6;
+@color-ami-gray2: #333333;
+@color-ami-gray3: #ededed;
+@color-ami-black: #363636;
+
+//
+//  Color nesting
+//  ---------------------------------------------
+
+@theme__color__primary: @color-ami-green;
+@theme__color__primary-alt: @color-ami-yellow;
+@theme__color__secondary: @color-ami-yellow;
+
+@primary__color: @color-black;
+@primary__color__dark: @color-black;
+@primary__color__darker: @color-black;
+@primary__color__lighter: lighten(@primary__color, 29%);
+@primary__color__light: lighten(@primary__color, 45%);
+
+@secondary__color: @color-gray91;
+@secondary__color__light: lighten(@secondary__color, 5%);
+
+@page__background-color: @color-white;
+@panel__background-color: darken(@page__background-color, 6%);
+
+@active__color: @theme__color__secondary;
+@error__color: @color-red3;
+
+@link__color: @color-ami-yellow;
+@link__visited__color: @theme__color__primary;
+@link__hover__color: @theme__color__secondary;
+@link__active__color: @theme__color__secondary;
+
+@footer__background-color: @color-white;
+
+@minicart__border-color: @color-gray10;

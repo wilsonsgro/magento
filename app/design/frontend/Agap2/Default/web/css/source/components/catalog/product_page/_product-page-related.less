@@ -1,0 +1,284 @@
+//
+//  Variables
+//  _____________________________________________
+
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .catalog-product-view .page-wrapper{
+        overflow-x: hidden;
+    }
+
+    .page-layout-1column {
+        #maincontent {
+            .related-wrapper {
+                padding-bottom: 40px;
+                padding-top: 40px;
+                clear: both;
+                text-align: center;
+                position: relative;
+                font-weight: 200;
+                color: @color-gray91;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    background-color: @color-gray65;
+                    right: -100vw;
+                    left: -100vw;
+                    top: 0;
+                    bottom: 0;
+                }
+                .block.related {
+                    position: relative;
+                    margin: 0 auto;
+                    max-width: 1570px;
+                    #block-related-heading {
+                        font-size: 26px;
+                        font-weight: 200;
+                        margin: 0;
+                    }
+                    .block-actions {
+                        font-size: 15px;
+                        button {
+                            color: @color-ami-yellow;
+                            vertical-align: inherit;
+                            span {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    .products-grid {
+                        ol.product-items {
+                            padding-left: 0;
+                            li.product-item {
+                                display: inline-block !important;
+                                text-align: center;
+                                margin-bottom: 0;
+                                border-radius: 25px;
+                                a.product-item-photo {
+                                    margin-right: 15px;
+                                    .product-image-container {
+                                        width: inherit !important;
+                                        .product-image-wrapper {
+                                            display: inline-block;
+                                            height: inherit;
+                                            overflow: auto;
+                                            padding-bottom: 0 !important;
+                                            img.product-image-photo {
+                                                position: relative;
+                                                min-width: 110px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .product-item-info {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    width: initial;
+                                    background-color: @color-white;
+                                    flex-wrap: nowrap;
+                                    border-radius: 25px;
+                                    &.active, &:hover, &:visited {
+                                        box-shadow: none;
+                                        border: none;
+                                    }
+                                    .product-discount-text {
+                                        display: none;
+                                    }
+                                    .product-item-details {
+                                        text-align: left;
+                                        width: 100%;
+                                        .product-item-name {
+                                            display: block;
+                                            margin: 0 0 10px;
+                                            .product-item-link {
+                                                font-size: 13px;
+                                                text-transform: uppercase;
+                                                font-weight: 700;
+                                                color: @color-gray91;
+                                                line-height: 15px;
+                                                display: block;
+                                            }
+                                        }
+                                        .price-box.price-final_price {
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;
+                                            max-width: 180px;
+                                            width: inherit;
+                                            flex-wrap: wrap;
+                                            .special-price {
+                                                order: 2;
+                                                line-height: 19px;
+                                                .price-label {
+                                                    display: none;
+                                                }
+                                                .price {
+                                                    font-size: 16px;
+                                                    font-weight: 700;
+                                                    line-height: 19px;
+                                                    color: @color-ami-yellow;
+                                                }
+                                            }
+                                            .old-price {
+                                                order: 1;
+                                                line-height: 19px;
+                                                margin: 0 10px 0 0;
+                                                font-weight: @font-weight__regular;
+                                                .price-container.price-final_price {
+                                                    .price-label {
+                                                        display: none;
+                                                    }
+                                                    .price {
+                                                        font-size: 12px;
+                                                        text-decoration: line-through;
+                                                        color: @color-gray40;
+                                                    }
+                                                }
+                                            }
+                                            .omnibus-price-container {
+                                                font-size: 10px;
+                                                color: @color-gray40;
+                                                max-width: 180px;
+                                                width: 100%;
+                                                order: 3;
+                                                .price {
+                                                    margin-left: 3px;
+                                                    text-decoration: line-through;
+                                                }
+                                            }
+                                            .special-price ~ .omnibus-price-container {
+                                                text-align: right;
+                                            }
+                                        }
+                                        .field.choice.related {
+                                            position: relative;
+                                            display: flex;
+                                            align-items: center;
+                                            margin-top: 5px;
+                                            top: 0;
+                                            .label {
+                                                display: inline;
+                                                position: relative;
+                                                height: inherit;
+                                                width: inherit;
+                                                font-weight: 400;
+                                                font-size: 12px;
+                                                color: @color-black;
+                                                text-decoration: underline;
+                                                margin-left: 8px;
+                                                cursor: pointer;
+                                            }
+                                            input[type="checkbox"] {
+                                                -webkit-appearance: none;
+                                                display: inline-block !important;
+                                                padding: 6px;
+                                                border: 1px solid #363636;
+                                                border-radius: 50%;
+                                                margin: 0 5px 0 0;
+                                                cursor: pointer;
+                                                &:checked {
+                                                    background: @theme__color__secondary;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .page-layout-1column {
+        #maincontent {
+            .related-wrapper {
+                .block.related {
+                    .products-grid {
+                        display: block;
+                        ol.product-items {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 0;
+                            li.product-item {
+                                padding: 10px;
+                                margin: 10px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {
+
+    .page-layout-1column {
+        #maincontent {
+            .related-wrapper {
+                .block.related {
+                    .products-grid {
+                        ol.product-items {
+                            li.product-item {
+                                min-width: 80%;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .page-layout-1column {
+        #maincontent {
+            .related-wrapper {
+                .block.related {
+                    .products-grid {
+                        ol.product-items {
+                            li.product-item {
+                                margin: 3%;
+                                width: 27%;
+                                .product-item-info {
+                                    padding: 10px 15px;
+                                    .product-item-details {
+                                        margin-top: 0;
+                                        .field.choice.related {
+                                            .label {
+                                                font-weight: 600;
+                                                font-size: 13px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

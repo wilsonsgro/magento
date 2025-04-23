@@ -1,0 +1,43 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .cms-dove-siamo {
+        #maincontent {
+            .padding-text-both {
+                padding: 0 30px;
+            }
+
+            [data-content-type='html'] {
+                height: 100%;
+
+                iframe {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .cms-dove-siamo {
+        #maincontent {
+            .padding-text-both {
+                padding: 0 !important;
+            }
+
+            [data-content-type='html'] {
+                iframe {
+                    height: 350px !important;
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+}
+

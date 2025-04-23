@@ -1,0 +1,83 @@
+& when (@media-common = true) {
+
+    .page-bottom {
+        .widget.block.block-static-block {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer-bottom-content {
+        .footer-services-wrapper {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 39px 10px;
+
+            .footer-services-item {
+                width: 20%;
+                float: left;
+                -ms-flex-order: 1;
+                -webkit-order: 1;
+                order: 1;
+
+                a {
+                    text-decoration: none;
+
+                    span {
+                        &.custom-icon {
+                            color: @color-ami-yellow;
+                            display: block;
+                            text-align: center;
+
+                            &:before {
+                                font-size: 3.2rem;
+                            }
+                        }
+
+                        &.footer-icon-text {
+                            color: @color-white;
+                            display: block;
+                            font-weight: @font-weight__bold;
+                            padding-top: 7px;
+                            text-align: center;
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .footer-bottom-content {
+        .footer-services-wrapper {
+            padding: 29px 0;
+            .footer-services-item {
+                a {
+                    span {
+                        &.footer-icon-text {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

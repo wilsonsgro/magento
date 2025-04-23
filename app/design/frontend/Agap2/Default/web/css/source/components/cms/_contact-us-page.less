@@ -1,0 +1,100 @@
+
+& when (@media-common = true) {
+
+    .contact-index-index {
+        #maincontent {
+            #contact-form {
+                width: 100%;
+                max-width: 1200px;
+
+                .input-row {
+                    width: 100%;
+
+                    label {
+                        display: inline-block;
+                        padding-bottom: 4px;
+                        font-weight: bold;
+                        color: @theme__color__primary;
+
+                    }
+
+                    .policy {
+                        label {
+                            color: @color-black;
+                        }
+                    }
+                }
+
+                .required {
+                    label {
+                        &:after {
+                            display: inline-block;
+                            content: " *";
+                            font-style: normal;
+                            font-weight: normal;
+                            color: #a94442;
+                            padding-left: 3px;
+                        }
+                    }
+                }
+
+                .actions-toolbar {
+                    margin-bottom: 40px;
+
+                    .primary {
+                        float: right;
+
+                        .submit {
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding: 9px 40px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .contact-index-index {
+        #maincontent {
+            #contact-form {
+                .actions-toolbar {
+                    .primary {
+                        .submit {
+                            margin-top: -70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .contact-index-index {
+        #maincontent {
+            #contact-form {
+                .actions-toolbar {
+                    .primary {
+                        .submit {
+                            margin-top: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,583 @@
+& when (@media-common = true) {
+
+    .widget.block.block-static-block {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .countdown-wrapper {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .countdown {
+        border-bottom: 2px solid @color-ami-gray;
+
+        .box-countdown-widget {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 9px 15px;
+            cursor: pointer;
+
+            span, strong {
+                padding-left: 5px;
+            }
+
+            strong {
+                span {
+                    padding: 0;
+                }
+            }
+
+            .first-label {
+                padding-left: 0;
+            }
+
+            .box-countdown.grid {
+                display: flex;
+                padding-left: 5px;
+                font-weight: bold;
+            }
+
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-direction: row;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 18px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+            width: 50% ;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    flex-direction: row;
+                    grid-gap: 0;
+                    justify-content: space-between;
+                    width: 100%;
+                    flex-basis: 100%;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 20px;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .countdown-modal {
+        display: none;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000001;
+        overflow-y: auto;
+        opacity: 1;
+        background-color: rgba(0,0,0,0.4);
+
+        &.active {
+            display: block;
+        }
+
+        .modal {
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            margin: auto;
+            width: auto;
+        }
+
+        .modal-content {
+            border-radius: 0px;
+            background: none;
+            border: none;
+            position: relative;
+
+            .close-modal {
+                position: absolute;
+                right: 10px;
+                top: 5px;
+                opacity: unset;
+                text-shadow: unset;
+                float: none;
+                font-size: 30px;
+                color: @color-black;
+                padding: 0;
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                font-weight: bold;
+                line-height: 1;
+                -webkit-appearance: none;
+            }
+        }
+    }
+}
+
+// countdown on image
+
+//
+//  Desktop 1200
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 24px;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop 1440
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%!important;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 32px!important;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop 1600
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xxl) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%!important;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 32px;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop 2000
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xxxl) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 32px;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 40%;
+
+            .box-countdown-widget {
+                padding-top: 4px;
+
+                .box-countdown.grid {
+                    margin-top: 5px;
+                    margin-left: -10px;
+                    flex-direction: row;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 16px !important;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 40%;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    margin-top: 15px;
+                    margin-left: 0;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 16px !important;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    margin-top: 5px;
+                    margin-left: 0;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 16px !important;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .countdown-wrapper {
+        .countdown-modal {
+            .modal {
+                transform: translate(-6%, -20%);
+                top: 25%;
+                left: 10%;
+            }
+        }
+    }
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    .pagebuilder-counter {
+        position: relative;
+
+        .countdown {
+            border-bottom: none;
+            position: absolute;
+            top: 50%;
+
+            .box-countdown-widget {
+                .box-countdown.grid {
+                    flex-direction: row;
+                    margin-left: 10px;
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+
+                        #day_counter,
+                        #hour_counter,
+                        #min_counter,
+                        #sec_counter {
+                            font-size: 32px!important;;
+                        }
+
+                        #day_label,
+                        #hour_label,
+                        #min_label,
+                        #sec_label {
+                            font-size: 16px!important;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+
+    .countdown {
+        border-bottom: 3px solid @color-ami-gray;
+
+        .box-countdown-widget {
+            height: 20px;
+
+            .box-countdown.grid {
+
+                #day_counter,
+                #hour_counter,
+                #min_counter,
+                #sec_counter {
+                    text-align: center;
+                }
+            }
+
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-direction: row;
+                color: @color-ami-green;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 18px;
+
+                img {
+                    margin: -2px 10px auto 0px;
+                    width: 23px;
+                    height: 23px;
+                    float: left;
+                }
+
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    .countdown {
+        border-bottom: 2px solid @color-ami-green;
+
+        .box-countdown-widget {
+            display: flex;
+            justify-content: center;
+            padding: 10px 15px;
+
+            a {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-direction: row;
+                color: @color-ami-green;
+                text-decoration: none;
+
+                img {
+                    margin: -4px 5px;
+                    height: 17px;
+                    width: 17px;
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__mxl) {
+    .pagebuilder-counter {
+        .countdown {
+            .box-countdown.grid {
+                margin-top: -10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,465 @@
+//
+//  Variables
+//  _____________________________________________
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                margin: 0 auto;
+                padding: 0 15px;
+                width: calc(~'100% - 30px');
+
+                //brand filters
+                .brands-filters {
+                    border: 1px solid @color-ami-yellow;
+                    border-radius: 20px;
+                    height: 40px;
+                    margin: 50px 0;
+                    min-height: 40px;
+                    z-index: 20;
+
+                    .all-letters-box {
+                        a {
+                            &.-letter-all {
+                                background: transparent;
+                                border: none;
+                                float: none;
+                                font-size: 15px;
+                                font-weight: @font-weight__bold;
+                                line-height: 20px;
+                                min-height: 20px;
+                                min-width: 130px;
+                                padding: 10px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+
+                    .letters {
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 0;
+
+                        .letters-box {
+
+                            .letter {
+                                background: none;
+                                border: none;
+                                border-radius: 0;
+                                font-size: 14px;
+                                font-weight: @font-weight__bold;
+                                margin: 0;
+                                min-height: 20px;
+                                padding: 10px 4px;
+
+                                &.-active {
+                                    color: @color-white;
+                                    position: relative;
+
+                                    span {
+                                        position: relative;
+                                        z-index: 1;
+                                    }
+
+                                    &:before {
+                                        background-color: @color-ami-green;
+                                        border-radius: 25px;
+                                        content: '';
+                                        height: 35px;
+                                        left: -5px;
+                                        position: absolute;
+                                        top: 2px;
+                                        width: 35px;
+                                        z-index: 0;
+                                    }
+
+                                    &:hover {
+                                        color: @color-white;
+                                    }
+                                }
+
+                                &:hover {
+                                    color: @color-ami-yellow;
+                                }
+                            }
+                        }
+                    }
+
+                    .input-box {
+                        border-radius: 0 25px 25px 0;
+
+                        .ambrands-search-wrapper {
+                            margin-right: 20px;
+                            padding: 7px 0;
+                            width: 95%;
+
+                            .ambrands-search-input {
+                                border: none;
+                                border-bottom: 2px solid @color-ami-gray;
+                                border-radius: 0;
+                                font-size: 13px;
+                                height: 25px;
+                                padding: 6px 2px;
+                                position: relative;
+                            }
+
+                            #livesearch {
+                                border: none;
+                                border-radius: 12px;
+                                box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
+                                padding: 0;
+
+                                a {
+                                    padding: 10px 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //actual brands lists
+                .brands-columns-wrapper {
+                    column-count: 4;
+                    column-gap: 2em;
+                    column-width: 253px;
+                    margin-bottom: 50px;
+
+                    .brand-images {
+                        display: block;
+
+                        .brands-letter {
+                            padding-right: 0;
+                            width: 100%;
+
+                            dt.letter {
+                                border-bottom: none;
+                                line-height: 1;
+
+                                .title {
+                                    background: none;
+                                    color: @color-ami-gray2;
+                                    display: block;
+                                    font-size: 14px;
+                                    font-weight: @font-weight__bold;
+                                    padding-bottom: 5px;
+                                }
+                            }
+
+                            ul.bare-list {
+                                display: block;
+
+                                li.brand-item {
+                                    min-height: auto;
+                                    max-width: none;
+                                    text-align: left;
+                                    margin: 0;
+
+                                    .item {
+                                        display: inline-block;
+
+                                        .am-image-wrapper {
+                                            display: none;
+                                        }
+
+                                        &:hover {
+                                            .label {
+                                                &:after {
+                                                    background-color: @color-ami-yellow;
+                                                    bottom: -2px;
+                                                    content: '';
+                                                    height: 2px;
+                                                    left: 0;
+                                                    position: absolute;
+                                                    width: ~"calc(100% + 10px)";
+                                                }
+                                            }
+                                        }
+
+                                        .label {
+                                            font-size: 14px;
+                                            margin: 0;
+                                            padding-top: 5px;
+                                            width: auto;
+
+                                            &:before {
+                                                content: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                //brand filters
+                .brands-filters {
+                    .all-letters-box {
+                        display: block;
+                        float: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__l) {
+    .cms-brands {
+        #maincontent {
+            padding: 0;
+            width: 100% !important;
+
+            .am-widget-brandlist {
+                //brand filters
+                .brands-filters {
+                    border: none !important;
+                    border-radius: 0 !important;
+                    display: block;
+                    height: auto !important;
+                    margin: 20px 0 0 !important;
+
+                    .all-letters-box {
+                        display: inline-block;
+                        float: left;
+                        width: auto;
+
+                        a {
+                            &.-letter-all {
+                                background-color: @color-ami-black !important;
+                                border: 1px solid @color-ami-black !important;
+                                border-radius: 25px;
+                                color: @color-white;
+
+                                &:hover {
+                                    background-color: transparent !important;
+                                    color: @color-ami-black;
+                                }
+                            }
+                        }
+                    }
+
+                    .letters {
+                        display: inline-block !important;
+                        margin-left: 10px;
+                        width: auto;
+                    }
+
+                    .input-box {
+                        width: auto;
+                        display: block;
+
+                        .ambrands-search-wrapper {
+                            width: 100% !important;
+                        }
+                    }
+                }
+
+                //actual brands lists
+                .brands-columns-wrapper {
+                    .brand-images {
+                        .brands-letter {
+                            width: 100%;
+
+                            dt.letter {
+                                border-bottom: 1px solid @color-ami-gray1 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__lxl) {
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                //brand filters
+                .brands-filters {
+                    .all-letters-box {
+                        width: 13%;
+                    }
+
+                    .letters {
+                        width: 73%;
+                    }
+
+                    .input-box {
+                        width: 14%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                //actual brands lists
+                .brands-columns-wrapper {
+                    .brand-images {
+                        .brands-letter {
+
+                            &.am-brands-fullwidth {
+                                column-count: 4;
+                                column-gap: 2em;
+                                column-width: 253px;
+
+                                .bare-list {
+                                    display: block;
+                                    margin: 0;
+
+                                    .brand-item {
+                                        margin: 0;
+                                        min-width: auto;
+                                        max-width: none;
+                                        min-height: auto;
+                                        width: 100%;
+                                        display: inline-block;
+                                        line-height: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                //brand filters
+                .brands-filters {
+                    display: flex;
+
+                    .letters {
+                        .title {
+                            font-size: 26px;
+                        }
+                    }
+                }
+
+                //actual brands lists
+                .brands-columns-wrapper {
+                    .brand-images {
+                        margin-top: 0;
+
+                        .brands-letter {
+                            ul.bare-list {
+                                li.brand-item {
+                                    .item {
+                                        .label {
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            dt.letter {
+                                .title {
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                //brand filters
+                .brands-filters {
+                    .all-letters-box {
+                        width: 13%;
+                    }
+
+                    .letters {
+                        width: 72%;
+                    }
+
+                    .input-box {
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxxl) {
+    .cms-brands {
+        #maincontent {
+            .am-widget-brandlist {
+                //brand filters
+                .brands-filters {
+                    .all-letters-box {
+                        a {
+                            &.-letter-all {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .letters {
+                        .letters-box {
+                            .letter {
+                                font-size: 19px;
+                                padding: 10px 8px;
+
+                                &.-active {
+                                    &:before {
+                                        background-color: @color-ami-green;
+                                        border-radius: 25px;
+                                        content: '';
+                                        height: 42px;
+                                        left: -5px;
+                                        position: absolute;
+                                        top: -1px;
+                                        width: 42px;
+                                        z-index: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

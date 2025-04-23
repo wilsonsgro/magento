@@ -1,0 +1,217 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .christmas-guide-carousel {
+        position: relative;
+
+        &:not(.slick-initialized) {
+            #html-body & {
+                flex-direction: row;
+                overflow: hidden;
+            }
+
+            .pagebuilder-column-group {
+                flex: 0 0 auto;
+            }
+
+            .pagebuilder-column {
+                align-items: center;
+            }
+        }
+
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            display: flex;
+            height: auto;
+
+            .pagebuilder-column-group,
+            .pagebuilder-column {
+                height: 100%;
+            }
+        }
+
+        .xmas-heading {
+            font-size: 25px;
+            font-weight: 700;
+            color: @color-white;
+        }
+
+        .xmas-text {
+            color: @color-white;
+            font-size: 15px;
+        }
+
+        .xmas-button {
+            margin-top: auto;
+            .pagebuilder-button-primary {
+                background-color: @color-ami-yellow;
+                border-color: @color-ami-yellow;
+                border-radius: 25px;
+                margin: 0;
+
+                &:hover {
+                    background-color: @color-ami-green;
+                    border-color: @color-ami-green;
+                }
+            }
+        }
+
+        .xmas-image img {
+            width: 240px;
+            margin: 0 auto;
+        }
+
+        .slick-arrow {
+            background: none;
+            height: 30px;
+            position: absolute;
+            width: 30px;
+
+            &:before {
+                content: '';
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+            }
+
+            &.slick-next {
+                &:before {
+                    background-image: url("../images/icons/freccia-destra-xmas.png");
+                }
+            }
+
+            &.slick-prev {
+                &:before {
+                    background-image: url("../images/icons/freccia-sinistra-xmas.png");
+                }
+            }
+        }
+    }
+
+    .xmas-discover-more .pagebuilder-button-link {
+        color: @color-white;
+        font-weight: 700;
+        margin: 15px 0 0;
+        text-decoration: underline;
+
+        &:hover {
+            color: @color-white;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .christmas-guide-carousel {
+        padding: 0 0 50px;
+
+        .slick-slide {
+            padding: 0 15px;
+        }
+
+        .slick-arrow {
+            bottom: 0;
+            top: auto;
+            transform: none;
+
+            &.slick-next {
+                right: 40%;
+            }
+
+            &.slick-prev {
+                left: 40%;
+            }
+        }
+
+        .xmas-heading {
+            font-size: 22px;
+        }
+
+        .xmas-text {
+            font-size: 14px;
+        }
+
+        .xmas-button .pagebuilder-button-primary {
+            font-size: 15px;
+        }
+
+        &:not(.slick-initialized) {
+            .pagebuilder-column-group {
+                width: 50%;
+            }
+        }
+    }
+
+    .xmas-discover-more .pagebuilder-button-link {
+        font-size: 22px;
+    }
+}
+
+//
+//  Desktop 768
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .christmas-guide-carousel {
+        padding: 0 40px;
+
+        .slick-arrow {
+            &.slick-next {
+                right: 0;
+            }
+
+            &.slick-prev {
+                left: 0;
+            }
+        }
+
+        .slick-slide {
+            padding: 0 30px;
+        }
+
+        .xmas-heading {
+            font-size: 25px;
+        }
+
+        .xmas-text {
+            font-size: 15px;
+        }
+
+        .xmas-button .pagebuilder-button-primary {
+            font-size: 20px;
+        }
+
+        &:not(.slick-initialized) {
+            .pagebuilder-column-group {
+                width: 25%;
+            }
+        }
+    }
+
+    .xmas-discover-more .pagebuilder-button-link {
+        font-size: 25px;
+    }
+}
+
+//
+//  Desktop 1200
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .christmas-guide-carousel {
+        .xmas-text {
+            padding: 0 30px;
+        }
+    }
+}

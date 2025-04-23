@@ -1,0 +1,503 @@
+//
+//  Variables
+//  _____________________________________________
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .firecheckout {
+        .action-select-shipping-item {
+            right: auto;
+            left: 0!important;
+        }
+
+        .field-tooltip .field-tooltip-content{
+            right: 0px;
+            margin-top: 100%;
+            left: unset;
+            top: unset !important;
+
+            &:after {
+                border-right-color: transparent !important;
+                border-bottom-color: #fff !important;
+            }
+            &:before {
+                border-bottom-color: #fff !important;
+                border-right-color: transparent !important;
+            }
+
+            &:before, &:after {
+                border: 10px solid transparent;
+                height: 0;
+                width: 0;
+                border-bottom-color: #f4f4f4;
+                right: 0px;
+                top: -21px;
+                content: '';
+                display: block;
+                position: absolute;
+                z-index: 3;
+                left:unset;
+            }
+        }
+        .fieldset > .field {
+            margin-bottom: 2px !important;
+            > .label {
+                font-size: 14px;
+            }
+        }
+
+        .shipping-address-item {
+            padding-bottom: 100px!important;
+        }
+        .form-shipping-address {
+            [name="shippingAddress.custom_attributes.is_business_address"],
+            [name="custom_attributes[tax_code]"],
+            [name="company"],
+            [name="vat_id"],
+            [name="custom_attributes[fe_pec]"],
+            [name="custom_attributes[fe_cod]"],
+            [name="shippingAddress.custom_attributes.tax_code"],
+            [name="shippingAddress.company"],
+            [name="shippingAddress.vat_id"],
+            [name="shippingAddress.custom_attributes.fe_pec"],
+            [name="shippingAddress.custom_attributes.fe_cod"] {
+                display: none !important;
+            }
+        }
+
+        .page-main {
+            &:not(.page-layout-checkout) {
+                .page-title-wrapper {
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    h1 {
+                        color: @theme__color__primary;
+                        font-size: 30px;
+                        font-weight: 600;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .checkout-agreement {
+                .action {
+                    font-size: 14px;
+                }
+                &.required {
+                    .action {
+                        span {
+                            &:after {
+                                content: ' *';
+                            }
+                        }
+                    }
+                }
+            }
+
+            #block-discount-heading,
+            #block-giftcard-heading span {
+                text-decoration: none;
+                font-size: 17px;
+                font-weight: 500;
+                text-transform: initial;
+                color: @primary__color;
+            }
+        }
+        .form-login {
+            .action.login {
+                border-radius: 23px !important;
+            }
+        }
+
+        .form-discount, .form-giftcard-account {
+            display: inline-flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            .payment-option-inner {
+                width: ~"calc(100% - 120px)";
+            }
+
+            .action-apply, .action-add, .action-check {
+                margin: 0;
+                padding: 0 15px;
+                height: 49px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .actions-toolbar {
+                width: 100px;
+                .primary, .secondary {
+                    .action {
+                        margin: 0;
+                        text-transform: uppercase;
+                    }
+                }
+                .primary {
+                    width: 100%;
+                    .action,
+                    .action.action-cancel {
+                        width: 100%;
+                        max-width: 100%;
+                        height: 35px;
+                        border-radius: 23px !important;
+                        background: @theme__color__secondary;
+                        color: @color-white;
+                    }
+                }
+            }
+        }
+        #giftcardaccount-placer {
+            .payment-option-title {
+                .action.action-toggle {
+                    &:after {
+                        display: none!important;
+                    }
+                }
+            }
+            .payment-option-content {
+                display: block!important;
+                .form-giftcard-account {
+                    position: relative;
+                    padding-bottom: 25px;
+                    .payment-option-inner {
+                        .label {
+                            display: none;
+                        }
+                    }
+                    .giftcard-account-info {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    .actions-toolbar {
+                        display: block;
+                        position: static;
+                        .secondary {
+                            padding: 0!important;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            border: none;
+                            .action-check {
+                                border: none;
+                                background: none;
+                                padding: 0;
+                                height: auto;
+                                color: @primary__color;
+                                text-transform: initial;
+                                text-decoration: underline;
+                                font-weight: @font-weight__regular;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .field {
+            &.fullwidth {
+                width: 100%!important;
+            }
+        }
+        #billing-address-same-as-shipping-shared + label span{
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        #maincontent {
+            .page-title-wrapper {
+                .authentication-wrapper {
+                    display: flex;
+                    align-items: center;
+                    font-weight: bold;
+
+                    .auth-message {
+                        margin-right: 20px;
+                        font-size: 22px;
+                        line-height: 27px;
+                        font-weight: 500;
+                    }
+
+                    .action-auth-toggle {
+                        width: 162px;
+                        height: 45px;
+                        font-size: 18px;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        display: block;
+                        text-decoration: none;
+                        text-align: center;
+                        line-height: 32px;
+                        font-weight: 600;
+                        background-color: @theme__color__secondary;
+                        border-radius: 23px !important;
+                    }
+                    .modal-custom input:not([type="checkbox"]):not([type="radio"]):not([type="image"]),
+                    .modal-popup input:not([type="checkbox"]):not([type="radio"]):not([type="image"]),
+                    .modal-popup select,
+                    .modal-custom textarea,
+                    .modal-popup textarea {
+                        height: 35px;
+                        border: 1px solid @primary__color;
+                        border-radius: 18px;
+                        background: @color-white;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        font-size: 14px;
+                    }
+                    .modal-custom .action-login {
+                        border-radius: 23px !important;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .table-checkout-shipping-method {
+                tbody {
+                    tr {
+                        td {
+                            font-size: 16px;
+                            line-height: 1;
+                            vertical-align: middle;
+                        }
+                        &:nth-child(2) td {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+            .checkout-payment-method {
+                .payment-method-title {
+                    padding: 8px 0;
+                    .label {
+                        padding-left: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        #checkout {
+            #checkoutSteps {
+                #shipping, #opc-shipping_method, #payment, #opc-block-summary {
+                    border: 0;
+                }
+            }
+            &.checkout-container {
+                .opc-wrapper .opc > li,
+                .opc-sidebar {
+                    padding: 20px 0 0;
+                    box-shadow: none;
+                    border: none;
+                }
+                input:not([type="checkbox"]):not([type="radio"]):not([type="image"]),
+                select,
+                textarea {
+                    height: 35px;
+                    border: 1px solid @primary__color;
+                    border-radius: 18px;
+                    background: @color-white;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    font-size: 14px;
+                }
+                .field .field-tooltip {
+                    top: 2px !important;
+                }
+                input[type="checkbox"] {
+                    border-radius: 50%;
+                    &:checked:after {
+                        background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBkPSJNMjU2LDQ2NGMxMTQuOSwwLDIwOC05My4xLDIwOC0yMDhjMC0xMTQuOS05My4xLTIwOC0yMDgtMjA4QzE0MS4xLDQ4LDQ4LDE0MS4xLDQ4LDI1NkM0OCwzNzAuOSwxNDEuMSw0NjQsMjU2LDQ2NHoiIHN0eWxlPSJmaWxsOiNmZmYiLz4NCjwvc3ZnPg0K");
+                        background-size: 8px 8px;
+                    }
+                }
+                .items-in-cart > .title strong {
+                    font-size: 14px !important;
+                    color: @primary__color !important;
+                }
+                .table-totals {
+                    border: none;
+                    margin-top: 10px;
+                    tbody {
+                        .mark .label,
+                        .amount .price,
+                        .totals-tax .mark {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .place-order {
+                    .actions-toolbar {
+                        margin-left: 0 !important;
+                        margin-right: 0 !important;
+                        button {
+                            border-radius: 23px !important;
+                        }
+                    }
+
+                }
+            }
+            .opc-wrapper .step-title,
+            .opc-block-summary > .title,
+            .opc-sidebar .step-title {
+                &:not(.action-toggle) {
+                    font-size: 24px;
+                    line-height: 29px;
+                    font-weight: 600;
+                }
+                &:before {
+                    display: none;
+                }
+            }
+            .field.field-select-billing > .label {
+                display: none;
+            }
+            .checkout-billing-address {
+                .fieldset {
+                    div.field {
+                        .label.cf-obbligatorio {
+                            &::after {
+                                position: static;
+                                content: ' *';
+                                color: #e02b27;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #shipping-new-address-form > div:not(.field) {
+        display: none;
+    }
+
+    input[name="custom_attributes[tax_code]"] {
+        text-transform: uppercase;
+        &::placeholder{
+            text-transform: capitalize;
+        }
+    }
+    .checkout-index-index {
+        input.postcode,
+        input[name="postcode"] {
+            + .message.warning {
+                background: none;
+                color: #ff0024;
+                padding: 0 !important;
+                margin: 2px 0 0;
+                font-weight: 400;
+                font-size: .85em;
+                span:before {
+                    content: none;
+                }
+            }
+        }
+        .checkout-shipping-address {
+            overflow: hidden;
+        }
+    }
+
+    .title-billing-address {
+            margin-top: 70px;
+            margin-bottom: 20px;
+        .title-billing {
+            font-size: 2.4rem;
+            font-weight: 600;
+            padding: 0 0 15px;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .checkout-index-index {
+        &.firecheckout {
+            .sections.nav-sections {
+                display: block;
+            }
+
+            #billing-address-same-as-shipping-shared + label span{
+                font-size: 13px;
+                font-weight: 500;
+            }
+        }
+        .header.content .block.block-search {
+            display: none;
+        }
+    }
+    .firecheckout {
+        .page-main:not(.page-layout-checkout) {
+            .page-title-wrapper {
+                h1 {
+                    padding-bottom: 0;
+                }
+                .authentication-wrapper {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .firecheckout {
+        .page-main:not(.page-layout-checkout) {
+            .page-title-wrapper {
+                h1 {
+                    text-align: left;
+                    font-size: 41px;
+                    padding-bottom: 20px;
+                    margin-bottom: 25px;
+                    border-bottom: 2px solid #E3E3E3;
+                    font-weight: 600;
+                }
+            }
+        }
+        #checkout {
+            &.checkout-container {
+                .opc-wrapper .opc > li,
+                .opc-sidebar {
+                    padding: 20px 15px 0;
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
+
+    .checkout-index-index {
+        &.firecheckout {
+            .checkout-payment-method {
+                .payment-method-content {
+                    padding: 0 !important;
+                }
+                #co-transparent-form-braintree {
+                    .field.cvv.required {
+                        padding-left: 30px;
+                        .control._with-tooltip {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

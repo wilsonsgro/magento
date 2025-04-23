@@ -1,0 +1,84 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .title-price-tier,
+    .prices-tier.items {
+        order: 1;
+    }
+    .title-price-tier {
+        font-weight: @font-weight__bold;
+    }
+    .prices-tier.items {
+        display: flex;
+        align-items: center;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 0 0 auto;
+            height: 55px;
+            background: @color-grey8;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-bottom: 0;
+            border: 1px solid @color-grey8;
+            cursor: pointer;
+            &:not(:last-child) {
+                margin-right: 5px;
+            }
+            &:hover,
+            &.selected {
+                border-color: @border-color__base;
+                background: @color-white;
+                .item-tier-qty {
+                    color: @theme__color__secondary;
+                }
+            }
+        }
+        .item-tier-qty {
+            font-weight: @font-weight__bold;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .title-price-tier {
+        font-size: 17px;
+        margin: 40px 0 20px;
+    }
+    .prices-tier.items {
+        margin: 0 -@layout-indent__width 40px;
+        padding: 0 @layout-indent__width;
+    }
+}
+
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .title-price-tier {
+        margin: 20px 0;
+    }
+    .prices-tier.items {
+        margin-bottom: 20px;
+        .item {
+            height: 60px;
+            padding: 10px;
+        }
+        .item-tier-qty,
+        .item-tier-price {
+            font-size: 18px;
+        }
+    }
+}

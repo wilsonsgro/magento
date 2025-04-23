@@ -1,0 +1,46 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// phpcs:disable Magento2.Templates.ThisInTemplate.FoundThis
+
+/**
+ * Product additional attributes template
+ *
+ * @var $block \Magento\Catalog\Block\Product\View\Attributes
+ */
+
+ /**
+ * Product additional attributes template
+ *
+ *  @var $viewModel \ExampleCorp\Catalog\ViewModel\CustomViewModel
+ */
+ $viewModel = $block->getViewModel();
+?>
+
+<?php
+    $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
+    $_product = $block->getProduct();
+    $extensionAttributes = $_product->getExtensionAttributes();
+    if (is_callable([$extensionAttributes, 'setTheKillers'])) {
+        $_product->getExtensionAttributes()->setTheKillers('ciao');
+    }
+    $extensionAttributes2 = $_product->getExtensionAttributes();
+?>
+<?php if ($_additional = $block->getAdditionalData()) :?>
+    <div class="additional-attributes-wrapper table-wrapper">
+        <table class="data table additional-attributes" id="product-attribute-specs-table">
+            <caption class="table-caption"><?= $block->escapeHtml(__('More Information')) ?></caption>
+            <tbody>
+            <?php foreach ($_additional as $_data) :?>
+                <tr>
+                    <th class="col label" scope="row"><?= $block->escapeHtml($_data['label']) ?></th>
+                    <td class="col data" data-th="<?= $block->escapeHtmlAttr($_data['label']) ?>"><?= /* @noEscape */ $_helper->productAttribute($_product, $_data['value'], $_data['code']) ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<?php endif;?>

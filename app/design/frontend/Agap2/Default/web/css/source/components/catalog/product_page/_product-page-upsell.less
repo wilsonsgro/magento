@@ -1,0 +1,190 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    #block-upsell-heading {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+    .block.upsell {
+        .product-items {
+            padding: 0;
+            margin: 0 -10px;
+            list-style: none;
+            &:not(.slick-initialized) {
+                display: flex;
+                overflow: auto;
+            }
+        }
+        .product-item {
+            flex: 0 0 auto;
+            .product-item-info {
+                border: 1px solid @color-gray-25;
+                padding: 5%;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+        .product-item-name {
+            margin-bottom: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            min-height: 60px;
+            position: relative;
+            .product-item-link {
+                color: @color-gray91;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+        .price-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 80%;
+            margin: 0 auto;
+            width: 100%;
+            > .price-container, > .price-box {
+                width: 100%;
+            }
+            .price-label {
+                display: none;
+            }
+            .old-price {
+                text-decoration: line-through;
+            }
+            .product-discount-text {
+                position: absolute;
+                left: 10px;
+                top: 20px;
+                z-index: 2;
+            }
+            .omnibus-price-container {
+                font-size: 10px;
+                color: @color-gray40;
+                margin: 0 auto;
+                .price {
+                    text-decoration: line-through;
+                    padding-left: 3px;
+                    font-size: 10px;
+                }
+            }
+        }
+        .tocart {
+            min-width: 70%;
+            margin: 20px auto;
+            text-transform: uppercase;
+        }
+        .stock.unavailable {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            min-height: 32px;
+            color: @color-red2;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    #block-upsell-heading {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+    .block.upsell {
+        .product-item-name {
+            font-size: 14px;
+        }
+        .price-box {
+            flex-direction: column-reverse;
+            &.price-final_price {
+                min-height: 76px;
+            }
+            .price {
+                font-size: 15px;
+            }
+        }
+        .price-box.price-final_price {
+            .omnibus-price-container {
+                order: -1;
+            }
+            .special-price ~ .omnibus-price-container {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .stock.unavailable {
+            margin: 20px auto;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    .block.upsell,
+    .block.crosssell {
+        .tocart {
+            width: 90%;
+        }
+        .stock.unavailable {
+            min-height: 32px;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    #block-upsell-heading {
+        font-size: 23px;
+        line-height: 28px;
+        margin: 40px 0 30px;
+    }
+    .block.upsell {
+        .product-item-name {
+            font-size: 12px;
+            line-height: 19px;
+            text-transform: uppercase;
+        }
+        .price-box {
+            flex-direction: row-reverse;
+            .price {
+                font-size: 18px;
+            }
+            .old-price {
+                .price {
+                    font-size: 14px;
+                }
+            }
+        }
+        .price-box.price-final_price {
+            .omnibus-price-container {
+                width: 100%;
+            }
+            .special-price ~ .omnibus-price-container {
+                text-align: right;
+            }
+        }
+        .tocart {
+            font-size: 11px;
+        }
+        .stock.unavailable {
+            margin: 30px auto 20px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Email extend styles
+//  _____________________________________________
+
+//  This file should be used for theme-specific styles for emails that extend or modify the styles in _email.less
+//  This will allow you to edit email styles without copying and editing the _email.less file
+
+//  Importing fonts from an external CSS file, rather than embedding @font-face declarations inside the <style> tag,
+//  as the latter will cause font rendering issues if the web fonts are inaccessible.
+
+@import url("@{baseUrl}css/email-fonts.css");
+
+.main-content {
+  a {
+    color: @email__link-color !important;
+
+    &:hover, &:visited {
+      color: @email__link-color !important;
+    }
+  }
+
+  table.button {
+    margin-top: 10px;
+
+    table.inner-wrapper {
+      td {
+        background-color: @email__link-color;
+        border-radius: 22px;
+
+        a {
+          border: none !important;
+          color: @color-white !important;
+          text-transform: uppercase;
+        }
+
+        &:hover, &:visited {
+          background-color: @email__link-hover-color !important;
+
+          a {
+            color: @color-white !important;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.concorso-email-container {
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .concorso-banner {
+    background-color: #63B054;
+    width: 100%;
+
+    p {
+      color: @color-white;
+      text-align: center;
+    }
+
+    a:hover {
+      text-decoration: none !important;
+    }
+
+    .numero-spedizione {
+      text-transform: uppercase;
+    }
+  }
+
+  .generated-code-email {
+    text-align: center;
+
+    p.concorso-text {
+      padding: 20px 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.concorso-banner-order-email {
+  background-color: #63B054;
+  padding: 10px;
+  margin-bottom: 20px;
+  p {
+    color: @color-white;
+    text-align: center;
+    //font-size: 18px;
+    margin: 5px 0!important;
+  }
+  a:hover {
+    text-decoration: none!important;
+  }
+}

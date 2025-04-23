@@ -1,0 +1,73 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    //
+    //  Header
+    //  ---------------------------------------------
+
+    .minicart-wrapper {
+        .block-minicart.ui-dialog-content {
+            &:after {
+                content: none;
+            }
+        }
+
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .customer-wrapper {
+        .block-customer.ui-dialog-content {
+            &:before {
+                right: 24px;
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .header {
+        &.content {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            grid-gap: 30px;
+            align-items: center;
+            padding: 10px 0 40px;
+
+            &:after, &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__lxl) {
+    .header.content {
+        padding: 0 !important;
+
+        .col-span-3.shipping {
+            display: none;
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    .minicart-wrapper {
+        .block-minicart.ui-dialog-content {
+            &:before {
+                right: 6px !important;
+            }
+        }
+    }
+}
+

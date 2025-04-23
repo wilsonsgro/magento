@@ -1,0 +1,875 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body#html-body.cms-garanzia {
+    /* SPACES */
+
+    .space-both-10 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .padding-text-both {
+        padding: 0 30px;
+    }
+    .reset-negative-margin {
+        margin: 0 -15px;
+    }
+    .only-bt-pad {
+        padding-top: 0!important;
+    }
+    .m-40-t {
+        margin-top: 40px;
+    }
+    .m-10-r {
+        margin-right: 10px;
+    }
+
+    /* CONTAINERS AND SECTIONS*/
+
+    .full-width-content {
+        position: relative;
+    }
+    .boxed-content {
+        max-width: 1440px;
+        padding: 0 55px;
+        margin:0 auto;
+        box-sizing: unset;
+    }
+    .flex-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .flex-content.card {
+        margin-top:0;
+    }
+    .space-between {
+        justify-content: space-between;
+    }
+    .content-center {
+        align-content: center;
+    }
+    .align-items-center {
+        align-items: center;
+    }
+    .align-items-end {
+        align-items: end;
+    }
+    .flex-content:first-of-type {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .flex-stretch {
+        align-items: stretch;
+    }
+    .flex-row {
+        flex-flow: row;
+    }
+    .flex-end {
+        align-self: flex-end;
+    }
+    .section-relative {
+        position: relative;
+        width: 100%;
+    }
+    .col-1-flex {
+        width: 100%;
+    }
+    .col-2-flex {
+        width: 50%;
+    }
+    .col-3-flex {
+        width: 33%;
+    }
+    .col-4-flex {
+        width: 25%;
+    }
+    .section-title-number {
+        width: 50%;
+    }
+    .section-prodotti {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .block-shadow {
+        -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+        padding: 40px 30px;
+        margin: 15px;
+        border-radius: 30px;
+    }
+    .hover-zoom {
+        transition: transform .8s;
+    }
+    .hover-zoom:hover {
+        transform: scale(1.05);
+    }
+    .flex-align-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: inherit;
+    }
+    .cta-section {
+        padding: 30px;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    /* HEADINGS */
+
+    .title-section {
+        padding: 50px 30px;
+        z-index: 1;
+    }
+    .title-section h1,
+    .title-section h2,
+    .text-bold {
+        font-weight: bold;
+    }
+    .title-section.ts-no-pd {
+        padding: 0 30px;
+    }
+    .title-section.section-no-bg {
+        padding: 0 30px;
+    }
+    .title-section h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .title-section .sub-title-light {
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .pre-title{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .sub-title-black {
+        color: #000;
+        font-size: 24px;
+        text-transform: inherit;
+    }
+    .section-title-number .title-number {
+        margin-left: -15px;
+    }
+    .section-title-number h5 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .block-shadow h5 {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+    .block-shadow h3 {
+        font-size: 25px;
+        font-weight: 900;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .block-shadow p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    /* TEXT */
+
+    .boxed-content p {
+        font-size: 16px;
+        padding-bottom: 10px;
+        line-height: 1.4
+    }
+    a.text-primary,
+    .text-primary {
+        color: #63b054;
+    }
+    a.text-primary:hover {
+        color: #2b4522;
+    }
+    a.text-dark-grey,
+    .text-dark-grey {
+        color: #4c4c4c;
+    }
+    a.text-dark-grey:hover {
+        color: #63b054;
+    }
+    a.text-white,
+    .text-white {
+        color: #fff;
+    }
+    .text-medium {
+        font-size: 18px;
+    }
+    .text-center {
+        text-align: center;
+    }
+    body .p-16-pad {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 16px;
+    }
+
+    /* IMAGES */
+
+    .full-width,
+    .img-full img {
+        width: 100%;
+    }
+    .sigillo img {
+        max-width: 150px;
+    }
+
+    /*ANCORA*/
+
+    .ancor-offset {
+        display: block;
+        position: relative;
+        top: -250px;
+        visibility: hidden;
+    }
+
+    /* BACKGROUNDS */
+
+    .bg-primary,
+    .bg-white.hover-zoom:hover {
+        background-color: #63b054;
+        color:#fff;
+    }
+    .bg-secondary {
+        background-color: #F4B02C;
+        color:#fff;
+    }
+    .bg-orange {
+        background-color: #FF7F5A;
+        color:#fff;
+    }
+    .bg-orange hr {
+        border-color: #fff;
+    }
+    .bg-white {
+        background-color: #fff;
+        color:#333;
+    }
+
+    /* SHAPE BACKGROUND*/
+
+    .shape-background {
+        background: rgba(255,255,255,1);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(239,239,239,1) 100%);
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    .shape-background:after {
+        content: '';
+        background-color: #63b055;
+        width: 40px;
+        height: 80px;
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+        bottom: -40px;
+        -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 10px 15px 0 rgba(0,0,0,0.15);
+    }
+    .shape-background.shape-bottom {
+        background: #fff;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .shape-background.shape-bottom:after {
+        display: none;
+    }
+    .shape-bottom {
+        position: relative;
+    }
+    .shape-bottom .boxed-content {
+        background-color: #64b054;
+        margin-bottom: 0;
+    }
+    .shape-bottom .boxed-content:before {
+        content: '';
+        width: 100%;
+        background-color: #63af53;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .shape-background .absolute {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        img {
+            width: 100%;
+            height: 335px;
+        }
+    }
+    .shape-background.shape-bottom .absolute {
+        top: 70px;
+        height: 85%;
+        width: 125%;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        img {
+            width: 150%;
+            height: 100%;
+        }
+    }
+    .shape-bottom h2 {
+        padding-bottom: 20px;
+    }
+
+    /*IMAGE LEFT*/
+
+    .section-title-number .title-number {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    /* BORDER */
+
+    .border-bot {
+        border-bottom: 1px solid #707070;
+    }
+    .border-circle {
+        border: 1px solid #707070;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        line-height: 37px !important;
+    }
+    .dividing-line {
+        border-color: #707070;
+        width: 100%;
+        display: inline-block;
+    }
+
+    /* BOX */
+
+    .box-plus {
+        width: 25%;
+        text-align: center;
+        padding: 40px 15px;
+    }
+    .box-plus img {
+        margin-top: 10px;
+    }
+    .box-plus span.pre-title {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .box-plus h4 {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .box-cover {
+        height: 100px;
+        width: 70%;
+        position: absolute;
+        left: 10%;
+        top: -50px;
+        background: #ff7f5a;
+    }
+    .block-bordered-evidenced h4 {
+        font-size: 22px;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0;
+    }
+    .block-bordered-evidenced h4:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        top: 10px;
+        left: 10px;
+    }
+    .block-bordered-evidenced.green h4:before {
+        background: #E0EFDD;
+    }
+    .block-bordered-evidenced.orange h4:before {
+        background: #FDEFD4;
+    }
+    .block-bordered-evidenced p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .garanzia-heading {
+        h3 span {
+            font-weight: 400;
+        }
+        .pagebuilder-column-group {
+            max-width: 1440px;
+            padding-bottom: 55px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+    }
+    .garanzia-stripe-content.pagebuilder-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        figure {
+            font-size: 0;
+        }
+        .garanzia-stripe-content-number {
+            width: 35%;
+        }
+        .garanzia-stripe-content-title {
+            display: flex;
+            align-items: end;
+            width: 65%;
+        }
+    }
+    .numero-verde {
+        padding: 0 30px;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        .img-num-verde {
+            img {
+                max-height: 80px;
+            }
+        }
+        &:after,
+        &:before {
+            content: '';
+            display: block;
+            width: ~"calc(100% + 40px)";
+            height: 1px;
+            background: #707070;
+            margin: 30px -20px;
+        }
+    }
+    .cta-section p {
+        font-size: 20px;
+    }
+
+    /*BG LEFT*/
+
+    .bg-left {
+        width: 60%;
+        height: auto;
+        margin-left: -10%;
+    }
+
+    /* VANTAGGI */
+
+    .garanzia-vantaggi {
+        background-image: url('https://amicafarmacia.com/media/img-institutional-page/shape-bg.png');
+        background-repeat: no-repeat;
+        background-position: right -30% top 30%;
+        background-size: 80%;
+    }
+    .block-skill {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+        border-bottom: 2px solid #63b054;
+        width: 100%;
+    }
+    .block-skill p {
+        font-size: 16px;
+    }
+    .skills-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .bg-shape-right {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 50%;
+        margin-left: 0;
+    }
+    .bg-shape-right .card-skill {
+        width: 50%;
+    }
+
+    /* BUTTON */
+
+    .btn-primary,
+    .alink:visited {
+        color: #63b054;
+        background: #fff;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 10px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-primary:hover {
+        background: #f4b000;
+        color: #fff;
+    }
+    .btn-orange,
+    .btn-orange:visited {
+        color: #fff;
+        background: #f4b000;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        display: inline-block;
+        margin-top: 10px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .btn-orange:hover {
+        background: #ffffff;
+        color: #63b054;
+    }
+    .end-btn {
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+    .garanzia-heading,
+    .garanzia-vantaggi,
+    .garanzia-footer {
+        .btn-orange {
+            position: relative;
+            z-index: 1;
+            .pagebuilder-button-link {
+                padding: 0;
+                margin: auto;
+                display: inline;
+            }
+            &:not(:hover) {
+                .pagebuilder-button-link {
+                    color: @color-white;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    body#html-body.cms-garanzia {
+        .garanzia-heading {
+            .pagebuilder-column-group {
+                flex-wrap: nowrap;
+            }
+        }
+        .card {
+            flex-wrap: nowrap;
+        }
+        .bg-shape-right {
+            width: 40%;
+            margin-left: 5%;
+        }
+        .garanzia-vantaggi {
+            padding-bottom: 100px;
+        }
+    }
+}
+@media only screen and (max-width: 1279px) {
+    body#html-body.cms-garanzia {
+        .box-card {
+            flex-grow: 1;
+            width: 40% !important;
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+    body#html-body.cms-garanzia {
+        .img-amica-team {
+            margin-top: -50px;
+        }
+        .desktop {
+            display: block;
+        }
+        .mobile {
+            display: none;
+        }
+        .garanzia-stripe-image {
+            justify-content: center;
+            .image-bg-left {
+                img {
+                    max-width: 115%;
+                    transform: translateX(-15%);
+                }
+            }
+        }
+        .garanzia-originalita {
+            .garanzia-stripe-content.pagebuilder-column {
+                .garanzia-stripe-content-number {
+                    width: 235px;
+                }
+                .garanzia-stripe-content-title {
+                    width: ~"calc(100% - 235px)";
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 991px) {
+    body#html-body.cms-garanzia {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        .boxed-content {
+            padding: 0;
+        }
+        .pre-title {
+            font-size: 16px;
+        }
+        .numero-verde .pre-title {
+            margin-top: 0;
+        }
+        .title-section {
+            padding: 30px;
+        }
+        .title-section h1,
+        .title-section h2 {
+            font-size: 26px;
+        }
+        h3.sub-title-black {
+            font-size: 22px;
+        }
+        .title-section.ts-no-pd {
+            padding: 0 15px;
+        }
+        .boxed-content .iframe-video-custom iframe {
+            width: 100%;
+            position: relative;
+            right: 0;
+        }
+        .col-2-flex {
+            width: 100%;
+            padding: 0 15px;
+        }
+        .col-3-flex {
+            width: 100%;
+            padding: 0 15px;
+        }
+        .section-prod .col-3-flex {
+            width: 33%;
+        }
+        .iframe-video-custom {
+            margin-top: -100px;
+            padding: 0 30px;
+        }
+        .box-plus.third-child {
+            order: 4;
+        }
+        .box-plus.fourth-child {
+            order: 3;
+        }
+        .col-2-flex.block-bordered,
+        .col-3-flex.block-bordered {
+            padding: 30px;
+        }
+        .block-flex-bordered-cont {
+            padding: 0 15px;
+        }
+        .block-bordered-cont.neg-15 {
+            margin: 0;
+        }
+        .block-bordered-evidenced.col-2-flex {
+            padding: 0;
+        }
+        .block-bordered-cont,
+        .block-bordered-cont.neg-15 .block-bordered {
+            margin: 0 15px;
+        }
+        .block-bordered-evidenced.g-mob h4:before {
+            background: #E0EFDD;
+        }
+        .block-bordered-evidenced.o-mob h4:before {
+            background: #FDEFD4;
+        }
+        .img-amica-team {
+            margin-top: 20px;
+        }
+        .box-cover {
+            top: 0;
+            background: #ff7f5a;
+            height: 70px;
+        }
+        .cta-section {
+            text-align: left;
+        }
+        .image-bg-left {
+            padding: 50px 15px 15px 15px;
+        }
+        .shape-background .absolute {
+            top: 0;
+            img {
+                height: 230px;
+            }
+        }
+        .shape-background.shape-bottom .absolute {
+            transform: rotate(0deg);
+            bottom: auto;
+            top: 100px;
+            margin-bottom: -1px;
+        }
+        .shape-bottom .boxed-content {
+            margin-top: 50px;
+            margin-bottom: -1px;
+        }
+        .garanzia-vantaggi {
+            background-image: url('https://amicafarmacia.com/media/img-institutional-page/shape-bg-big-mobile.png');
+            background-size: auto 100%;
+            background-position: left -50px center;
+        }
+        .flex-column-m {
+            flex-flow: column;
+        }
+        .bg-left,
+        .section-title-number,
+        .bg-shape-right,
+        .numero-verde {
+            width: 80%;
+        }
+        .entry-num {
+            max-width: 35%;
+            margin-right: 10px;
+        }
+        .img-num-verde {
+            max-width: 30%;
+        }
+        .bg-left {
+            margin-left: 0;
+            margin-top: 30px;
+            margin-bottom: -10px;
+        }
+        .mob-80-perc {
+            max-width: 80%;
+        }
+        .box-card {
+            flex-direction: row;
+            text-align: left;
+            justify-content: space-between;
+        }
+        .box-card img {
+            width: 30%;
+        }
+        .box-card .card-info {
+            width: 100%;
+            padding-left: 20px;
+        }
+        .box-card h3 {
+            font-size: 20px;
+        }
+        .box-card p {
+            display: none;
+        }
+        .box-card a.btn-orange {
+            width:100%;
+            font-size:16px;
+            padding:7px 15px;
+        }
+        .numero-verde {
+            padding: 0 15px;
+            justify-content: space-around;
+            margin: 15px auto auto;
+        }
+        .numero-verde img {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #garanzia-professionalita,
+        #garanzia-assistenza {
+            top: 200px;
+        }
+        #garanzia-vantaggi,
+        #garanzia-originalita {
+            top: -200px;
+        }
+        .dividing-line {
+            width: 90%;
+            display: block;
+        }
+        .garanzia-heading {
+            .pagebuilder-column-group {
+                .box-card {
+                    position: relative;
+                    align-items: center;
+                    figure {
+                        width: 30%;
+                        img {
+                            width: auto;
+                        }
+                    }
+                    .card-info {
+                        width: 64%;
+                        margin-bottom: 20px;
+                        h3 {
+                            text-align: left !important;
+                        }
+                    }
+                    [data-content-type="buttons"] {
+                        position: absolute;
+                        left: 33%;
+                        margin-left: 20px;
+                        bottom: 20%;
+                    }
+                }
+            }
+        }
+        .garanzia-professionalita,
+        .garanzia-soddisfazione,
+        .garanzia-vantaggi,
+        .garanzia-originalita {
+            .pagebuilder-column-group {
+                flex-direction: column;
+                .pagebuilder-column {
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px) {
+    body#html-body.cms-garanzia {
+        .col-4-flex {
+            width: 100%;
+        }
+        .section-prod .col-3-flex {
+            width: 100%;
+        }
+        .bg-left,
+        .section-title-number,
+        .bg-shape-right {
+            width: 100%;
+        }
+        .numero-verde {
+            text-align: center;
+            width: 100%;
+            flex-flow: column;
+        }
+        .garanzia-professionalita,
+        .garanzia-soddisfazione,
+        .garanzia-vantaggi,
+        .garanzia-originalita {
+            .pagebuilder-column-group {
+                .pagebuilder-column {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

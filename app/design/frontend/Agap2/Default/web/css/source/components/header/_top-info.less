@@ -1,0 +1,105 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .top-info {
+        display: block;
+        width: 100%;
+        height: 55px;
+        font-size: 11px;
+        line-height: 25px;
+        text-align: center;
+        background-color: @color-ami-dark-green;
+
+        a,
+        .top-info-text {
+            color: @color-white;
+        }
+
+        > a,
+        .top-info-text {
+            font-size: 10px;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__lxl) {
+    .top-info {
+        div.mobile-only {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            background: @color-ami-green;
+            width: 100%;
+
+            a {
+                display: inline-flex;
+                color: @color-white;
+                text-align: center;
+                font-size: 11px;
+                height: 24px;
+                line-height: 24px;
+                font-weight: @font-weight__bold;
+                align-items: center;
+                &:after {
+                    content: '';
+                    background: url("../images/icons/png/icon-phone-bianco.png");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 5px;
+                }
+            }
+
+            span {
+                align-items: center;
+                color: @color-white;
+                display: flex;
+
+                &.label-text-mobile {
+                    display: inline-block;
+                    margin-right: 5px;
+                }
+
+                &.label-price {
+                    padding-left: 6px;
+                    font-weight: @font-weight__bold;
+                }
+            }
+
+            .pipe {
+                margin: 0 18px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .top-info {
+        height: 30px;
+        line-height: 30px;
+        div.mobile-only {
+            display: none;
+        }
+        a,
+        .top-info-text {
+            display: block;
+            letter-spacing: 0.55px;
+            font-size: 12px;
+        }
+    }
+}

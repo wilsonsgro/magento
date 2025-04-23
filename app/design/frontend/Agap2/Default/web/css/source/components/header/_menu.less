@@ -1,0 +1,1063 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .sections.nav-sections {
+        margin-bottom: 0 !important;
+
+        .section-item-content {
+            background-color: @color-ami-green;
+
+            .menus__mobile {
+                display: none;
+            }
+
+            .menus.desktop {
+                max-width: @layout__max-width;
+                margin: 0 auto;
+                padding: 0 15px;
+
+                ul.menus__inner-list.nav_1 {
+                    position: absolute;
+                    top: 50px;
+                    left: 0;
+                    width: 100%;
+                    margin: 0px;
+                    padding: 0;
+                    grid-template-columns: 35% 15% 15%;
+                    background-color: @color-white;
+                    z-index: 99999;
+
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100vw;
+                        top: 0;
+                        bottom: 0;
+                        background: white;
+                        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            }
+
+            nav {
+                display: block;
+                height: 50px;
+
+                ul.menus__list {
+                    padding: 0;
+                    width: 100%;
+                    position: relative;
+                    text-align: center;
+
+                    li.menus__item {
+                        text-transform: uppercase;
+                        display: inline-block;
+                        margin: 0;
+                        height: 50px;
+                        padding: 0 9px;
+
+                        &.promotions {
+                            background-color: @color-ami-purple;
+                        }
+
+                        &.black-friday {
+                            background-color: @color-black;
+                        }
+
+                        &:active {
+                            a.menus__link {
+                                text-decoration: none;
+                            }
+                        }
+
+                        a.menus__link {
+                            color: @color-white;
+                            padding: 15px;
+                            padding-bottom: 12px;
+                            display: block;
+                            border-bottom: 5px;
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+
+                        &:hover {
+                            a.menus__link {
+                                text-decoration: none;
+                            }
+                        }
+
+                        ul.menus__inner-list.nav_1 {
+                            display: none;
+                        }
+
+                        &.hover-js:hover {
+                            ul.menus__inner-list.nav_1 {
+                                display: grid;
+                                justify-content: center;
+                                grid-template-columns: 25% 25% 25% 25%;
+                                padding-bottom: 30px;
+
+
+                                li.menus__inner-item--all {
+                                    display: none !important;
+                                }
+
+                                li.menus__inner-item--level1 {
+                                    height: 100%;
+                                    margin: 0 -10px;
+                                    z-index: 100;
+                                    position: relative;
+                                    background: white;
+
+                                    .wrapper-title {
+                                        display: block;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        text-align: left;
+                                        padding: 30px 30px 0 45px;
+                                        margin-bottom: -15px;
+                                    }
+
+                                    ul.menus__inner-list.nav_2 {
+                                        padding: 30px;
+                                        position: relative;
+                                        // top brand
+                                        li.menus__inner-item.top-brand {
+                                            padding-top: 15px;
+
+                                            &:hover {
+                                                background: none;
+                                                width: auto;
+                                            }
+
+                                            .brand-title {
+                                                font-size: 17px;
+                                                font-weight: 500;
+                                                line-height: 21px;
+                                                text-transform: uppercase;
+                                                padding: 0px 15px 20px;
+                                            }
+
+                                            a {
+                                                color: @color-ami-gray;
+                                                display: block;
+                                                font-size: 17px;
+                                                font-weight: 500;
+                                                line-height: 21px;
+                                                padding: 9px 15px;
+                                                text-transform: none;
+
+                                                &:hover {
+                                                    text-decoration: none;
+
+                                                    span {
+                                                        padding-bottom: 3px;
+                                                        border-bottom: 2px solid @color-ami-yellow;
+                                                    }
+                                                }
+
+                                                &.all-brands {
+                                                    text-transform: uppercase;
+                                                }
+                                            }
+                                        }
+
+                                        // product
+                                        li.menus__inner-item.menus__inner-item--level2.product {
+                                            flex-direction: column-reverse;
+                                            height: fit-content;
+                                            padding-top: 0;
+
+                                            &:hover {
+                                                background: none !important;
+                                                width: auto;
+                                            }
+
+                                            a {
+                                                font-weight: normal;
+                                                text-transform: capitalize;
+
+                                                &:hover {
+                                                    text-decoration: underline;
+                                                    background: none;
+                                                }
+                                            }
+
+                                            img {
+                                                width: 150px;
+                                            }
+
+                                        }
+
+                                        // first column
+                                        li.menus__inner-item.menus__inner-item--level2.menus__inner-item--parent.menus.first {
+                                            ul.menus__inner-list.nav_3 {
+                                                display: flex;
+                                                flex-direction: column;
+                                                height: 100%;
+                                                padding-left: 15px;
+                                                margin: 5px 0;
+                                                text-align: left;
+
+                                                a.menus__inner-link.current {
+                                                    color: @color-ami-gray;
+                                                    text-transform: capitalize;
+                                                    padding: 13px 15px;
+                                                    min-height: 18px;
+                                                    line-height: 22px;
+                                                    font-size: 14px;
+
+                                                    &:hover {
+                                                        color: @color-white;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    li.menus__inner-item--level2 {
+                                        width: 100%;
+                                        margin-bottom: 2px;
+                                        text-align: left;
+
+                                        &.only-mobile {
+                                            display: none;
+                                        }
+
+                                        > a.menus__inner-link {
+                                            color: @color-ami-gray;
+                                            font-size: 15px;
+                                            font-weight: 700;
+                                            padding: 10px 10px;
+                                            line-height: 22px;
+
+                                        }
+
+                                        ul.menus__inner-list.nav_3 {
+                                            display: none;
+                                        }
+
+                                        &:hover {
+                                            a.menus__inner-link {
+                                                color: @color-white;
+                                                text-decoration: none;
+                                            }
+
+                                            ul.menus__inner-list.nav_3 {
+                                                li.menus__inner-item--level3 {
+                                                    a.menus__inner-link {
+                                                        color: @color-ami-gray;
+                                                        text-transform: capitalize;
+                                                        padding: 13px 15px;
+                                                        min-height: 18px;
+                                                        line-height: 22px;
+
+                                                        &:hover {
+                                                            color: @color-white;
+                                                        }
+                                                    }
+
+                                                    a.menus__inner-link.current {
+                                                        color: @color-ami-gray;
+                                                        text-transform: capitalize;
+                                                        padding: 13px 15px;
+                                                        min-height: 18px;
+                                                        line-height: 22px;
+                                                        font-size: 14px;
+
+                                                        &:hover {
+                                                            color: @color-white;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+
+                    li.menus__inner-item--level3 {
+                        margin-bottom: 0;
+                        display: flex;
+
+                        a.menus__inner-link {
+                            background: @color-white;
+                            color: @color-ami-gray;
+                            text-transform: capitalize;
+                            padding: 13px 15px;
+                            width: 100%;
+                            min-height: 18px;
+                            line-height: 22px;
+                            font-weight: 700;
+
+                            &:hover {
+                                color: @color-white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .menu-wrapper {
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+    .hidden-title {
+        .wrapper-title {
+            display: none !important;
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
+    body {
+        &.active {
+            overflow-y: auto;
+            overflow: hidden;
+        }
+    }
+
+    .sections.nav-sections {
+        margin-bottom: 0 !important;
+
+        .section-item-content {
+            background-color: @color-ami-green;
+
+            nav {
+                &.menus.container {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    .sections.nav-sections {
+        .section-item-content {
+            .menus__mobile {
+                nav {
+                    .phone-us {
+                        top: 10%;
+                    }
+
+                    &.menus_mobile.container {
+
+                        ul.menus_mobile__list {
+
+                            li.menus_mobile__item.nav_0 {
+
+                                ul.menus__inner-list.nav_1 {
+
+                                    li.menus__inner-item.menus__inner-item--level1 {
+
+                                        ul.menus__inner-list.menus.nav_2.active {
+
+                                            li.menus__inner-item.menus__inner-item--level2.menus.menus__inner-item--parent {
+
+                                                > a.menus__inner-link.active {
+                                                    > .mobile-menu-icon:after {
+                                                        background-image: url("../images/icons/png/accordion_aperto@2x.png") !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__lxl) {
+
+    body {
+        &.active {
+            overflow-y: auto;
+            overflow: hidden;
+        }
+    }
+
+    .sections.nav-sections {
+        margin-bottom: 0 !important;
+        z-index: 111;
+        height: 100%;
+        top: 0;
+        left: calc(~'-1 * (100% - @{active-nav-indent})');
+        width: calc(~'100% - @{active-nav-indent}');
+        overflow: auto;
+        position: fixed;
+
+        &.active {
+            left: 0px;
+            width: 100%;
+        }
+
+        .section-items.nav-sections-items {
+            position: relative;
+            z-index: 1;
+            height: 100%;
+            background-color: @color-ami-green;
+
+            .section-item-title.nav-sections-item-title {
+                display: none;
+            }
+        }
+
+        .section-item-content {
+            background-color: @color-ami-green;
+
+            .menus__mobile {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                .close-menu {
+                    display: flex;
+                    flex-wrap: wrap;
+                    opacity: 1;
+                    position: absolute;
+                    top: 0;
+                    background: @color-ami-green;
+                    width: 100%;
+
+                    #menu-close-bottom {
+                        text-decoration: none;
+                        padding: 12px 12px 12px 20px;
+
+                        img {
+                            height: 16px;
+                            width: auto;
+                            margin-left: 3%;
+                            cursor: pointer;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                nav {
+                    &.menus_mobile.container {
+                        display: block !important;
+                        position: absolute;
+                        top: 44px;
+                        background: @color-ami-green;
+                        width: 100% !important;
+                        z-index: 111;
+                        height: 100%;
+                        padding: 0;
+
+                        ul.menus_mobile__list {
+                            padding-left: 20px;
+                            width: calc(~'100% - 20px');
+
+                            li.menus_mobile__item.nav_0 {
+                                display: flex;
+                                flex-direction: column;
+                                margin: 0;
+                                width: 100%;
+
+                                &.promotions {
+                                    position: relative;
+
+                                    &:before {
+                                        background-color: @color-ami-purple;
+                                        content: '';
+                                        height: 100%;
+                                        position: absolute;
+                                        left: -20px;
+                                        width: calc(~'100% + 20px');
+                                    }
+                                }
+
+                                &.black-friday {
+                                    position: relative;
+                                    &:before {
+                                        background-color: @color-black;
+                                        content: '';
+                                        height: 100%;
+                                        position: absolute;
+                                        left: -20px;
+                                        width: calc(~'100% + 20px');
+                                    }
+                                }
+
+                                a.menus__link {
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    padding: 10px 0;
+                                    text-transform: uppercase;
+                                    color: white;
+                                    width: 100%;
+                                    position: relative;
+                                }
+                                &.menus_mobile__item--parent {
+                                    a.menus__link {
+                                        &:after {
+                                            content: '';
+                                            background-image: url("../images/icons/png/accordion_chiuso@2x.png");
+                                            display: block;
+                                            height: 16px;
+                                            width: 16px;
+                                            background-size: cover;
+                                            position: absolute;
+                                            right: 15px;
+                                            top: 15px;
+                                        }
+                                    }
+                                }
+                                &.visible {
+                                    &.menus_mobile__item--parent {
+                                        > a.menus__link {
+                                            &:after {
+                                                background-image: url("../images/icons/png/accordion_aperto@2x.png");
+                                            }
+                                        }
+                                    }
+                                    ul.menus__inner-list.nav_1 {
+                                        li.wrapper-container {
+                                            margin-bottom: 0;
+                                            .wrapper-title {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                ul.menus__inner-list.nav_1 {
+                                    padding-left: 15px;
+                                    li.menus__inner-item--all {
+                                        display: none;
+                                    }
+                                    li.wrapper-container {
+                                        margin-bottom: 0;
+                                        .wrapper-title {
+                                            display: none;
+                                            font-size: 14px;
+                                            font-weight: 700;
+                                            padding: 10px 0;
+                                            color: white;
+                                            width: 100%;
+                                            position: relative;
+                                            &:after {
+                                                content: '';
+                                                background-image: url("../images/icons/png/next.svg");
+                                                display: block;
+                                                height: 16px;
+                                                width: 16px;
+                                                background-size: cover;
+                                                position: absolute;
+                                                right: 15px;
+                                                top: 15px;
+                                            }
+                                        }
+                                    }
+
+                                    li.menus__inner-item.menus__inner-item--level1 {
+                                        ul.menus__inner-list.nav_2 {
+                                            padding: 0;
+                                            position: relative;
+
+                                            // top brand
+                                            li.menus__inner-item.top-brand {
+                                                display: none;
+                                            }
+
+                                            // product
+                                            li.menus__inner-item.menus__inner-item--level2.product {
+                                                display: none;
+                                            }
+
+                                            li.menus__inner-item.menus__inner-item--level2 {
+                                                display: none;
+                                            }
+
+                                        }
+
+                                        ul.menus__inner-list.menus.nav_2.active {
+                                            position: absolute !important;
+                                            left: 0;
+                                            top: 0;
+                                            width: 100%;
+                                            z-index: 1234;
+                                            background: @color-white;
+                                            height: 100%;
+
+                                            li.menus__inner-item.menus__inner-item--level2.only-mobile.background {
+                                                a {
+                                                    background: @color-ami-gray3;
+                                                    color: @color-ami-gray2;
+                                                    padding-left: 50px;
+
+                                                    &:before {
+                                                        color: @color-ami-gray2;
+                                                        content: @icon-custom-angle-up;
+                                                        font-family: @font-family-custom-icon;
+                                                        font-size: 22px;
+                                                        transform: rotate(-90deg);
+                                                        display: block;
+                                                        height: 16px;
+                                                        width: 16px;
+                                                        background-size: cover;
+                                                        position: absolute;
+                                                        left: 15px;
+                                                        top: 13px;
+                                                    }
+                                                }
+                                            }
+
+                                            li.menus__inner-item.menus__inner-item--level2.only-mobile {
+                                                display: block;
+                                                margin: 0;
+
+                                                &.lowercase {
+                                                    a {
+                                                        font-size: 14px;
+                                                        font-weight: 700;
+                                                        line-height: 20px;
+                                                        padding: 12px 10px 12px 20px;
+                                                        display: block;
+                                                        color: @color-gray-50;
+                                                        text-transform: none !important;
+                                                        text-decoration: none;
+                                                    }
+                                                }
+
+                                                a {
+                                                    font-size: 14px;
+                                                    font-weight: 700;
+                                                    line-height: 20px;
+                                                    padding: 12px 10px 12px 20px;
+                                                    display: block;
+                                                    color: @color-ami-gray;
+                                                    text-transform: uppercase;
+                                                    text-decoration: none;
+                                                }
+                                            }
+
+                                            li.menus__inner-item.menus__inner-item--level2.menus.menus__inner-item--parent {
+                                                position: relative;
+
+                                                > a.menus__inner-link.active {
+                                                    span:after {
+                                                        display: block;
+                                                        height: 16px;
+                                                        width: 16px;
+                                                        background-size: cover;
+                                                        position: absolute;
+                                                        right: 30px !important;
+                                                        top: 15px;
+                                                        content: '';
+                                                        background-image: url("../images/icons/png/accordion_aperto@2x.png") !important;
+                                                    }
+                                                }
+
+                                                > a.menus__inner-link {
+                                                    > .mobile-menu-icon:after {
+                                                        content: '';
+                                                        background-image: url("../images/icons/png/accordion_chiuso_nero@2x.png");
+                                                        display: block;
+                                                        height: 16px;
+                                                        width: 16px;
+                                                        background-size: cover;
+                                                        position: absolute;
+                                                        right: 30px !important;
+                                                        top: 15px;
+                                                    }
+                                                }
+
+                                            }
+
+                                            li.menus__inner-item.menus__inner-item--level2.menus {
+                                                display: block;
+                                                margin: 0;
+                                                background: white;
+
+                                                a.active {
+                                                    background: @color-ami-green;
+                                                    color: @color-white;
+                                                }
+
+                                                a {
+                                                    font-size: 14px;
+                                                    font-weight: 700;
+                                                    line-height: 20px;
+                                                    padding: 12px 10px 12px 20px;
+                                                    display: block;
+                                                    color: @color-ami-gray;
+                                                    text-transform: uppercase;
+                                                    text-decoration: none;
+                                                }
+
+                                                ul.menus__inner-list.nav_3 {
+                                                    display: none;
+                                                }
+
+                                                ul.menus__inner-list.nav_3.active {
+                                                    display: block;
+
+                                                    li.menus__inner-item.menus__inner-item--level3 {
+                                                        margin: 0;
+
+                                                        a {
+                                                            border-bottom: 1px solid @color-ami-gray3;
+                                                            font-size: 14px;
+                                                            font-weight: 700;
+                                                            line-height: 20px;
+                                                            padding: 8px 10px 8px 20px;
+                                                            display: block;
+                                                            color: @color-ami-gray;
+                                                            text-transform: capitalize;
+                                                            text-decoration: none;
+                                                        }
+
+                                                        &:last-child {
+                                                            border-bottom: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .phone-us {
+                        align-items: center;
+                        bottom: 65px;
+                        display: flex;
+                        position: absolute;
+                        top: unset !important;
+
+                        a.phone-us-link {
+                            color: @color-white;
+                            padding-left: 20px;
+                            font-weight: @font-weight__bold;
+                        }
+
+                        a {
+                            display: flex;
+                        }
+
+                        .phone-img {
+                            height: 26px;
+                            padding-left: 32px;
+                            font-size: 19px;
+                            color: @color-white;
+                            font-weight: 700;
+                            vertical-align: middle;
+                            background-image: url(../images/icons/png/call_footer.png);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: 25px;
+                            margin-left: 20px;
+                            margin-top: -3px;
+                            margin-right: 5px;
+                        }
+
+                        span {
+                            color: @color-white;
+                        }
+                    }
+                }
+            }
+
+            nav {
+                &.menus.desktop {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .sections.nav-sections {
+        .section-item-content {
+            .menus__mobile {
+                nav {
+
+                    &.menus_mobile.container {
+
+                        ul.menus_mobile__list {
+
+                            li.menus_mobile__item {
+                                .mobile-menu-icon:after {
+                                    right: 50px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+// 1100
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__mxl) {
+    .sections.nav-sections {
+        margin-bottom: 0 !important;
+
+        .section-item-content {
+            background-color: @color-ami-green;
+
+            .menus__mobile {
+                display: none;
+            }
+        }
+    }
+}
+
+// 1200
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .sections.nav-sections {
+        margin-bottom: 0 !important;
+        position: relative;
+        z-index: 100;
+
+        .section-item-content {
+            background-color: @color-ami-green;
+
+            .menus__mobile {
+                display: none;
+            }
+
+            nav {
+                display: block;
+
+                ul.menus__list {
+                    text-align: center;
+
+                    li.menus__item {
+                        a.menus__link {
+                            padding: 17px 0 1px;
+                            font-size: 13px;
+
+                            &:hover {
+                                border-bottom: 2px solid @color-white;
+                            }
+                        }
+
+                        ul.menus__inner-list.nav_1 {
+                            display: none;
+                        }
+
+                        .menus__inner-item--level2.menus__inner-item--parent {
+                            position: relative;
+                            &:after {
+                                content: @icon-down;
+                                font-family: 'luma-icons';
+                                position: absolute;
+                                top: 8px;
+                                right: 0;
+                                font-size: 12px;
+                                padding: 4px;
+                            }
+                            &.first:after {
+                                content: @icon-up;
+                            }
+                        }
+
+                        &:hover {
+                            ul.menus__inner-list.nav_1 {
+                                li.menus__inner-item--all {
+                                    display: none !important;
+                                }
+
+                                li.menus__inner-item--level1 {
+                                    ul.menus__inner-list.nav_2 {
+                                        // top brand
+                                        li.menus__inner-item.top-brand {
+
+                                            img.pagebuilder-mobile-hidden {
+                                                width: 112px;
+                                                height: 70px;
+                                            }
+                                        }
+
+                                        // product
+                                        li.menus__inner-item.menus__inner-item--level2.product {
+                                            flex-direction: column-reverse;
+                                            height: fit-content;
+                                            align-items: flex-start;
+
+                                            a.menus__inner-link {
+                                                font-weight: normal;
+                                                font-size: 17px;
+                                                padding: 9px 0;
+                                                text-decoration: underline;
+                                                text-transform: capitalize;
+                                                width: auto;
+
+                                                img.lazyload{
+                                                    width: 100%;
+                                                    max-width: 350px;
+                                                    margin: 0 auto;
+                                                    text-align: center;
+                                                    display:block;
+                                                }
+
+                                                .icon-category-name{
+                                                    font-weight: bold;
+                                                }
+
+                                                &:hover {
+                                                    color: @color-ami-yellow;
+                                                    background: none !important;
+                                                }
+                                            }
+
+                                            img {
+                                                width: 353px;
+                                            }
+
+                                            &:hover {
+                                                background: none !important;
+                                                width: auto;
+                                            }
+                                        }
+
+                                        // first column
+                                        li.menus__inner-item.menus__inner-item--level2.menus__inner-item--parent.menus.first {
+                                            ul.menus__inner-list.nav_3 {
+                                                li.menus__inner-item--level3 {
+                                                    a.menus__inner-link {
+                                                        color: @color-ami-gray;
+                                                        font-size: 15px;
+                                                        text-transform: capitalize;
+                                                        padding: 7px 15px;
+                                                        min-height: 18px;
+                                                        line-height: 21px;
+                                                        font-weight: 500;
+
+                                                        &:hover {
+                                                            color: @color-ami-gray;
+
+                                                            > span {
+                                                                padding-bottom: 3px;
+                                                                border-bottom: 2px solid @color-ami-yellow;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    a.menus__inner-link.current {
+                                                        > span {
+                                                            padding-bottom: 3px;
+                                                            border-bottom: 2px solid @color-ami-yellow;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        li.menus__inner-item--level2 {
+                                            &.only-mobile {
+                                                display: none;
+                                            }
+
+                                            > a.menus__inner-link {
+                                                display: block;
+                                                padding: 5px 15px;
+                                                color: @color-ami-gray;
+                                                font-size: 15px;
+                                                font-weight: 500;
+                                                text-transform: none;
+                                            }
+
+                                            ul.menus__inner-list.nav_3 {
+                                                display: none;
+                                                li.menus__inner-item--level3 {
+                                                    &.only-mobile {
+                                                        display: none;
+                                                    }
+                                                }
+                                            }
+
+                                            &:hover {
+                                                > a.menus__inner-link {
+                                                    text-decoration: none;
+
+                                                    > span {
+                                                        padding-bottom: 3px;
+                                                        border-bottom: 2px solid @color-ami-yellow;
+                                                    }
+                                                }
+
+                                                ul.menus__inner-list.nav_3 {
+                                                    li.menus__inner-item--level3 {
+                                                        a.menus__inner-link {
+                                                            color: @color-ami-gray;
+                                                            font-size: 15px;
+                                                            font-weight: 500;
+                                                            text-transform: capitalize;
+                                                            padding: 9px 15px;
+                                                            min-height: 18px;
+                                                            line-height: 21px;
+
+                                                            &:hover {
+                                                                color: @color-ami-gray;
+
+                                                                > span {
+                                                                    padding-bottom: 3px;
+                                                                    border-bottom: 2px solid @color-ami-yellow;
+                                                                }
+                                                            }
+                                                        }
+
+                                                        a.menus__inner-link.current {
+                                                            > span {
+                                                                padding-bottom: 3px;
+                                                                border-bottom: 2px solid @color-ami-yellow;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

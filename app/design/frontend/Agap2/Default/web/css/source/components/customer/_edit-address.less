@@ -1,0 +1,48 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .customer-address-form {
+        .form-address-edit {
+            .fieldset:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                .field.country {
+                    order: 1;
+                }
+                .field.region {
+                    order: 2;
+                }
+                .field.zip {
+                    order: 2;
+                }
+                .field.city {
+                    order: 3;
+                }
+                .field.field-infoaggiuntive {
+                    order: 4;
+                }
+                .field.street {
+                    order: 5;
+                }
+                .field.field-civico {
+                    order: 6;
+                }
+                .field.field-tax_code {
+                    input {
+                        text-transform: uppercase;
+                    }
+                }
+                .field.taxvat {
+                    input {
+                        text-transform: uppercase;
+                    }
+                }
+                .field.choice {
+                   order: 50;
+                }
+            }
+        }
+    }
+}

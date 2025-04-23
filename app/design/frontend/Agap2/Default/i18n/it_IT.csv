@@ -1,0 +1,426 @@
+"Insert your email","Inserisci la tua email"
+"Enter the password associated with your account","Inserisci la password associata al tuo account"
+"Have you forgotten your password or username?","Hai dimenticato la password o il tuo username?"
+"Not registered yet?","Non sei ancora registrato?"
+"Create an Account","Crea un Account"
+"My profile","Il mio profilo"
+"My orders","I miei ordini"
+"Make a return","Effettua un reso"
+"Help and contacts","Aiuto e contatti"
+"Out Of Stock","Non disponibile"
+"Buy","Acquista"
+"Special Price","Prezzo Amicafarmacia",module,Magento_Wishlist
+"Regular Price","Prezzo al pubblico",module,Magento_Wishlist
+"Invite a friend","Invia ad un amico tramite"
+"Nickname","Nome Utente"
+"Summary","Titolo della tua recensione"
+"How do you rate our service?","Come consideri il servizio avuto?"
+"Add your review","Scrivi la tua recensione"
+"Submit Review","Invia la tua recensione",module,Magento_Review
+" from %1 to %2 of %3"," da %1 a %2 di %3",module,Magento_Catalog
+'from %1 to %2 of %3','da %1 a %2 di %3'
+"Shopping Options","Opzioni acquisto"
+"Now Shopping by","Hai selezionato"
+"Related Products","Prodotti associati",module,Magento_Catalog
+"Check items to add to the cart or","Spunta i prodotti da aggiungere al carrello o",module,Magento_Catalog
+"Buy","Acquista"
+"Add to Wish List","Aggiungi alla tua wishlist",module,Magento_MultipleWishlist
+"add to cart","aggiungi al carrello"
+"and","e"
+"Products Number: %1","Numero Prodotti: %1"
+"Unity Price","Prezzo Unitario"
+"Shopping Cart","Il tuo carrello",module,Magento_Checkout
+"Remove","Rimuovi"
+"Qty","Qtà"
+"Estimate Shipping and Tax","Stima spedizione e iva",module,Magento_Checkout
+"Apply Discount Code","Codice Promozionale",module,Magento_Checkout
+"Enter discount code","Inserisci il codice sconto",module,Magento_Checkout
+"Apply Discount","Applica",module,Magento_Checkout
+"Articles","Articoli"
+"Complete the Order","Concludi l'Ordine"
+"Day","Giorni"
+"Who is Farmaè","Chi é Farmaè"
+"Where we are","Dove siamo"
+"Work with us","Lavora con noi"
+"Customer Service","Servizio Clienti",theme,frontend/Magento/luma
+"Warranty Farmaè","Garanzia Farmaè"
+"Secure Payment","Pagamenti Sicuri"
+"Returns and Privacy","Recesso e privacy"
+"Sales Conditions","Condizioni di vendita"
+"Brands A-Z","Marchi A-Z"
+"Shopping guide","Guida all'acquisto"
+"Availability","Disponibilità",module,Magento_Wishlist
+"We found other products you might like!","Scelti per te",module,Magento_Catalog
+"%-D Day%!D %H:%M:%S","%-D Giorni%!D %H:%M:%S"
+"Login","Accedi"
+"You have no items in your shopping cart.","Non hai articoli nel carrello."
+"Navigation Guide","Guida alla navigazione"
+"Contact us","Contattaci"
+"Secure Payments","Pagamenti Sicuri"
+"Fast delivery","Spedizioni Rapide"
+"Proceed to Checkout","CHECKOUT"
+"Enter your destination to get a shipping estimate.","Inserisci la destinazione per avere una stima di spedizione."
+"Insert your email address","Inserisci il tuo indirizzo email"
+"Send","Invia"
+" of ", " di "
+"next","prossimo"
+"previous","precedente"
+"Hot Searches","Ricerche Popolari"
+"Day%!D ","Giorni"
+"Days ","Giorni"
+"Days","Giorni"
+"Hour%!H","Ore"
+"Hours","Ore"
+"Minute%!M","Minuti"
+"Minutes","Minuti"
+"Second%!S","Secondi"
+"Seconds","Secondi"
+"Access information","Informazioni d’accesso"
+"It's a pleasure to see you again","È un piacere rivederti"
+"Customer Login","È un piacere rivederti"
+"Login cliente","È un piacere rivederti"
+"We remind you that registration is simple and free.","Ti ricordiamo che la registrazione è semplice e gratuita."
+"BENEFITS FOR USERS OF AMICAFARMACIA","VANTAGGI PER GLI UTENTI DI AMICAFARMACIA"
+"- Fast checkout","- Checkout veloce"
+"If you don't have an account, check your order here:","Se non possiedi un account, controlla il tuo ordine qui:"
+"Not registered","Non registrato"
+"View order","Visualizza ordine"
+"- Save multiple shipping addresses","- Salvare indirizzi di spedizione multipli"
+"- See and track your orders and more","- Vedere e tracciare i tuoi ordini e altro ancora"
+"Write your email here","Scrivi qui la tua email"
+"Write your password here","Scrivi qui la tua password"
+"Confirm your password here","Conferma qui la tua password"
+"Perform Vocal Search","Esegui la ricerca vocale"
+"Unable to recognise that phrase. Please try again.","Non é stato possibile riconoscere la frase. Tenta di nuovo"
+"Unable to start voice search. Please check your browser permissions and allow this website to use the microphone.","Impossibile iniziare la ricerca vocale. Controlla i permessi del tuo browser e abilita questo sito web all'utilizzo del microfono."
+"Unfortunately, your language is not supported by speech to text services at this time.","Sfortunatamente al momento la tua lingua non é supportata dal servizio Speech to Text."
+"Voice capture has been aborted.","La registrzione vocale é stata interrotta."
+"Voice capture has failed.","La registrazione vocale é fallita."
+"Network connectivity is required for voice input.","La ricerca volare richiede una connessione attiva."
+"An error has occurred with the speech to text services.","Si é verificato un errore con il servizio Speech to Text"
+"Show all %1 results →","Mostra tutti i %1 risultati →"
+"Sorry, nothing has been found for '%1'.","Non è stato trovato nulla per '%1'"
+"1 star","1 stella"
+"2 stars","2 stelle"
+"3 stars","3 stelle"
+"4 stars","4 stelle"
+"5 stars","5 stelle"
+"Product reviews","Recensioni prodotto"
+"Qty:","Qtà:"
+"Write a review","Scrivi una recensione"
+"New Customers","Nuovo Cliente"
+"Your Email","La tua Email"
+"Forgot Your Password?","Recupera password"
+"Please enter your email address below to receive a password reset link.","Inserisci il tuo indirizzo email. Riceverai un link per creare una nuova password."
+"Email address","Indirizzo email"
+"Go to login","Vai al Log in"
+"Your Email","La Tua Email"
+"Register","Registrati"
+"Quantity","Quantità"
+"Add other products","Aggiungi altri prodotti"
+"Order Total","Importo totale"
+"Wishlist","Wishlist"
+"General Subscription","Autorizzazione al trattamento dei dati per scopi di profilazione e di marketing e per l'iscrizione alla newsletter"
+"Thank you, ","Grazie, "
+"Something went wrong with reCAPTCHA. Please contact the store owner.","Qualcosa con il reCAPTCHA é andato storto. Per favore conttata il proprietario del negozio."
+"Service reviews","Recensioni servizio"
+"All Brands","Tutti i brand"
+"Code Minsan","Codice Minsan"
+"Code","Codice"
+"Tax","IVA",module,Magento_Tax
+"Billing Address","Dati Anagrafici"
+"Comment","Commento"
+"Lastname","Cognome"
+"Country","Paese"
+"Know Us","Come ci hai scoperto"
+"Interest Area","Area di interesse"
+"Reference","Referenze"
+"More about","Varie ed eventuali"
+"Administration","Amministrazione"
+"Sales","Vendite"
+"Customer Care","Assistenza Clienti"
+"Management","Direzione"
+"Logistic","Logistica"
+"Search is disabled in this page.","La ricerca è disabilitata in questa pagina."
+"Card Verification Number","CVV"
+"Discover the product","Scopri il prodotto"
+"Sale Documents","Documenti Commerciali"
+"Not processed yet","Non ancora processati"
+"Show All Addresses","Mostra tutti gli indirizzi"
+"Hide Addresses","Nascondi indirizzi"
+"Sale Documents","Documenti Commerciali"
+"Not processed yet","Non ancora processati"
+"At least one of this fields must be compiled.","Almeno uno di questi due campi deve essere compilato."
+"I accept the ","Dichiaro di aver letto "
+"privacy conditions","l'informativa per il trattamento dei dati personali"
+" and marketing usage."," e il trattamento dei dati per scopi di marketing e profilazione"
+"%1: Line %2","%1"
+"All products","Tutti i prodotti"
+"Invalid VAT number or fiscal code","P.IVA o Codice fiscale non valido."
+"Code Minsan:","Codice Minsan:"
+"Share Wish List","Invia la wishlist per mail",module,Magento_Wishlist
+"Free gift <strong>%1</strong> was added to your shopping cart","OMAGGIO - <strong>%1</strong> è stato aggiunto al tuo carrello"
+"Free Items","Prodotti omaggio"
+"The field lenght is 7.","La lunghezza del campo è di 7 caratteri."
+"Nonprescription Medicine outside Italy is not allowed.","Non è possibile spedire prodotti OTC fuori dall'Italia."
+"The coupon code isn't valid. Verify the code and try again.","Il coupon non è valido. Si prega di verificarlo e riprovare.",module,Magento_Quote
+"Create an account","Crea un account"
+"More Choices:","Potresti essere interessato ai seguenti articoli:"
+"Select an option","Seleziona una opzione"
+"Ask your pharmacist","Chiedi al farmacista"
+"Change address","Cambio Indirizzo"
+"Ask a return","Recesso"
+"VAT 4%","Acquisti IVA 4%"
+"Shipping information","Informazioni Spedizione"
+"Cancel order","Annullamento Ordine"
+"Returns","Rimborsi"
+"Error in your order","Problemi con i miei ordini"
+"Ask for invoice","Informazioni Fattura"
+"Promotions","Offerte e Buoni Sconto"
+"Minimum of different classes of characters in password is %1. Classes of characters: Lower Case, Upper Case, Digits, Special Characters.","La password deve contenere almeno 1 lettera minuscola, 1 lettera maiuscola e almeno 1 numero o 1 carattere speciale.",module,Magento_Customer
+"Please enter a valid email address (Ex: johndoe@domain.com).","Inserisci un indirizzo email valido.",module,Magento_Ui
+"VAT ID","P.IVA"
+"Tax code","CF"
+"Tax Data","Dati Fiscali"
+"We apologize, but your free gift <strong>%1</strong> is not available at the moment","Ci scusiamo, ma il prodotto omaggio <strong>%1</strong> non è disponibile al momento."
+"PayPal Checkout could not be initialized. Please contact the store owner.","Compila i campi obbligatori prima di procedere al pagamento dell'ordine."
+"Enter a valid Zip/Postal Code","Inserire un CAP valido"
+"Sorry, nothing has been found for ""%s"".","Non è stato trovato nulla per ""%s""."
+"Sorry, nothing has been found for ""%1"".","Non è stato trovato nulla per ""%1""."
+"The requested qty for %1 is not available. Max avaliable qty is %2","La quantità richiesta per %1 non è disponibile. La quantità massima disponibile è %2"
+"Gift Card","Gift Card"
+"Discover your balance","Scopri il tuo saldo"
+"Enter the gift card code","Inserisci il codice gift card"
+"Gift Card Sender","Mittente",module,Magento_GiftCard
+"Gift Card Recipient","Destinatario",module,Magento_GiftCard
+"Gift Card Message","Messaggio",module,Magento_GiftCard
+"Invite a friend","Invita un amico"
+"Your balance","Il tuo saldo"
+"Balance assets","Attività saldo"
+"Movements","Movimenti"
+"Purchased products or the gitf card itself cannot be refunded in cash. The credit for your gift card is valid for new purchases.","I prodotti acquistati o la gitf card stessa non possono essere rimborsati in contanti. Il credito per la tua gift card è valido per i nuovi acquisti."
+"Uses Credit","Utilizza credito"
+"Use reward points","Utilizza i punti",module,Magento_Reward
+"<p>Buy and earn <u>%1 fidelity points</u></p>","<p>Acquista e guadagni <u>%1 Punti è</u></p>"
+"+ %1 fidelity points","+ %1 Punti è"
+"Learn more","Scopri di più!",module,Magento_Reward
+"New to our loyalty program?","Non conosci il nostro programma fedeltà?",module,Magento_Reward
+"You can earn for this order","Per questo ordine puoi guadagnare",module,Magento_Reward
+"Find out how to earn loyalty points.","Scopri come ottenere i Punti è.",module,Magento_Reward
+"%1 Reward points earned <span>(%2)</span>","%1 Punti è guadagnati <span>(%2)</span>",module,Magento_Reward
+"%1 Reward points earned","%1 Punti è guadagnati",module,Magento_Reward
+"You earned ","Hai guadagnato "
+"points ","punti "
+"for registration and ","per la registrazione e "
+"for newsletter subscription","per l'iscrizione alla newsletter"
+"for registration","per la registrazione"
+"Reward Points","Punti è",module,Magento_CustomerFinance
+"Reward Points","Punti è",module,Magento_Reward
+"Reward Points History","Cronologia Punti è",module,Magento_Reward
+"Reward Points Threshold","Soglia Punti è",module,Magento_Reward
+"Reward Points Cap","Limite Punti è",module,Magento_Reward
+"Update Reward Points Balance","Aggiorna saldo Punti è",module,Magento_Reward
+"Reward Points Notifications","Notifiche Punti è",module,Magento_Reward
+"Use your reward points; %1 are available.","Usa i tuoi Punti è: sono disponibili %1.",module,Magento_Reward
+"You removed the reward points from this order.","Hai rimosso i Punti è da questo ordine.",module,Magento_Reward
+"Reward points will not be used in this order.","I Punti è non possono essere usati in questo ordine.",module,Magento_Reward
+"%1 Reward points (%2)","%1 Punti è (%2)",module,Magento_Reward
+"%1 Reward points","%1 Punti è",module,Magento_Reward
+"%1 store reward points available (%2)","%1 Punti è disponibili nel negozio (%2)",module,Magento_Reward
+"%1 store reward points available","%1 punti fedelità disponibili nel negozio",module,Magento_Reward
+"You don't have enough reward points to pay for this purchase.","Non hai abbastanza Punti è per pagare questo acquisto.",module,Magento_Reward
+"""Minimum Reward Points Balance"" should be either a positive number or left empty.","""Saldo minimo Punti è"" deve essere un numero positivo o lasciato vuoto.",module,Magento_Reward
+"""Cap Reward Points Balance"" should be either a positive number or left empty.","Il ""Limite saldo Punti è"" deve essere un numero positivo o lasciato vuoto.",module,Magento_Reward
+"""Minimum Reward Points Balance"" should be less or equal to ""Cap Reward Points Balance"".","Il ""saldo minimo Punti è"" deve essere minore o uguale a ""Limite saldo Punti è"".",module,Magento_Reward
+"Reward Points Balance","Saldo Punti è",module,Magento_Reward
+"Refund Reward Points","Rimborsa Punti è",module,Magento_Reward
+"Reward Points refunded to customer","Punti è rimborsati al cliente",module,Magento_Reward
+"Reward points balance Information","Informazioni saldo Punti è",module,Magento_Reward
+"Each earned reward points award expires in %1 days.","Ogni ricompensa per i Punti è guadagnati scade in %1 giorni.",module,Magento_Reward
+"Refer to reward points history to see when a specific record expires.","Fare riferimento alla cronologia dei Punti è per vedere quando scade un record specifico.",module,Magento_Reward
+"Reward Points Balance Updated at %store_name","Saldo Punti è aggiornato a %store_name",module,Magento_Reward
+"Reward Points Expiry Warning at %store_name","Avviso di scadenza Punti è presso %store_name",module,Magento_Reward
+"There are %remaining_days day(s) remaining to use %points_expiring of your reward points.","Ci sono %remaining_days giorni rimanenti per l'utilizzo di %points_expiring dei tuoi Punti è.",module,Magento_Reward
+"Reward points","Punti è",module,Magento_Reward
+"Use reward points","Utilizzare i Punti è",module,Magento_Reward
+"Manage Reward Points Balances","Gestisci saldo Punti è",module,Magento_Reward
+"Can Spend Reward Points","Puoi utilizzare Punti è",module,Magento_Reward
+"Enable Reward Points Functionality","Abilita la funzionalità dei Punti è",module,Magento_Reward
+"Enable Reward Points Functionality on Storefront","Abilita la funzionalità dei Punti è nel frontend",module,Magento_Reward
+"Customers May See Reward Points History","I clienti possono vedere la cronologia dei Punti è",module,Magento_Reward
+"Cap Reward Points Balance At","Limite saldo Punti è a",module,Magento_Reward
+"Reward Points Expire in (days)","I Punti è scadono in (giorni)",module,Magento_Reward
+"Reward Points Expiry Calculation","Calcolo della scadenza dei Punti è",module,Magento_Reward
+"Refund Reward Points Automatically","Rimborsa Punti è automaticamente",module,Magento_Reward
+"Deduct Reward Points from Refund Amount Automatically","Detrai automaticamente i Punti è dall'importo del rimborso",module,Magento_Reward
+"Actions for Acquiring Reward Points by Customers","Azioni per l'acquisizione di Punti è da parte dei clienti",module,Magento_Reward
+"Reward Points Expiry Warning Email","Email di avviso di scadenza Punti è",module,Magento_Reward
+"Reward Points Rates","Tassi Punti è",module,Magento_Reward
+"Add Reward Points","Aggiungi Punti è",module,Magento_Reward
+"Reward points should be a valid integer number.","Reward points should be a valid integer number.",module,Magento_Reward
+"The ""Minimum Reward Points Balance"" is invalid. The balance needs to be a positive number or left empty. Verify and try again.","The ""Minimum Reward Points Balance"" is invalid. The balance needs to be a positive number or left empty. Verify and try again.",module,Magento_Reward
+"The ""Cap Reward Points Balance"" is invalid. The balance needs to be a positive number or left empty. Verify and try again.","The ""Cap Reward Points Balance"" is invalid. The balance needs to be a positive number or left empty. Verify and try again.",module,Magento_Reward
+"The ""Minimum Reward Points Balance"" is invalid. The balance needs to be less than or equal to the ""Cap Reward Points Balance"".","The ""Minimum Reward Points Balance"" is invalid. The balance needs to be less than or equal to the ""Cap Reward Points Balance"".",module,Magento_Reward
+"We did not send %1 invitation(s) addressed to current customers.","Non siamo riusciti ad invitare %1 mail, forse è già iscritto?",module,Magento_Invitation
+"You have %points_balance points that may be used in our store:","Hai %points_balance punti che possono essere utilizzati nel nostro negozio:",module,Magento_Reward
+"Others have bought","Altri hanno acquistato"
+"Write your name here","Scrivi qui il tuo nome"
+"Write your lastname here","Scrivi qui il tuo cognome"
+"Immediate availability","Disponibilità immediata"
+"Send to a friend via","Invia ad un amico tramite"
+"Shipments","Spedizioni"
+"Payments","Pagamenti"
+"Description and Method of Use","Descrizione e Modo d'Uso"
+"Product Sales","Vendita Prodotti"
+"Thanks for choosing %store_name.","Grazie per aver scelto %store_name."
+"Once your package ships we will send you a tracking number.","Una volta spedito il pacco, ti invieremo un numero di tracciamento."
+"We have received your return request. Please wait for notification from Customer Care before shipping.","Abbiamo ricevuto la Sua richiesta di reso. La preghiamo di attendere notifica dal Customer Care prima di spedire."
+"%store_name: New return request #%increment_id","%store_name: Nuova richiesta di reso #%increment_id"
+"If you have any questions regarding the return procedures do not hesitate to contact us via our email <a href=""mailto:%support_email"">%support_email</a>","Se avete domande in merito alle procedure di reso non esiti a contattarci tramite la nostra email <a href=""mailto:%support_email"">%support_email</a>"
+"Return #%increment_id - %status_label","Reso #%increment_id - %status_label"
+"Best regards,","Cordiali saluti,"
+"Customer care","Servizio clienti"
+"Dear Customer,","Gentile Cliente,"
+"%store_name: Return authorization notification #%increment_id","%store_name: Notifica di autorizzazione per il reso #%increment_id"
+"Your request has been processed and approved.","La Sua richiesta è stata elaborata ed approvata."
+"Please consider that the reimbursement does not include transport costs, both those incurred for the original shipment of the goods and those for the subsequent return. For this reason, for the return, you can use the courier you deem most appropriate.","La preghiamo di considerare che il rimborso non comprende le spese di trasporto, sia quelle sostenute per l’originario invio della merce che quelle per la successiva restituzione. Per questo motivo, per il reso, può utilizzare il corriere che ritiene più opportuno."
+"Furthermore, the essential condition for proceeding with the refund is the return of the products in perfect condition, unused, with original labels not removed and, if possible, with original packaging.","Inoltre, la condizione essenziale per procedere al rimborso è la restituzione dei prodotti in perfetto stato di conservazione, non utilizzati, con etichette originali non rimosse e, se possibile, con involucro originale."
+"The sum will be credited after the necessary administrative procedures, within 14 days of receiving the package.","La somma verrà accreditata dopo le necessarie procedure amministrative, entro 14 giorni dalla ricezione del pacco."
+"The updates on the status of the return are visible in the details of your account in the Returns section","Gli aggiornamenti sullo stato del reso sono visibili nel dettaglio del proprio account nella sezione Resi"
+"If you have any questions regarding the return procedures please do not hesitate to contact us at <a href=""mailto:%support_email"">%support_email</a> or by phone at %store_phone","Se ha domande in merito alle procedure di reso non esiti a contattarci a <a href=""mailto:%support_email"">%support_email</a> o al numero %store_phone"
+"Please print this Return Authorization and include it in your package before shipping to the address below.","Si prega di stampare la presente Autorizzazione per il reso e di includerla nel pacco prima di spedire all'indirizzo sotto indicato."
+"Please note that the refund does not inc<p>{{trans "A new comment has been added regarding the return request in question."}}lude the cost of returning the goods. For this reason, for the return, you can use the courier you deem most appropriate.","La preghiamo di considerare che il rimborso non comprende le spese per la restituzione della merce. Per questo motivo, per il reso, può utilizzare il corriere che ritiene più opportuno."
+"%store_name: New comment on return #%increment_id","%store_name: Nuovo commento su reso #%increment_id"
+"A new comment has been added regarding the return request in question.","E' stato inserito un nuovo commento riguardo alla richiesta di reso in oggetto."
+"New comment:","Nuovo commento:"
+"My Account","Il mio Profilo"
+"Welcome to your personal area","Benvenuto/a nella tua area personale"
+"Hello","Ciao"
+"Search Brand","Cerca il Brand"
+"Badge Site Verification","Bollino Verifica Sito"
+"Badge No Prescription","Bollino Senza Ricetta"
+"Article","Articolo"
+"Clear all","Cancella tutto"
+"Our hours are <span class='no-link'>%store_hours</span>.","I nostri orari sono <span class='no-link'>%store_hours</span>."
+"Back in Stock Subscriptions","Sottoscrizioni Back in Stock"
+"Billing Agreements","Pagamenti PayPal",module,Magento_Paypal
+"Account Information","Informazioni Account",module,Magento_Customer
+"My Wish List","La mia Wishlist",module,Magento_Wishlist
+"My Orders","I miei Ordini",module,Magento_Sales
+"New Address","Nuovo indirizzo"
+"Search for products, categories, ...","Cosa stai cercando?"
+"Cancel coupon","Rimuovi",module,Magento_SalesRule
+"Cancel Coupon","Rimuovi",module,Magento_Checkout
+"One or more input exceptions have occured","Si sono verificati uno e più errori negli input"
+"The account sign-in was incorrect or your account is disabled temporarily. Please wait and try again later.","L'accesso all'account non è corretto o il tuo account è temporaneamente disabilitato. Attendere e riprovare più tardi."
+"Reason to return","Motivo del reso"
+"Item Condition","Condizioni dell'articolo"
+"Subscribed On","Iscritto a"
+"There are no active subscriptions.","Non ci sono iscrizioni attive."
+"My Back in Stock Subscriptions","Le mie Sottoscrizioni Back in Stock"
+"Show Password","Mostra password"
+"The gift card code couldn't be added. Verify your information and try again.","Il codice della gift card non può essere aggiunto. Verifica le informazioni e prova ancora.",module,Magento_GiftCardAccount
+"There are no source items with the in stock status","Non ci sono articoli sorgente con lo stato in stock"
+"Insert your email","Inserisci la tua email"
+"Subscribe to back in stock notification","Iscriviti per ricevere le notifiche di back in stock"
+"The confirmation request has been sent.","La richiesta di conferma è stata inviata."
+"A confirmation request has been sent.","La richiesta di conferma è stata inviata."
+"Resolution","Risoluzione"
+"No products for query","Nessun risultato per la ricerca"
+"See all products","Vedi tutti i prodotti"
+"%store_name : your order #%increment_id confirmation","%store_name : Conferma Ordine #%increment_id"
+"Thank you! You are already subscribed to this product.","Grazie! Sei già iscritto a questo prodotto."
+"Shipping cost","Costi di spedizione"
+"Show all","Mostra tutti i"
+"results","risultati"
+"Search","Cerca"
+"Show (<span class='am-counter' data-am-counter='counter'></span>) more","Mostra (<span class='am-counter' data-am-counter='counter'></span>) tutti"
+"Ship Here","Spedisci qui"
+"The coupon code couldn\'t be applied: ","Il coupon non può essere applicato: "
+"The coupon code couldn\'t be applied. Verify the coupon code and try again.","Il coupon non può essere applicato. Verifica il codice del coupon e riprova"
+"Search for other ...","Cerca altri..."
+"Less","Meno"
+"Message from %customer_name:","Messaggio da %customer_name:"
+"Placed on <span class=""no-link bold"">%created_at</span>","Effettuato il <span class=""no-link bold"">%created_at</span>"
+"or call us at <a href=""tel:%store_phone"">%store_phone</a>","o chiamarci al <a href=""tel:%store_phone"">%store_phone</a>"
+"We have updated your subscription.","Abbiamo aggiornato la tua iscrizione."
+"We have removed your newsletter subscription.","Abbiamo rimosso la tua iscrizione alla newsletter."
+"Shipping & Handling (%1)","Spedizione e gestione (%1)",module,Magento_Sales
+"The shipping method is missing. Select the shipping method and try again.","Manca il metodo di spedizione. Selezionare il metodo di spedizione e riprovare.",module,Magento_Quote
+"The shipping method is missing. Select the shipping method and try again.","Manca il metodo di spedizione. Selezionare il metodo di spedizione e riprovare.",module,Magento_Sales
+"Please specify a regionId in shipping address.","Si prega di specificare un regionId nell'indirizzo di spedizione."
+"Sign a billing agreement to streamline further purchases with PayPal.","Seleziona questa opzione se vuoi pagare con un click senza necessità di login su Paypal. Verrà attivata la procedura Pagamenti automatici di Paypal.",module,Magento_Paypal
+"You can revoke it at any time.","Potrai eventualmente disattivarla in qualunque momento.",module,Magento_Paypal
+"One-Click Payments Subscription","Sottoscrizione pagamenti automatici"
+"Not Signed any billing agreement","Non sei iscritto alla funzione pagamenti automatici di Paypal"
+"Learn about","Scopri cos'è"
+"%1 Piece","%1 Pezzo"
+"%1 Pieces","%1 Pezzi"
+"Savings multiply!","Il risparmio si moltiplica!"
+"To begin receiving the newsletter, you must first confirm your subscription by clicking on the following link:","Per iniziare a ricevere la newsletter, è prima necessario confermare l’iscrizione cliccando sul seguente link:",module,Magento_Newsletter
+"No results for your search?","Nessun risultato per la tua ricerca?"
+"Search again or visit our large catalog.","Cerca nuovamente oppure visita il nostro ampio catalogo."
+"Go to catalog","Vai al catalogo"
+"Make It a Gift","Aggiungi confezione regalo"
+"Choose the Gift Wrap","Scegli la confezione regalo"
+"Add Gift Message","Aggiungi un messaggio"
+Finish,Conferma
+"Add Gift Wrap","Aggiungi confezione regalo"
+"Added Gift Wrap(s)","Aggiunto pacchetto/i regalo"
+"Gift Wrap Option","Opzioni del Pacchetto regalo"
+"Wrap All Available Items","Confeziona tutti gli articoli"
+"Choose Items for Wrapping","Scegli gli articoli da confezionare"
+"Choose Items you want to wrap (all these items will be wrapped together).","Scegli gli articoli che vuoi confezionare (verranno confezionati insieme)."
+"New Gift Wrap","Nuovo Pacchetto regalo"
+"New Wrap","Nuovo pacchetto"
+"Product(s) was added successfully","Articoli aggiunti correttamente"
+"Want to Add Gift Message Card? (optional)","Vuoi aggiungere un biglietto di auguri? (opzionale)"
+"Edit Gift Wrap: ","Modifica il pacchetto regalo: "
+"Item(s) will be sent packaged in a gift box.
+         Please remember, once enclosed you will be unable to see the contents of the package. ","Gli articoli verranno spediti confezionati in una confezione regalo.
+         Ricorda che una volta chiuso non potrai vedere il contenuto del pacco. "
+"There is a product in your cart not available for wrapping.","Nel carrello è presente un prodotto che non può essere confezionato."
+"There are products in your cart not available for wrapping.","Nel carrello sono presenti dei prodotti che non possono essere confezionati."
+"(Excluding Tax)","(Tasse escluse)"
+"(Including Tax)","(Tasse incluse)"
+"Hidden prices on the recipient’s receipt","Nascondi i prezzi nello scontrino del destinatario"
+"Gift Wrap","Confezione Regalo"
+"No Items Available","Nessun elemento disponibile"
+"Gift Wrap (Excl. Tax)","Confezione regalo (Tasse escl.)"
+"Gift Wrap (Incl. Tax)","Confezione regalo (Tasse incl.)"
+"Please check and confirm the chosen wrapping","Conferma la confezione regalo"
+"Choose the options for your gift","Scegli le opzioni per il tuo regalo"
+"added","aggiunta"
+"%1 was added successfully","%1 è stato correttamente aggiunto"
+"Donation","Donazione"
+"The Donation of","La Donazione di"
+"was added to your order total","è stata aggiunta al tuo totale ordine. Si precisa che l'importo della donazione verrà accreditato alla Onlus e non verrà rimborsato in caso di annullamento d'ordine."
+"Remove Donation","Rimuovi Donazione"
+"Add Donation","Aggiungi Donazione"
+"Minimum donation","Donazione minima"
+"Donation was successfully deleted.","La Donazione è stata rimossa."
+"Donation was successfully applied.","La Donazione è stata correttamente aggiunta."
+"Custom Amount","Importo libero"
+"Round Up","Arrotonda"
+"Donate with Amica","Dona con Amica"
+"Minimum donations should be more than 0","La donazione dev'essere maggiore di 0"
+"Please specify a donation amount.","Per favore, inserisci la tua donazione."
+"Minimum accepted donation is %1","La donazione minima accettata è di %1"
+"You must accept all required terms and conditions","È necessario dare il consenso al Trattamento dati."
+"Could not apply donation","Non è possibile inserire la sua donazione"
+"Please, insert an integer amount, thank you","Per favore, inserisci un importo intero, grazie!"
+"The maximum you may purchase is %1.","La quantità massima acquistabile è %1."
+"The requested qty exceeds the maximum qty allowed in shopping cart","La quantità richiesta supera la quantità massima consentita nel carrello"
+"Price friend","Prezzo amico"
+"Accetto le","Dichiaro di aver letto"
+"condizioni della privacy","dell'Informativa sulla Privacy"
+"Consent Authorization marketing","Autorizzazione all'esecuzione di attività promozionale, pubblicitaria e di marketing, anche da parte di terzi"
+"Consent Authorization profile","Autorizzazione al trattamento dei miei dati per finalità di profilazione commerciale"
+"Consent viewed","Ho preso visione "
+"Consent marketing","Acconsento all'esecuzione di attività promozionale, pubblicitaria e di marketing, anche da parte di terzi"
+"Consent profile","Acconsento al trattamento dei miei dati per finalità di profilazione commerciale"
+"Newsletter Subscriptions","I miei consensi"
+"Newsletter Subscription","I miei consensi",module,Magento_CustomerSegment
+"Consent updated successfully.","I consensi sono stati aggiornati"
+"You'll be redirected to Stripe to complete your payment using one of the following payment methods:","Verrai reindirizzato a Stripe per completare il pagamento utilizzando uno dei seguenti metodi di pagamento:"
+"No exact results found for: <b>'%1'</b>. The displayed items are the closest matches.","Nessun risultato per: <b>'%1'</b>. I prodotti visualizzati sono le corrispondenze più vicine."

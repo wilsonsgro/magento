@@ -1,0 +1,198 @@
+//
+//  Variables
+//  _____________________________________________
+
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    #maincontent {
+
+        //target all input
+        #nickname_field,
+        #summary_field,
+        #review_field {
+            &:focus {
+                border: 2px solid #000000;
+                border-radius: 3px;
+            }
+        }
+
+        .product.info.detailed {
+
+            #tab-label-reviews-title {
+                .counter {
+                    display: none;
+                }
+            }
+
+            #reviews {
+                display: flex;
+                flex-direction: column;
+
+                #product-review-container {
+                    order: 2;
+                    line-height: 20px;
+                    font-size: 12px;
+                    font-weight: 700;
+
+                    .review-title {
+                        display: none;
+                    }
+
+                    .review-ratings {
+                        .rating-label {
+                            font-size: 12px;
+                        }
+                    }
+
+                    .review-items {
+                        padding-left: 0;
+
+                        .review-item {
+                            list-style-type: none;
+                            padding: 15px 0;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .rating-label {
+                        padding-bottom: 0;
+                    }
+
+                    .rating-summary .rating-result > span:before {
+                        color: @color-yellow;
+                    }
+
+                    .review-content {
+                        font-weight: 400;
+
+                        .review-details-label,
+                        .review-details-value {
+                            font-size: 11px;
+                            font-style: italic;
+                        }
+                    }
+
+                    .review-details-label {
+                        font-weight: 400;
+                    }
+
+                    .review-author {
+                        > .review-details-value {
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .review-add {
+                    order: 1;
+
+                    > .block-title {
+                        display: block;
+                        font-size: 16px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: @color-blue2;
+                        margin-bottom: 5px;
+                    }
+
+                    #review-form {
+                        max-width: 100%;
+                        margin-bottom: 25px;
+                        border-top: 1px solid @color-grey-22;
+                        padding-top: 15px;
+
+                        .review-legend {
+                            margin-bottom: 15px;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+
+                        #product-review-table {
+                            border-collapse: collapse;
+                            border: 1px solid black;
+                            font-size: 14px;
+                            line-height: 20px;
+
+                            table&, th, td {
+                                border: 1px solid @color-gray15;
+                            }
+
+                            thead th {
+                                white-space: nowrap;
+                            }
+
+                            tbody tr {
+                                &:nth-child(odd) {
+                                    background-color: @color-gray3;
+                                }
+
+                                td {
+                                    text-align: center;
+
+                                    &.left-align {
+                                        padding-top: 8px;
+                                        padding-bottom: 8px;
+                                        font-weight: 700;
+                                        text-align: left;
+                                    }
+
+                                    input {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .review-field-nickname, .review-field-text, .review-field-summary {
+                            .label {
+                                font-size: 14px;
+                                font-weight: 700;
+                                margin: 0;
+                            }
+                        }
+
+                        .review-form-actions {
+                            border-top: 1px solid @color-grey3-5;
+
+                            .actions-primary {
+                                float: right;
+
+                                button {
+                                    margin-top: 5px;
+                                    background-color: @color-blue3;
+                                    color: @color-white;
+                                    text-transform: uppercase;
+                                    line-height: 20px;
+                                    padding: 12px;
+                                    border-radius: 0;
+                                    font-weight: 400;
+                                    border-color: @color-blue3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    #maincontent .product.info.detailed #reviews #product-review-container {
+        margin-top: 35px;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__s) {
+
+    #maincontent .product.info.detailed #reviews #product-review-container .review-content {
+        margin-left: 220px;
+    }
+}

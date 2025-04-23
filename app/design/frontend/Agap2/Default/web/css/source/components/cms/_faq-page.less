@@ -1,0 +1,33 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .cms-faq {
+        #faq-element {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: @color-gray1;
+
+            .collapsible {
+                background-color: @color-blue11;
+                color: @color-white;
+                line-height: 15px;
+                padding: 8px 15px;
+                margin: 0 0 3px;
+                font-size: 15px;
+                font-weight: 400;
+
+                &.active {
+                    font-weight: bold;
+                }
+            }
+
+            .content {
+                font-size: 12px;
+                padding: 15px;
+            }
+        }
+    }
+}

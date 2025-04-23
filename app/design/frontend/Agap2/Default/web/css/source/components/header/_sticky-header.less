@@ -1,0 +1,30 @@
+//
+//  Common
+//  _____________________________________________
+& when (@media-common = true) {
+    body:not(.checkout-index-index) {
+        .header-placeholder {
+            z-index: 101;
+            position: relative;
+        }
+        //  Sticky scroll
+        .sticky-scroll {
+            position: fixed;
+            top: -215px;
+            width: 100%;
+            transition: top 1s;
+            -moz-transition: top 1s;
+            -webkit-transition: top 1s;
+            -o-transition: top 1s;
+            -webkit-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+            -o-box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+            box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.05);
+            background: @color-white;
+
+            &.effect-scroll {
+                top: 0;
+            }
+        }
+    }
+}

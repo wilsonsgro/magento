@@ -1,0 +1,1436 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .promotions-block {
+        .product-promotions-block {
+            align-items: center;
+        }
+        figure, img {
+            border-radius: 20px;
+        }
+        figure, iframe {
+            margin-bottom: 15px;
+        }
+    }
+    .catalog-product-view {
+        .badge-site-verification {
+            box-sizing: border-box;
+            border: 1px solid #e6e6e6;
+            margin-bottom: 20px;
+            a {
+                display: flex;
+                justify-content: center;
+                line-height: 1;
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        .banner-product{
+            p {
+                line-height: 1;
+            }
+            &.banner-promo {
+                margin-bottom: 20px;
+                text-align: center;
+                align-items: center;
+                > .pagebuilder-column-group:first-child {
+                    width: 75%;
+                    z-index: 2;
+                }
+                > .pagebuilder-column-group:last-child {
+                    width: 100%;
+                    margin-top: -50px;
+                }
+                .promo-title {
+                    background-color: #F25163;
+                    padding: 10px;
+                    color: @color-white;
+                    .promo-title-title {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                    .promo-title-subtitle {
+                        font-size: 17px;
+                        font-weight: 400;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+                .promo-content {
+                    background: radial-gradient(#FDEB7B, #F8D300);
+                    padding: 65px 40px 20px;
+                    .promo-content-title {
+                        color: @color-white;
+                        font-weight: 900;
+                    }
+                    .promo-content-subtitle1 {
+                        color: #8D570A;
+                        font-weight: 900;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                    .promo-content-subtitle2 {
+                        color: #8D570A;
+                        font-size: 24px;
+                        font-weight: 400;
+                    }
+                    .promo-content-button {
+                        color: @color-white;
+                        .pagebuilder-button-primary {
+                            background-color: @color-ami-yellow;
+                            margin: 10px 0 0;
+                            border-radius: 8px;
+                            padding: 0 25px;
+                            height: 38px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all .3s ease;
+                            border: 0;
+                            font-size: 19px;
+                            font-weight: 900;
+                            &:hover {
+                                background-color: @color-ami-green;
+                            }
+                        }
+                    }
+                }
+            }
+            &.banner-warrenty {
+                color: @color-gray91;
+                .warrenty-title {
+                    padding: 20px;
+                    background: #E6E6E6;
+                    flex-direction: row!important;
+                    gap: 25px;
+                    align-items: center;
+                    font-size: 17px;
+                    font-weight: 600;
+                    p {
+                        margin: 0;
+                    }
+                }
+                .warrenty-content {
+                    border: 1px solid @color-gray1;
+                    padding: 20px;
+                    font-size: 16px;
+                    flex-direction: row!important;
+                    flex-wrap: wrap;
+                    .warrenty-image {
+                        width: 35px;
+                        margin-right: 15px;
+                    }
+                    .warrenty-item {
+                        width: ~"calc(100% - 50px)";
+                        display: flex;
+                        align-items: center;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .brand-wrapper {
+            color: @color-gray91;
+            .product-brand-title {
+                margin: 0;
+            }
+        }
+        .product-info-main {
+            .brand-url {
+                color: @theme__color__secondary;
+                .brand-image {
+                    max-width: 150px;
+                    max-height: 150px;
+                }
+            }
+            .stock:not(.alert) {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                text-transform: initial;
+                font-weight: 300;
+                color: @color-gray91;
+                span:first-child {
+                    &:after {
+                        content: ':';
+                    }
+                }
+                .status {
+                    font-weight: 700;
+                }
+                &.available {
+                    .status {
+                        color: @color-ami-green;
+                    }
+                }
+                &.unavailable {
+                    .status {
+                        color: @color-ami-yellow;
+                    }
+                }
+            }
+            .product.attribute.sku {
+                color: @color-gray91;
+                text-align: left;
+                .type {
+                    display: inline-block;
+                    font-weight: 300;
+                    &:after {
+                        content: ':';
+                    }
+                }
+                .value {
+                    display: inline-block;
+                    font-weight: 300;
+                    margin: 0;
+                }
+            }
+            .product-info-main-center {
+                line-height: normal;
+                .alert {
+                    margin: 0;
+                }
+                .amxnotif-block {
+                    margin: 0;
+                    label {
+                        font-size: 15px;
+                        font-weight: 500;
+                        margin-bottom: 5px;
+                    }
+                    .notification-container {
+                        display: flex;
+                        gap: 5px;
+                    }
+                }
+                .image-scroll {
+                    display: none;
+                }
+                .page-title-wrapper {
+                    .page-title {
+                        margin-top: 0;
+                        font-size: 28px;
+                        color: @color-gray91;
+                        font-weight: 900;
+                        margin-bottom: 20px;
+                    }
+                }
+                .product-trustpilot-reviews-summary {
+                    border-top: 1px solid @color-ami-gray1;
+                    border-bottom: 1px solid @color-ami-gray1;
+                    margin-bottom: 15px;
+                    .trustpilot-reviews-actions {
+                        display: flex;
+                        justify-content: space-between;
+                        .trustpliot-container {
+
+                        }
+                        #add-trustpilot-review {
+                            display: none;
+                            width: 50%;
+                            text-align: right;
+                            text-decoration: underline;
+                            color: @color-gray91;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                .product-info-price {
+                    border: 0;
+                    .price-box {
+                        display: flex;
+                        color: @color-gray91;
+                        padding: 0;
+
+                        .price {
+                            line-height: normal;
+                        }
+
+                        .special-price {
+                            order: 2;
+
+                            .price-container {
+                                font-weight: 500;
+                                .price-label {
+                                    overflow: visible;
+                                    clip: auto;
+                                    height: auto;
+                                    width: auto;
+                                    margin: 0;
+                                    position: static;
+                                    &:after {
+                                        content: '';
+                                    }
+                                }
+                                .price {
+                                    font-weight: 900;
+                                }
+                            }
+                        }
+                        .old-price {
+                            order: 1;
+                            .price-container {
+                                display: flex;
+                                font-weight: 500;
+                                .price {
+                                    font-weight: 400;
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                        .product-discount-text {
+                            display: none;
+                        }
+                    }
+                    .omnibus-price-container {
+                        color: @color-ami-gray1;
+                        order: 3;
+                        .price {
+                            text-decoration: line-through;
+                            padding-left: 3px;
+                        }
+                    }
+                }
+                #scalapayText {
+                    margin-bottom: 35px!important;
+                    font-weight: 300;
+                    color: @color-gray91;
+                }
+                .product-add-form {
+                    padding: 0;
+                    margin-bottom: 25px;
+                    .box-tocart {
+                        margin: 0;
+                        .fieldset {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 30px;
+                            align-items: center;
+                            margin: 0;
+                            .qty {
+                                display: flex;
+                                align-items: center;
+                                margin: 0;
+                                .label {
+                                    margin: 0 10px 0 0;
+                                    text-transform: uppercase;
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                }
+                                .control {
+                                }
+                            }
+                            .actions {
+                                .action.tocart {
+                                    width: 100%;
+                                    padding: 0 25px;
+                                    height: 40px;
+                                    border-radius: 20px;
+                                    transition: all .3s ease;
+                                    margin: 0;
+                                    display: flex;
+                                    align-items: center;
+                                    line-height: 1;
+                                    span {
+                                        font-size: 13px;
+                                        font-weight: 900;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-info-stock-sku {
+                    padding: 0;
+                    width: 100%;
+                    .product-info-last {
+                        display: flex;
+                        .product-info-last-left {
+                            .product-social-links {
+                                margin: 0;
+                                .product-addto-links {
+                                    .action.towishlist {
+                                        display: flex;
+                                        align-items: center;
+                                        margin: 0;
+                                        color: @color-gray91;
+                                        &:before {
+                                            content: @icon-star-empty;
+                                            font-size: 25px;
+                                            width: 25px;
+                                            height: 25px;
+                                            line-height: 1;
+                                            margin-right: 15px;
+                                        }
+                                        span {
+                                            width: ~"calc(100% - 40px)";
+                                            text-align: left;
+                                        }
+                                        &:hover {
+                                            span {
+                                                text-decoration: underline;
+                                            }
+                                        }
+                                    }
+                                }
+                                .action.mailto.friend {
+                                    display: none;
+                                }
+                            }
+                        }
+                        .product-info-share {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: baseline;
+                            color: @color-gray91;
+                            .share-text {
+                                flex-basis: 100%;
+                                font-weight: 300;
+                            }
+                            a {
+                                font-size: 12px;
+                                font-weight: 300;
+                                color: @color-ami-dark-green;
+                                text-decoration: none;
+                                &:before {
+                                    font-size: 28px;
+                                    display: flex;
+                                    justify-content: center;
+                                    color: @color-ami-yellow;
+                                }
+                                &:hover {
+                                    span {
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .product.media {
+            position: relative;
+            .badge-no-prescription {
+                position: absolute;
+            }
+            .gallery-placeholder {
+                position: relative;
+                .product-discount-text {
+                    padding: 0;
+                    margin: 0;
+                    line-height: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: 1;
+                    font-weight: 700;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .badge-dermatologi{
+                    position: absolute;
+                    z-index: 10;
+                    left: 10%;
+                    top: 0%;
+                }
+                .badge-dermatologi-mobile{
+                    z-index: 10;
+                    position: absolute;
+                    max-width: 90px;
+                    top: 0%;
+                    left: 16%;
+                }
+                .fotorama__stage {
+                    left: 0!important;
+                    width: 100%!important;
+                    box-sizing: border-box;
+                    border: 1px solid @color-gray1;
+                    .fotorama__stage__shaft {
+                        max-width: 100%!important;
+                    }
+                }
+                .fotorama__nav-wrap {
+                    .fotorama__nav__shaft {
+                        background-color: transparent;
+                        .fotorama__thumb-border {
+                            border-radius: 5px;
+                            border-width: 1px;
+                            border-color: #c6c6c6;
+                            background-image: none;
+                        }
+                        .fotorama__nav__frame {
+                            .fotorama__thumb {
+                                background-color: transparent;
+                                img {
+                                    border-radius: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product-info-bottom {
+            clear: both;
+            .product-details-main {
+                .product.info.detailed {
+                    .product.data.items {
+                        .data.item.content {
+                            .product.attribute.description {
+                                .title {
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .additional-attributes-wrapper {
+                                margin-top: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .product-promotions-extra-block {
+                margin-bottom: 50px;
+            }
+        }
+        iframe#launcher {
+            bottom: 100px !important;
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .promotions-block {
+        .product-promotions-block {
+            align-items: flex-end;
+        }
+    }
+
+    .catalog-product-view {
+        .page-main {
+            width: 100%!important;
+            box-sizing: border-box;
+        }
+        #mobile-title {
+            display: none;
+        }
+        .banner-product{
+            &.banner-promo {
+                .promo-content {
+                    .promo-content-title {
+                        font-size: 30px;
+                    }
+                    .promo-content-subtitle1 {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .product-info-main {
+            width: 45%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 3%;
+            .product.attribute.sku {
+                font-size: 16px;
+                .value {
+                    font-size: 16px;
+                }
+            }
+            .product-info-main-center {
+                flex-basis: 100%;
+                margin-bottom: 50px;
+                > .stock:not(.alert) {
+                    display: none;
+                }
+                .product-trustpilot-reviews-summary {
+                    padding: 15px 0;
+                }
+                .product-info-price {
+                    margin-bottom: 0;
+                    .price-box {
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+
+                        .price-label {
+                            font-size: 14px;
+                        }
+
+                        .special-price {
+                            .price-container {
+                                .price-label {
+                                    text-align: right;
+                                    color: @color-ami-gray1;
+                                }
+                                .price {
+                                    font-size: 42px;
+                                }
+                            }
+                        }
+                        .old-price {
+                            .price-container {
+                                flex-direction: column;
+                                color: @color-ami-gray1;
+                                .price {
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                    .omnibus-price-container {
+                        width: 100%;
+                    }
+                    .special-price ~ .omnibus-price-container {
+                        text-align: right;
+                    }
+                }
+                #scalapayText {
+                    margin-bottom: 35px!important;
+                    font-size: 16px;
+                }
+                .product-add-form {
+                    .box-tocart {
+                        .fieldset {
+                            .qty {
+                                .control {
+                                    display: flex;
+                                    .qty-controller {
+                                        vertical-align: middle;
+                                        width: 36px;
+                                        height: 36px;
+                                        border: 1px solid @color-ami-yellow;
+                                        border-radius: 50%;
+                                        transition: all .3s ease;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        cursor: pointer;
+                                        box-sizing: border-box;
+                                        &:before {
+                                            font-size: 19px;
+                                            font-weight: 500;
+                                        }
+                                        &:hover {
+                                            background-color: @color-ami-yellow;
+                                        }
+                                    }
+                                    .controller-minus {
+                                        &:before {
+                                            content: '-';
+                                        }
+                                    }
+                                    .controller-plus {
+                                        &:before {
+                                            content: '+';
+                                        }
+                                    }
+                                    .input-text {
+                                        width: 45px;
+                                        height: 36px;
+                                        border: none;
+                                        font-size: 19px;
+                                        vertical-align: middle;
+                                        font-weight: 500;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-info-stock-sku {
+                    .stock:not(.alert) {
+                        padding: 25px 0;
+                        border-top: 1px solid @color-ami-gray1;
+                        border-bottom: 1px solid @color-ami-gray1;
+                        margin-bottom: 15px;
+                        font-size: 16px;
+                    }
+                    .product-info-last {
+                        .product-info-last-left {
+                            flex-basis: 50%;
+                            .product.attribute.sku {
+                                margin-bottom: 15px;
+                            }
+                            .product-social-links {
+                                .product-addto-links {
+                                    .action.towishlist {
+                                        font-size: 13px;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                        .product-info-share {
+                            flex-basis: 50%;
+                            flex-wrap: wrap;
+                            .share-text {
+                                margin-bottom: 10px;
+                            }
+                            a {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                }
+                .brand-wrapper {
+                    margin-top: 65px;
+                    float: left;
+                }
+
+            }
+            .product-info-main-side {
+                flex-basis: 100%;
+                margin-bottom: 50px;
+                .product.attribute.sku {
+                    display: none;
+                }
+                .brand-wrapper {
+                    display: none;
+                }
+            }
+            &.scroll {
+                .product-info-main-center {
+                    position: fixed;
+                    display: flex;
+                    justify-content: space-between;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    z-index: 2;
+                    width: 100%;
+                    flex-basis: 100%;
+                    background: @color-white;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    margin: 0;
+                    align-items: center;
+                    border-top: 2px solid @color-ami-yellow;
+                    .alert, .amxnotif-block {
+                        display: none;
+                    }
+                    .image-scroll {
+                        display: block;
+                        flex-basis: 7%;
+                        margin: 0;
+                    }
+                    .page-title-wrapper{
+                        flex-basis: 25%;
+                        margin: 0;
+                        .page-title {
+                            margin: 0;
+                            font-size: 23px;
+                        }
+                    }
+                    .product-info-price {
+                        flex-basis: 38%;
+                        display: flex;
+                        justify-content: center;
+                        margin: 0;
+                        flex-wrap: wrap;
+                        .price-box {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            gap: 0 20px;
+                            .price-container {
+                                align-items: center;
+                                text-align: center;
+                                .price-label {
+                                    text-align: center;
+                                }
+                            }
+                            .special-price {
+                                .price {
+                                    font-size: 28px;
+                                }
+                            }
+                            .old-price {
+                                .price {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                        .omnibus-price-container {
+                            font-size: 13px;
+                            text-align: center;
+                            grid-column-start: 1;
+                        }
+                        .special-price ~ .omnibus-price-container {
+                            grid-column-start: 2;
+                        }
+                    }
+                    #scalapayText {
+                        display: none;
+                    }
+                    .product-trustpilot-reviews-summary {
+                        display: none;
+                    }
+                    .product-info-stock-sku {
+                        display: none;
+                    }
+                    .product-add-form {
+                        margin: 0;
+                        flex-basis: 30%;
+                        .box-tocart {
+                            display: flex;
+                            justify-content: flex-end;
+                            .qty {
+                                display: none;
+                            }
+                        }
+                    }
+                    .brand-wrapper {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .product.media {
+            width: 50%;
+            margin-right: 1.5%;
+            max-width: 50%;
+            margin-bottom: 50px;
+            .badge-no-prescription {
+                width: 65px;
+                height: 65px;
+                bottom: 20px;
+                right: 20px;
+            }
+            .gallery-placeholder {
+                .product-discount-text {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 14px;
+                    top: 10px;
+                    right: 10px;
+                }
+                .badge-dermatologi{
+                    position: absolute;
+                    z-index: 10;
+                    left: 10%;
+                    top: 0%;
+                }
+                .badge-dermatologi-mobile{
+                    z-index: 10;
+                    position: absolute;
+                    max-width: 90px;
+                    top: 0%;
+                    left: 16%;
+                }
+                .fotorama__stage {
+                    border-radius: 20px;
+                    .fotorama__stage__shaft {
+                        .fotorama__stage__frame {
+                            img {
+                                border-radius: 20px;
+                            }
+                        }
+                    }
+                }
+                .fotorama__nav-wrap {
+                    left: 20px!important;
+                    .fotorama__nav__shaft {
+                        top: 20px!important;
+                    }
+                }
+            }
+        }
+        .product-info-bottom {
+            display: flex;
+            gap: 5%;
+            align-items: flex-start;
+            .product-details-main {
+                width: 75.5%;
+                .banner-product, .badge-site-verification {
+                    display: none!important;
+                }
+                .product.info.detailed {
+                    margin: 30px 0 40px;
+                    .product.data.items {
+                        .data.item.title {
+                            margin: 0 30px 5px 0;
+                            text-transform: uppercase;
+                            font-size: 16px;
+                            font-weight: 500;
+                            &:last-child {
+                                margin: 0;
+                            }
+                            span {
+                                .data.switch {
+                                    color: @color-gray91;
+                                }
+                            }
+                            &.active {
+                                position: relative;
+                                &:after {
+                                    content: '';
+                                    background-color: @color-ami-green;
+                                    display: block;
+                                    height: 3px;
+                                    width: ~"calc(100% + 15px)";
+                                    position: absolute;
+                                }
+                            }
+                        }
+                        .data.item.content {
+                            border: 0;
+                            margin-top: 32px;
+                            padding: 65px 0 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .promotions-block {
+                width: 19.5%;
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .badge-dermatologi {
+        text-align: left;
+        &-mobile {
+            display: none;
+        }
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .catalog-product-view {
+        .product-info-main {
+            width: 58%;
+            flex-wrap: nowrap;
+            min-width: 615px;
+            .product-info-main-center {
+                flex-basis: 57%;
+            }
+            .product-info-main-side {
+                flex-basis: 36%;
+            }
+        }
+        .product.media {
+            width: 38.5%;
+            max-width: ~"calc(98.5% - 615px)";
+            .gallery-placeholder {
+                .product-discount-text {
+                    width: 65px;
+                    height: 65px;
+                    font-size: 21px;
+                    top: 20px;
+                    right: 20px;
+                }
+                .badge-dermatologi{
+                    position: absolute;
+                    z-index: 10;
+                    left: 10%;
+                    top: 0%;
+                }
+                .badge-dermatologi-mobile{
+                    z-index: 10;
+                    position: absolute;
+                    max-width: 90px;
+                    top: 0%;
+                    left: 16%;
+                }
+            }
+        }
+        .product-info-bottom {
+            .product-details-main {
+                .product.info.detailed {
+                    .product.data.items {
+                        .data.item.title {
+                            margin: 0 40px 5px 0;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__lxl) {
+    .catalog-product-view {
+        .product-info-main {
+            &.scroll {
+                .product-info-main-center {
+                    .product-add-form {
+                        .box-tocart {
+                            .qty {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+            .product-info-main-center {
+                .product-info-stock-sku {
+                    .product-info-last {
+                        .product-info-share {
+                            a {
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .product-info-bottom {
+            .product-details-main {
+                .product.info.detailed {
+                    .product.data.items {
+                        .data.item.title {
+                            margin: 0 50px 5px 0;
+                            font-size: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .catalog-product-view {
+        #mobile-title {
+            display: block;
+            font-size: 17px;
+            font-weight: 900;
+            color: @color-gray91;
+            margin-bottom: 15px;
+        }
+        .banner-product{
+            &.banner-promo {
+                .promo-content {
+                    .promo-content-title {
+                        font-size: 28px;
+                    }
+                    .promo-content-subtitle1 {
+                        font-size: 28px;
+                    }
+                }
+            }
+            &.banner-warrenty {
+                margin-bottom: 40px;
+            }
+        }
+        .product-info-main {
+            display: flex;
+            flex-direction: column;
+            .product.attribute.sku {
+                font-size: 12px;
+                .value {
+                    font-size: 12px;
+                }
+            }
+            .product-info-main-center {
+                display: flex;
+                flex-direction: column;
+                .alert {
+                    order: 4;
+                }
+                .amxnotif-block {
+                    order: 4;
+                    .notification-container {
+                        flex-direction: column;
+                        .fieldset {
+                            width: 100%;
+                        }
+                        .actions-toolbar {
+                            margin: 0;
+                            max-width: 100%;
+                        }
+                    }
+                }
+                > .stock:not(.alert) {
+                    order: 3;
+                    margin-bottom: 15px;
+                    font-size: 12px;
+                }
+                .page-title-wrapper {
+                    .page-title {
+                        display: none;
+                    }
+                }
+                .product-trustpilot-reviews-summary {
+                    order: 5;
+                    padding: 20px 15px;
+                }
+                .product-info-price {
+                    order: 1;
+                    margin: 0 -15px 0;
+                    border: 0;
+                    display: block;
+                    width: auto!important;
+                    background: @color-gray3;
+                    padding: 20px 15px 0;
+                    .price-box {
+                        width: 100%;
+                        flex-direction: column;
+
+                        .price-label {
+                            font-size: 15px;
+                        }
+
+                        .special-price {
+                            .price-container {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .price {
+                                    font-size: 23px;
+                                }
+                            }
+                        }
+                        .old-price {
+                            .price-container {
+                                color: @color-gray91;
+                                justify-content: space-between;
+                                .price {
+                                    font-size: 14px;
+                                    color: @color-ami-gray1;
+                                }
+                            }
+                        }
+
+                    }
+                    .omnibus-price-container {
+                        font-size: 15px;
+                        display: flex;
+                        padding: 0;
+                    }
+                    .special-price ~ .omnibus-price-container {
+                        justify-content: space-between;
+                    }
+
+                }
+                #scalapayText {
+                    order: 2;
+                    margin: 0 -15px 20px!important;
+                    background: @color-gray3;
+                    padding: 15px  15px 20px;
+                    font-size: 14px;
+                }
+                .product-add-form {
+                    order: 4;
+                    .box-tocart {
+                        .fieldset {
+                            .qty {
+                                order: 2;
+                                .control {
+                                    .input-text {
+                                        width: 36px;
+                                        height: 36px;
+                                        border: 1px solid @color-ami-yellow;
+                                        border-radius: 50%;
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .product-info-stock-sku {
+                    order: 6;
+                    .stock:not(.alert) {
+                        display: none;
+                    }
+                    .product-info-last {
+                        flex-direction: column;
+                        margin-bottom: 20px;
+                        .product-info-last-left {
+                            margin-bottom: 20px;
+                            .product.attribute.sku {
+                                display: none;
+                            }
+                            .product-social-links {
+                                .product-addto-links {
+                                    .action.towishlist {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                        }
+                        .product-info-share {
+                            margin: 0 -15px;
+                            background: @color-gray3;
+                            padding: 20px 15px;
+                            .share-text {
+                                text-align: left;
+                            }
+                            a {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                }
+                .brand-wrapper {
+                    display: none;
+                }
+            }
+            .product-info-main-side {
+                margin-bottom: 25px;
+                .banner-product, .badge-site-verification {
+                    display: none!important;
+                }
+                .brand-wrapper {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+            }
+            &.scroll {
+                .product-info-main-center {
+                    position: fixed;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    z-index: 3;
+                    background: @color-white;
+                    padding: 15px;
+                    box-sizing: border-box;
+                    border-top: 2px solid @color-ami-yellow;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: center;
+                    .alert, .amxnotif-block {
+                        display: none;
+                    }
+                    .image-scroll {
+                        display: block;
+                        flex-basis: 12%;
+                        margin: 0 0 5px 0;
+                    }
+                    .page-title-wrapper{
+                        flex-basis: 88%;
+                        margin: 0;
+                        .page-title {
+                            display: block;
+                            margin: 0 0 5px 0;
+                            font-size: 18px;
+                        }
+                    }
+                    .stock:not(.alert) {
+                        display: none;
+                    }
+                    .product-info-price {
+                        flex-basis: 20%;
+                        margin: 0;
+                        padding: 0;
+                        background-color: transparent;
+                        .price-box {
+                            .price-container {
+                                .price-label {
+                                    display: none;
+                                }
+                            }
+                            .special-price {
+                                .price {
+                                    font-size: 16px;
+                                }
+                            }
+                            .old-price {
+                                .price {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .omnibus-price-container {
+                            font-size: 10px;
+                            display: block;
+                            white-space: nowrap;
+                        }
+                    }
+                    #scalapayText {
+                        display: none;
+                    }
+                    .product-trustpilot-reviews-summary {
+                        display: none;
+                    }
+                    .product-info-stock-sku {
+                        display: none;
+                    }
+                    .product-add-form {
+                        margin: 0;
+                        flex-basis: 60%;
+                        .box-tocart {
+                            > .fieldset {
+                                gap: 10px;
+                                flex-direction: row-reverse;
+                            }
+                        }
+                    }
+                    .brand-wrapper {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .product.media {
+            margin-bottom: 15px;
+            .badge-no-prescription {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                right: 15px;
+            }
+            .gallery-placeholder {
+                .product-discount-text {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 13px;
+                    top: 15px;
+                    right: 15px;
+                }
+                .badge-dermatologi{
+                    position: absolute;
+                    z-index: 10;
+                    left: 10%;
+                    top: 0%;
+                }
+                .badge-dermatologi-mobile{
+                    z-index: 10;
+                    position: absolute;
+                    max-width: 90px;
+                    top: 0%;
+                    left: 16%;
+                }
+                .fotorama__stage {
+                    border-radius: 15px;
+                    .fotorama__stage__shaft {
+                        .fotorama__stage__frame {
+                            img {
+                                border-radius: 15px;
+                            }
+                        }
+                    }
+                }
+                .fotorama__nav-wrap {
+                    left: 15px!important;
+                    .fotorama__nav__shaft {
+                        top:15px!important;
+                    }
+                }
+            }
+        }
+        .product-info-bottom {
+            .product-details-main {
+                margin-top: 40px;
+                .product.info.detailed {
+                    margin-bottom: 50px;
+                    .product.data.items {
+                        margin: 0;
+                        border: 0;
+                        .data.item.title {
+                            span {
+                                display: block;
+                                width: 100%;
+                                .data.switch {
+                                    display: flex;
+                                    align-items: center;
+                                    color: @color-gray91;
+                                    background: @color-grey8;
+                                    border-radius: 25px;
+                                    height: 50px;
+                                    padding: 0 20px;
+                                    margin-bottom: 5px;
+                                    text-transform: uppercase;
+                                    font-weight: 500;
+                                    &:after {
+                                        right: 20px;
+                                        top: auto;
+                                        transform: rotate(-90deg);
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                            &.active {
+                                span {
+                                    .data.switch {
+                                        color: @color-white;
+                                        background-color: @color-ami-yellow;
+                                        margin-bottom: 0;
+                                        &:after {
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .data.item.content {
+                            border-right: 1px solid #E6E6E6;
+                            border-left: 1px solid #E6E6E6;
+                            padding: 20px 15px;
+                            margin-bottom: 10px;
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .badge-dermatologi {
+        display: none;
+        &-mobile {
+            text-align: center;
+            margin: 0;
+            width: 50%;
+            display: inline-block;
+            float: left;
+        }
+    }
+
+    .badge-site-verification {
+        width: 50%;
+        display: inline-block;
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .catalog-product-view {
+        .product-info-main {
+            &.scroll {
+                .product-info-main-center {
+                    .product-add-form {
+                        .box-tocart {
+                            > .fieldset {
+                                .qty {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

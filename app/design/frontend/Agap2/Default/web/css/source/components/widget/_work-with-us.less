@@ -1,0 +1,173 @@
+//
+//  Variables
+//  _____________________________________________
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    .corporate-index-index {
+        #maincontent {
+                .container {
+                    max-width: 1570px;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+
+                .fullwidth-grey {
+                    background-color: @color-grey9;
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                }
+
+
+                #workwithus {
+
+                    .main-text {
+                        h1 {
+                            text-align: center;
+                            margin-top: 50px;
+                            margin-bottom: 20px;
+                            font-size: 40px;
+                        }
+                        p{
+                            padding-left: 1%;
+                            padding-right: 1%;
+                        }
+                    }
+
+                    form {
+                        margin-top: 50px;
+
+                        fieldset {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+                            border: none;
+                            margin: 0;
+                            padding: 0;
+
+                            .item {
+                                padding-left: 1%;
+                                padding-right: 1%;
+                                width: 31%;
+                                margin-bottom: 30px;
+
+                                &.required {
+                                    label:after {
+                                        content: ' *';
+                                        color: @error__color;
+                                    }
+                                }
+
+                                label {
+                                    margin-bottom: 5px;
+                                    color: @color-blue3;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                }
+
+                                input {
+                                    margin-top: 5px;
+                                }
+
+                                &.others {
+                                    width: 100%;
+                                }
+
+                                #curriculum,
+                                #reference {
+                                    display: block;
+                                }
+
+                                .privacy {
+                                    label {
+                                        color: @color-black;
+
+                                        a {
+                                            color: @color-blue3;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    #send-conditions {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        #submit-form {
+                            order: 3;
+
+                            border-radius: 0;
+                            box-shadow: none;
+                            padding: 5px 40px;
+                            text-shadow: none;
+                            color: @color-white;
+                            height: 35px;
+                            background: @color-ami-green;
+                            max-width: 200px;
+                            text-align: center;
+                            text-transform: uppercase;
+                            transition-duration: .3s;
+                            -webkit-transition-duration: .3s;
+                            border: none;
+                            margin-right: 1%;
+                        }
+                    }
+                }
+
+
+        }
+    }
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+    .corporate-index-index {
+        #maincontent {
+
+            #workwithus {
+                margin-left: 15px !important;
+                margin-right: 15px !important;
+
+                form {
+                    fieldset {
+                        .item {
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+    .corporate-index-index {
+        #maincontent {
+            .container {
+                &.fullwidth {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+

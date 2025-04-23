@@ -1,0 +1,47 @@
+.action.primary {
+    .lib-button-primary(
+        @_button-background: @color-ami-yellow,
+        @_button-background-hover: @color-yellow,
+        @_button-border: 1px solid @color-ami-yellow,
+        @_button-border-hover: 1px solid @color-yellow
+    );
+    border-radius: 25px;
+
+    &:focus, &:active {
+        background: @color-yellow;
+        border: 1px solid @color-yellow;
+        color: @color-white;
+    }
+}
+
+.action.secondary {
+    .lib-button-primary(
+        @_button-background: @color-ami-black,
+        @_button-background-hover: @color-white,
+        @_button-border: 1px solid @color-ami-black,
+        @_button-border-hover: 1px solid @color-ami-black
+    );
+    border-radius: 25px;
+
+    &:focus, &:active {
+        background: @color-white;
+        border: 1px solid @color-ami-black;
+        color: @color-white;
+    }
+}
+
+.action.third {
+    .lib-button-primary(
+        @_button-background: @theme__color__primary,
+        @_button-background-hover: @theme__color__primary,
+        @_button-border: 1px solid @theme__color__primary,
+        @_button-border-hover: 1px solid @theme__color__primary
+    );
+    border-radius: 25px;
+
+    &:focus, &:active {
+        background: @theme__color__primary;
+        border: 1px solid @theme__color__primary;
+        color: @color-white;
+    }
+}

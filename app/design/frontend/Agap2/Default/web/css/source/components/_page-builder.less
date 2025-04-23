@@ -1,0 +1,21 @@
+@widgets-indent__bottom: 0;
+
+& when (@media-common = true) {
+    .pagebuilder-slide-wrapper {
+        .pagebuilder-overlay {
+            padding: 0;
+        }
+    }
+
+    .product-slider-three {
+        ol:not(.slick-initialized) {
+            display: flex;
+            overflow: hidden;
+            visibility: hidden;
+
+            .slick-slide {
+                flex: 0 0 auto;
+            }
+        }
+    }
+}

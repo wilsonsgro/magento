@@ -1,0 +1,100 @@
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .cms-page-view {
+        #maincontent {
+            .bg-primary {
+                padding-left: 15px;
+                padding-right: 15px;
+
+                h1 {
+                    color: @color-white;
+                    font-size: 30px;
+                    margin: 0;
+
+                    span {
+                        font-size: 18px !important;
+                        display: block;
+                    }
+                }
+
+                .pagebuilder-button-secondary {
+                    background-color: @color-ami-yellow;
+                    border-color: @color-ami-yellow;
+                    border-radius: 25px;
+                    color: @color-white;
+                    font-weight: @font-weight__bold;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        background-color: @color-yellow;
+                        border-color: @color-yellow;
+                    }
+                }
+            }
+
+            .cms-title-section {
+                h2 {
+                    font-size: 25px;
+                    margin: 0;
+
+                    span {
+                        display: block;
+                        font-size: 14px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//  Mobile
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__ml) {
+    .cms-page-view {
+        #maincontent {
+            padding: 0;
+
+            .bg-primary {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__ml) {
+    .cms-page-view {
+        #maincontent {
+            .bg-primary {
+                padding-left: 30px;
+                padding-right: 30px;
+
+                h1 {
+                    font-size: 40px;
+
+                    span {
+                        font-size: 22px !important;
+                    }
+                }
+            }
+
+            .cms-title-section {
+                h2 {
+                    font-size: 35px;
+
+                    span {
+                        font-size: 22px !important;
+                    }
+                }
+            }
+        }
+    }
+}

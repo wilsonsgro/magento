@@ -499,7 +499,11 @@ crond -f -l 2
 
 ## Cacheable and uncacheable pages
 
-cacheable="false"
+Redis
+Varnish
+Database
+
+disable: cacheable="false"
 
 ```xml
 <block class="Magento\Customer\Block\Form\Edit" name="customer_edit" template="Magento_Customer::form/edit.phtml" cacheable="false">
@@ -507,6 +511,44 @@ cacheable="false"
 </block>
 ```
 
+## Maintenance
+
+edit file pub/errors/default/503.phtml
+
+
+## Change image types or sizes
+
+```xml
+<theme_dir>/etc/view.xml
+```
+
+## Extends less
+
+```bash
+app/design/frontend/Agap2/Default/web/css/source/_extend.less
+```
+
+```less
+@import "base/_base.less";
+
+@import "components/_components.less";
+```
+
+```bash
+app/design/frontend/Agap2/Default/web/css/source/base/_base.less
+app/design/frontend/Agap2/Default/web/css/source/components/_components.less
+```
+
+## custom logo
+
+curl https://www.amicafarmacia.com/static/version1745386632/frontend/Amicafarmacia/Default/it_IT/images/logo.svg --output logo.svg
+
+https://www.reshot.com/free-svg-icons/logo/?page=2
+
+edit
+
+app/design/frontend/Reply/Default/web/images
+app/design/frontend/Reply/Default/Magento_Theme/layout/default.xml
 
 ##  teach
 

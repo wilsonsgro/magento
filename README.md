@@ -647,6 +647,146 @@ Nell'accezione odierna, la tecnica ricomprende l'utilizzo di qualsiasi linguaggi
 
 Secondo un rapporto di Symantec, nel 2007 l'80% di tutte le violazioni era dovuto ad attacchi XSS
 
+
+## knockout
+
+
+
+KO observables:
+
+La caratteristica più utile di Knockout JS è l'osservabile e gli array osservabili. Permette di avere un data-binding dinamico con variabili che vengono immediatamente aggiornate nel template quando il valore all'interno del componente cambia. Un array osservabile agisce allo stesso modo e, come un normale osservabile, è possibile sottoscrivere gli eventi di modifica e creare una logica all'interno del componente quando i valori cambiano.
+
+Procediamo quindi ad aggiornare il nostro componente e il template per testare un osservabile.
+
+Nel nostro file del componente dobbiamo aggiungere una nuova chiave collegata all'oggetto componente e assegnare il suo valore come osservabile con un valore iniziale di 0. Questo ci permette di accedere al valore di myTimer nel template.
+
+```html
+<div class="component-wrapper">
+    <div data-bind="text: 'Catalog Timer'"></div>
+    <div data-bind="text: myTimer"></div>
+</div>
+```
+
+```js
+define(['jquery', 'uiComponent', 'ko'], function ($, Component, ko) {
+        'use strict';
+        return Component.extend({
+            myTimer: ko.observable(0),
+            initialize: function () {
+                this._super();
+            }
+        });
+    }
+);
+```
+
+subscribe:
+
+È anche possibile sottoscrivere gli osservabili, il che significa che quando il loro valore viene modificato, viene generato un evento a cui ci si può agganciare per eseguire un qualche tipo di logica all'interno di un'altra funzione o di più funzioni. Quindi, nel nostro esempio, aggiorneremo il colore del testo del timer con un colore casuale ogni volta che la variabile myTimer si aggiorna.
+
+```js
+define(['jquery', 'uiComponent', 'ko'], function ($, Component, ko) {
+        'use strict';
+        
+        var self;
+        return Component.extend({
+            myTimer: ko.observable(0),
+            randomColour: ko.observable("rgb(0, 0, 0)"),
+            initialize: function () {
+                self = this;
+                this._super();
+                //call the incrementTime function to run on intialize
+                this.incrementTime();
+                this.subscribeToTime();
+            },
+            //increment myTimer every second
+            incrementTime: function() {
+                var t = 0;
+                setInterval(function() {
+                    t++;
+                    self.myTimer(t);
+                }, 1000);
+            },
+            subscribeToTime: function() {
+                this.myTimer.subscribe(function(newValue) {
+                    console.log(newValue);
+                    self.updateTimerTextColour();
+                });
+            },
+            randomNumber: function() {
+                return Math.floor((Math.random() * 255) + 1);
+            },
+            updateTimerTextColour: function() {
+                //define RGB values
+                var red = self.randomNumber(),
+                    blue = self.randomNumber(),
+                    green = self.randomNumber();
+                    
+                self.randomColour('rgb(' + red + ', ' + blue + ', ' + green + ')');
+            }
+        });
+    }
+);
+```
+
+computed:
+
+Ovviamente gli osservabili sono ottimi se si vogliono gestire stringhe o valori booleani, ma che dire di logiche più complesse?
+
+KO JS ci fornisce il metodo computed, che ci consente di creare un osservabile basato sulla logica restituita dalla funzione computed. Questo può essere una combinazione di qualsiasi cosa, compresi normali osservabili o semplici valori di stringa.
+
+Miglioriamo quindi il nostro codice in modo che il colore del timer si aggiorni quando uno o più valori RGB cambiano.
+
+```js
+define(['jquery', 'uiComponent', 'ko'], function ($, Component, ko) {
+    'use strict';
+    var self;
+    return Component.extend({
+        myTimer: ko.observable(0),
+        red: ko.observable(0),
+        blue: ko.observable(0),
+        green: ko.observable(0),
+        initialize: function () {
+            self = this;
+            this._super();
+            //call the incrementTime function to run on intialize
+            this.incrementTime();
+            this.subscribeToTime();
+            this.randomColour = ko.computed(function() {
+                //return the random colour value
+                return 'rgb(' + this.red() + ', ' + this.blue() + ', ' + this.green() + ')';
+            }, this);
+        },
+        //increment myTimer every second
+        incrementTime: function() {
+            var t = 0;
+            setInterval(function() {
+                t++;
+                self.myTimer(t);
+            }, 1000);
+        },
+        subscribeToTime: function() {
+            this.myTimer.subscribe(function(newValue) {
+                console.log(newValue);
+                self.updateTimerTextColour();
+            });
+        },
+        randomNumber: function() {
+            return Math.floor((Math.random() * 255) + 1);
+        },
+        updateTimerTextColour: function() {
+            //define RGB values
+            /*notice we now no longer have to set and return the RBG style code here
+             we simply update the red/blue/green observables and the computed observable
+             returns the style element to the template */
+            this.red(self.randomNumber());
+            this.blue(self.randomNumber());
+            this.green(self.randomNumber());
+        }
+    });
+});
+```
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
@@ -665,6 +805,8 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [virtual-type-preference-type](https://chop-chop.org/blog/virtual-types-types-preferences-magento-2-design-patterns-pt-2)
 
 [csp](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)
+
+[knockout](https://inviqa.com/blog/using-knockout-js-magento-2)
 
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2

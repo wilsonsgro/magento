@@ -834,6 +834,33 @@ class You {
 }
 ```
 
+
+## dynamic row
+
+```php
+class NameCourier extends AbstractFieldArray
+{
+    const SIGLA = "sigla";
+    const URL = "url";
+    const NAME = "name";
+    /**
+     * Prepare rendering the new field by adding all the needed columns
+     */
+    protected function _prepareToRender()
+    {
+        $this->addColumn(self::SIGLA, ['label' => __('Sigla'), 'class' => 'required-entry']);
+        $this->addColumn(self::NAME,  ['label' => __('Name'), 'class' => 'required-entry']);
+        $this->addColumn(self::URL,   ['label' => __('Url Tracking'), 'class' => 'required-entry']);
+        $this->_addAfter = false;
+        $this->_addButtonLabel = __('Add');
+    }
+}
+```
+
+```xml
+<frontend_model>Reply\EmailTrackingShipping\Block\Adminhtml\Form\Field\NameCourier</frontend_model>
+<backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+```
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/

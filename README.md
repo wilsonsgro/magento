@@ -629,6 +629,24 @@ https://local.magento.it/it/reply/index/index
 
 https://local.magento.it/it/reply/index/test
 
+
+## csp
+
+content-security-policy-report-only:
+
+Le politiche di sicurezza dei contenuti (CSP) sono un potente strumento per mitigare il Cross Site Scripting (XSS) e gli attacchi correlati, tra cui lo skimmer di carte di credito, il dirottamento di sessioni, il clickjacking e altri ancora. I server Web inviano i CSP nelle intestazioni HTTP di risposta (in particolare Content-Security-Policy e Content-Security-Policy-Report-Only) ai browser che inseriscono nella whitelist le origini di script, stili e altre risorse. Insieme, i CSP e le funzioni integrate dei browser aiutano a prevenire:
+
+Il caricamento di uno script dannoso da un sito web di un aggressore
+Uno script inline dannoso invia le informazioni della carta di credito a un sito web di un aggressore
+Il caricamento di uno stile dannoso che induce gli utenti a fare clic su un elemento che non dovrebbe essere presente in una pagina
+
+
+Il cross-site scripting (XSS) è una vulnerabilità informatica che affligge siti web dinamici che impiegano un insufficiente controllo dell'input nei form. Un XSS permette a un cracker di inserire o eseguire codice lato client al fine di attuare un insieme variegato di attacchi quali, ad esempio, raccolta, manipolazione e reindirizzamento di informazioni riservate, visualizzazione e modifica di dati presenti sui server, alterazione del comportamento dinamico delle pagine web, ecc.
+
+Nell'accezione odierna, la tecnica ricomprende l'utilizzo di qualsiasi linguaggio di scripting lato client tra i quali JavaScript, VBScript, Flash. Il loro effetto può variare da un piccolo fastidio a un significativo rischio per la sicurezza, a seconda della sensibilità dei dati trattati nel sito vulnerabile e dalla natura delle strategie di sicurezza implementate dai proprietari del sito web.
+
+Secondo un rapporto di Symantec, nel 2007 l'80% di tutte le violazioni era dovuto ad attacchi XSS
+
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
@@ -643,6 +661,10 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [phpcodechecker](https://www.bairesdev.com/tools/phpcodechecker/)
 
 [cron-in-docker](https://blog.thesparktree.com/cron-in-docker)
+
+[virtual-type-preference-type](https://chop-chop.org/blog/virtual-types-types-preferences-magento-2-design-patterns-pt-2)
+
+[csp](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)
 
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2

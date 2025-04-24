@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<csp_whitelist xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Csp:etc/csp_whitelist.xsd">
+        <policies>
+          <policy id="default-src">
+                <values>
+                    <value id="doofinder-default" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-default" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-default" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-default" type="host">https://www.sandbox.paypal.com</value>
+                    <value id="unsplash-default" type="host">https://images.unsplash.com</value>
+                    <value id="facebookconnect-default" type="host">https://connect.facebook.net</value>
+		            <value id="facebook-default" type="host">https://www.facebook.com</value>
+		            <value id="payplug-default" type="host">https://cdn.payplug.com</value>
+                    <value id="uxsniff-default" type="host">https://api.uxsniff.com</value>
+                     
+                </values>
+            </policy>
+            <policy id="base-uri">
+                <values>
+                    <value id="doofinder-base" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-base" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-base" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-base" type="host">https://www.sandbox.paypal.com</value>
+                    <value id="unsplash-base" type="host">https://images.unsplash.com</value>
+                    <value id="facebookconnect-base" type="host">https://connect.facebook.net</value>
+		            <value id="facebook-base" type="host">https://www.facebook.com</value>
+		            <value id="payplug-base" type="host">https://cdn.payplug.com</value>
+                    <value id="chatbot-script" type="host">https://chatbot.simplified.com</value>
+                    <value id="googleads-script" type="host">https://googleads.g.doubleclick.net</value>
+                    <value id="uxsniff-script" type="host">https://api.uxsniff.com</value>
+                </values>
+            </policy>
+            <policy id="script-src">
+                <values>
+                    <value id="doofinder-script" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-script" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-script" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-script" type="host">https://www.sandbox.paypal.com</value>
+                    <value id="unsplash-script" type="host">https://images.unsplash.com</value>
+                    <value id="facebookconnect-script" type="host">https://connect.facebook.net</value>
+                    <value id="facebook-script" type="host">https://www.facebook.com</value>
+                    <value id="payplug-script" type="host">https://cdn.payplug.com</value>
+                    <value id="sibautomation-script" type="host">https://sibautomation.com</value>
+                    <value id="chatbot-script" type="host">https://chatbot.simplified.com</value>
+                    <value id="googleads-script" type="host">https://googleads.g.doubleclick.net</value>
+                    <value id="uxsniff-script" type="host">https://api.uxsniff.com</value>
+                    <value id="cookiebot-script" type="host">https://consent.cookiebot.com</value>
+                     <value id="conforama-script" type="host">https://www.conforama.it</value>
+                </values>
+            </policy>
+            <policy id="style-src">
+                <values>
+                    <value id="doofinder-style" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-style" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-style" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-style" type="host">https://www.sandbox.paypal.com</value>
+                    <value id="unsplash-style" type="host">https://images.unsplash.com</value>
+                    <value id="facebook-style" type="host">https://www.facebook.com</value>
+		            <value id="devtibiona-style-en" type="host">https://dev.tibiona.en</value>
+	    	         <value id="conforama-style" type="host">https://www.conforama.it</value>
+                </values>
+            </policy>
+            <policy id="img-src">
+                <values>
+                    <value id="doofinder-img" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-img" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-img" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-img" type="host">https://www.sandbox.paypal.com</value>
+                    <value id="unsplash-img" type="host">https://images.unsplash.com</value>
+                    <value id="tibiona-img" type="host">https://tibiona.it</value>
+                    <value id="facebookconnect-img" type="host">https://connect.facebook.net</value>
+                    <value id="facebook-img" type="host">https://www.facebook.com</value>
+		            <value id="placehold-img-en" type="host">https://placehold.co</value>
+		            <value id="payplug-img" type="host">https://cdn.payplug.com</value>
+                    <value id="tibiona-cdn-net-img" type="host">https://tibiona.b-cdn.net</value>
+                    <value id="google-img" type="host">https://www.google.it</value>
+                    <value id="conforama-img" type="host">https://www.conforama.it</value>
+                </values>
+            </policy>
+            <policy id="connect-src">
+                <values>
+                    <value id="doofinder-connect" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-connect" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-connect" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-connect" type="host">*.www.sandbox.paypal.com</value>
+                    <value id="unsplash-connect" type="host">*.images.unsplash.com</value>
+                    <value id="facebookconnect-connect" type="host">https://connect.facebook.net</value>
+		            <value id="facebook-connect" type="host">https://www.facebook.com</value>
+		            <value id="payplug-connect" type="host">https://cdn.payplug.com</value>
+                    <value id="in-automate-connect-src" type="host">https://in-automate.brevo.com</value>
+                    <value id="googleads-script" type="host">https://googleads.g.doubleclick.net</value>
+                    <value id="uxsniff-script" type="host">https://api.uxsniff.com</value>
+                    <value id="consentcdn-cookiebot-connect" type="host">https://consentcdn.cookiebot.com</value>
+                    <value id="google-ads-doubleclick" type="host">https://googleads.g.doubleclick.net</value>
+                    <value id="google-syndication" type="host">https://pagead2.googlesyndication.com</value>
+                </values>
+            </policy>
+            <policy id="font-src">
+                <values>
+                    <value id="doofinder-font" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-font" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-font" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-font" type="host">*.www.sandbox.paypal.com</value>
+		            <value id="unsplash-font" type="host">*.images.unsplash.com</value>
+		            <value id="payplug-font" type="host">https://cdn.payplug.com</value>
+                </values>
+            </policy>
+            <policy id="form-action">
+                <values>
+                    <value id="doofinder-form" type="host">https://eu1-search.doofinder.com</value>
+                    <value id="cdn-doofinder-form" type="host">https://cdn.doofinder.com</value>
+                    <value id="feedaty-form" type="host">https://widget.feedaty.com</value>
+                    <value id="paypal-form" type="host">*.www.sandbox.paypal.com</value>
+                    <value id="unsplash-form" type="host">*.images.unsplash.com</value>
+                    <value id="facebookconnect-form" type="host">https://connect.facebook.net</value>
+                    <value id="facebook-form" type="host">https://www.facebook.com</value>
+                    <value id="payplug-form" type="host">https://cdn.payplug.com</value>
+                </values>
+            </policy>
+            <policy id="frame-src">
+                <values>
+                    <value id="facebookconnect-frame" type="host">https://connect.facebook.net</value>
+		             <value id="facebook-frame" type="host">https://www.facebook.com</value>
+		             <value id="payplug-frame" type="host">https://cdn.payplug.com</value>
+                </values>
+            </policy>
+        </policies>
+</csp_whitelist>

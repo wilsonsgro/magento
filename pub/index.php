@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Public alias for the application entry point
  *

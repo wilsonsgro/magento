@@ -44,6 +44,7 @@
         "magento/module-widget-sample-data": "100.4.*",
         "magento/module-wishlist-sample-data": "100.4.*",
         "magento/product-community-edition": "2.4.6-p7",
+        "magento/pwa": "^0.9.2",
         "magento/sample-data-media": "100.4.*",
         "mageplaza/magento-2-french-language-pack": "^1.0",
         "mageplaza/magento-2-product-slider": "^4.0",

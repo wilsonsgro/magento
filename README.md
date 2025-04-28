@@ -897,11 +897,15 @@ crond -f -l 2
 
 http://127.0.0.1:8081/
 
+http://127.0.0.1:8081/breathe-easy-tank.html
+
+http://127.0.0.1:8081/it/women/tops-women.html?page=1
+
 
 ```bash
 docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app docker-nodejs bash
 docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  wilsonstart/docker-nodejs bash
-docker run -it -u root -p 8081:8081 -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  wilsonstart/docker-nodejs bash
+docker run -it -u root -p 8081:8081 -v /Users/wilsonsgro/Desktop/magento/www/node:/home/node/app  wilsonstart/docker-nodejs bash
 ```
 
 ```bash
@@ -989,6 +993,8 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [pwa](https://magento.stackexchange.com/questions/353802/magento-2-cannot-find-field-newsletter-enabled-on-type-storeconfig-pwa-studio)
 [pwa](https://github.com/matinict/Magento2x-Ubuntu-Nginx/blob/master/pwa-studio.md)
 [pwa](https://magento.stackexchange.com/questions/354740/magento-2-pwa-setup-environment-has-1-validation-errors-https-www-pwa-magent)
+
+[pwa store code issue](https://github.com/magento/pwa-studio/pull/4114)
 
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2

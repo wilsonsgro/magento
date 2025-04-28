@@ -1,0 +1,12 @@
+[
+    {
+      "name": "dev cluster",
+      "uri": "http://elasticsearch:9200"
+    },
+    {
+      "name": "prod cluster",
+      "uri": "http://elasticsearch:9501",
+      "username": "",
+      "password": ""
+    }
+  ]

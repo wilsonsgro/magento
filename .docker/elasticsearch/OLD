@@ -1,0 +1,2 @@
+from blacktop/elasticsearch:6.8
+RUN bin/elasticsearch-plugin install analysis-phonetic

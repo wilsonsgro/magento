@@ -4,6 +4,8 @@ http://local.magento.it/
 
 https://local.magento.it/it/
 
+http://local.magento.it/it/
+
 ```bash
 wilson.sgro81@gmail.com
 6gbMG0VUiHRxPhF
@@ -860,8 +862,109 @@ class NameCourier extends AbstractFieldArray
 ```xml
 <frontend_model>Reply\EmailTrackingShipping\Block\Adminhtml\Form\Field\NameCourier</frontend_model>
 <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+
+
 ```
+
+
+## ssl local
+
+```bash
+apk add openssl;
+mkdir -p /etc/ssl/private
+openssl req -x509 -nodes -days 365 -subj "/C=CA/ST=QC/O=Company, Inc./CN=local.magento.it"  -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt;
+
+
+/etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt;
+
+openssl req -x509 -nodes -days 365 -subj "/C=CA/ST=QC/O=Company, Inc./CN=local.estero.it"  -newkey rsa:2048 -keyout /etc/ssl/private/nginx-estero.key -out /etc/ssl/certs/nginx-estero.crt;
+
+
+openssl req -x509 -nodes -days 365 -subj "/C=CA/ST=QC/O=Company, Inc./CN=local.pwa.it"  -newkey rsa:2048 -keyout /etc/ssl/private/nginx-pwa.key -out /etc/ssl/certs/nginx-pwa.crt;
+
+```
+
+## crontab -l
+
+```bash
+crontab -e
+crond &
+
+crond -f -l 2
+```
+
+## PWA
+
+http://127.0.0.1:8081/
+
+
+```bash
+docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app docker-nodejs bash
+docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  wilsonstart/docker-nodejs bash
+docker run -it -u root -p 8081:8081 -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  wilsonstart/docker-nodejs bash
+```
+
+```bash
+yarn create @magento/pwa
+
+yarn add dompurify
+```
+
+```bash
+cd /home/node/app/node
+
+Done in 164.29s.
+  ✔  Installed dependencies for 'node' project
+  ⚠  Created new PWA project node. Next steps:
+
+     - cd node before running the below commands.
+
+     - yarn run buildpack create-custom-origin . # to generate a unique, secure custom domain for your new project. Highly recommended.
+
+     - yarn run watch # to start the dev server and do real-time development.
+
+     - yarn run storybook # to start Storybook dev server and view available components in your app.
+
+     - yarn run build # to build the project into optimized assets in the '/dist' directory.
+
+     - export NODE_OPTIONS=--openssl-legacy-provider
+
+     - yarn start # after build to preview the app on a local staging server.
+
+     - echo $NODE_OPTIONS 
+
+Done in 239.13s.
+
+As of version 12.1.0, PWA Studio requires the appropriate PWA metapackage to be installed on the backend.
+For more information, refer to the 12.1.0 release notes here: https://github.com/magento/pwa-studio/releases/tag/v12.1.0
+Error: Cannot query field "newsletter_enabled" on type "StoreConfig". (... 1 errors total)
+
+
+```
+## portainer
+
+>[portainer](https://127.0.0.1:9443)
+
+## run nodejs
+
+```bash
+ docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app docker-nodejs bash
+```
+
 ##  teach
+
+https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
+
+https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze/
+
+
+[extension-attributes-magento-2](https://www.mgt-commerce.com/tutorial/extension-attributes-magento-2/)
+
+[example-simple-extension-attributes](https://github.com/yireo-training/magento2-example-simple-extension-attributes)
+
+[phpcodechecker](https://www.bairesdev.com/tools/phpcodechecker/)
+
+[cron-in-docker](https://blog.thesparktree.com/cron-in-docker)
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
 
@@ -881,6 +984,11 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [csp](https://developer.adobe.com/commerce/php/development/security/content-security-policies/)
 
 [knockout](https://inviqa.com/blog/using-knockout-js-magento-2)
+
+[pwa](https://www.youtube.com/watch?v=X4COzBXVpBM&ab_channel=AlexanderL)
+[pwa](https://magento.stackexchange.com/questions/353802/magento-2-cannot-find-field-newsletter-enabled-on-type-storeconfig-pwa-studio)
+[pwa](https://github.com/matinict/Magento2x-Ubuntu-Nginx/blob/master/pwa-studio.md)
+[pwa](https://magento.stackexchange.com/questions/354740/magento-2-pwa-setup-environment-has-1-validation-errors-https-www-pwa-magent)
 
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2

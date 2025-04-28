@@ -2187,11 +2187,6 @@
   resolved "https://registry.yarnpkg.com/@magento/upward-security-headers/-/upward-security-headers-1.0.17.tgz#2f82faf570b5d2a520830d636707788b2971aefd"
   integrity sha512-/9ag9fj/N2WA0guJXxzvdq6gMHo1Vp6JPSsTufYsMVlZvmEMjBuxc+gdBjQkCErjOharJUAWGCnyPRLqWg1pWg==
 
-"@magento/venia-sample-backends@~0.0.1":
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/@magento/venia-sample-backends/-/venia-sample-backends-0.0.12.tgz#61fe119a75ffd177df1a792ff7431ca4fe348a21"
-  integrity sha512-S10iElOiW2MaCpLW96QB1ZlbmyORAfPJmolzs2T54KZyFaiJQBs3eGPOqBQxvaSle3xitG5qOw7zX5nEIhiDnw==
-
 "@magento/venia-ui@~11.6.0":
   version "11.6.0"
   resolved "https://registry.yarnpkg.com/@magento/venia-ui/-/venia-ui-11.6.0.tgz#b9e8ec3df0cb1ca0c16bf7fb522b1f640727edc6"
@@ -15323,10 +15318,8 @@ watchpack@^1.7.4:
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-1.7.5.tgz#1267e6c55e0b9b5be44c2023aed5437a2c26c453"
   integrity sha512-9P3MWk6SrKjHsGkLT2KHXdQ/9SNkyoJbabxnKOoJepsvJjJG8uYTR3yTPxPQvNDI3w4Nz1xnE0TLHK4RIVe/MQ==
   dependencies:
-    chokidar "^3.4.1"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
-    watchpack-chokidar2 "^2.0.1"
   optionalDependencies:
     chokidar "^3.4.1"
     watchpack-chokidar2 "^2.0.1"

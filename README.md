@@ -901,6 +901,8 @@ http://127.0.0.1:8081/breathe-easy-tank.html
 
 http://127.0.0.1:8081/it/women/tops-women.html?page=1
 
+http://local.pwa.it/
+
 
 ```bash
 docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app docker-nodejs bash

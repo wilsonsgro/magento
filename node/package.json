@@ -50,6 +50,7 @@
     "@magento/peregrine": "~14.5.1",
     "@magento/pwa-theme-venia": "~2.4.0",
     "@magento/upward-security-headers": "~1.0.14",
+    "@magento/venia-sample-payments-checkmo": "^0.0.15",
     "@magento/venia-ui": "~11.6.0",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.1",
     "@storybook/react": "~6.3.7",

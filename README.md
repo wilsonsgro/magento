@@ -26,6 +26,7 @@ Mariateresa1234
 
 https://local.estero.it/es_gb/
 
+http://local.pwa.it/
 
 ## web api
 
@@ -330,6 +331,8 @@ RUN  /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-phonetic
 ## portaniner
 
 >[portainer](https://127.0.0.1:9443)
+>[portainer](https://192.168.1.35:9443)
+
 
 ## regenerate url
 
@@ -922,6 +925,8 @@ cd /home/node/app/node
 Done in 164.29s.
   ✔  Installed dependencies for 'node' project
   ⚠  Created new PWA project node. Next steps:
+
+     - yarn  install
 
      - cd node before running the below commands.
 

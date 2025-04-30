@@ -13,4 +13,11 @@
             <resource ref="Reply_Example::products_set_description" />
         </resources>
     </route>
+
+    <route url="/V1/rest_example/graphql" method="POST">
+        <service class="Reply\Example\Api\GraphqlRepositoryInterface" method="getExecute" />
+        <resources>
+            <resource ref="Reply_Example::execute_graphql" />
+        </resources>
+    </route>
 </routes>

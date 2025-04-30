@@ -10,6 +10,8 @@
                               translate="title" sortOrder="10" />
                     <resource id="Reply_Example::products_set_description" title="Set description"
                               translate="title" sortOrder="20" />
+                    <resource id="Reply_Example::execute_graphql" title="Execute Graphql"
+                              translate="title" sortOrder="30" />
                 </resource>
             </resource>
         </resources>

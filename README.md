@@ -2,6 +2,8 @@
 
 http://local.magento.it/
 
+http://local.magento.it/graphql
+
 https://local.magento.it/it/
 
 http://local.magento.it/it/
@@ -23,15 +25,13 @@ mariateresa
 Mariateresa1234
 ```
 
-
 https://local.estero.it/es_gb/
 
 http://local.pwa.it/
 
 http://local.pwa.it/
-http://local.graphiql.it:8082
 
-http://local.graphiql.it:8082/
+http://local.graphiql.it
 
 ## web api
 
@@ -371,6 +371,7 @@ php n98-magerun2.phar db:query "select * from store"
 n98-magerun2.phar dev:module:create [-m|--minimal] [--add-blocks] [--add-helpers] [--add-models] [--add-setup] [--add-all] [-e|--enable] [--modman] [--add-readme] [--add-composer] [--add-strict-types] [--author-name [AUTHOR-NAME]] [--author-email [AUTHOR-EMAIL]] [--description [DESCRIPTION]] [-h|--help] [-q|--quiet] [-v|vv|vvv|--verbose] [-V|--version] [--ansi] [--no-ansi] [-n|--no-interaction] [--root-dir [ROOT-DIR]] [--skip-config] [--skip-root-check] [--skip-core-commands [SKIP-CORE-COMMANDS]] [--skip-magento-compatibility-check] [--] <command> <vendorNamespace> <moduleName>
 
 php n98-magerun2.phar dev:module:create --add-all Reply Example
+php n98-magerun2.phar dev:module:create --add-all Reply GraphQL
 
 php n98-magerun2.phar maintenance:enable
 

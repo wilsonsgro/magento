@@ -960,7 +960,8 @@ https://docs.scandipwa.com/getting-started-1/storefront-mode
 
 ## portainer
 
->[portainer](https://127.0.0.1:9443)
+>[portainer local](https://127.0.0.1:9443)
+>[portainer remote](https://192.168.1.35:9443)
 
 ## run nodejs
 
@@ -1012,6 +1013,8 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [developer.adobe.com/commerce/services/graphql](https://developer.adobe.com/commerce/services/graphql/)
 
 [graphql.org/learn/](https://graphql.org/learn/)
+
+[scandipwa.com](https://scandipwa.com/community)
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2
 

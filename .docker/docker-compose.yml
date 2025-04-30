@@ -126,8 +126,8 @@ services:
             - "9200:9200"
             - "9300:9300"
     nodejs:
-        #build: ./nodejs
-        image: wilsonstart/docker-nodejs
+        build: ./nodejs
+        #image: wilsonstart/docker-nodejs
         user: root
         hostname: nodejs
         environment:
@@ -140,7 +140,8 @@ services:
         command: "/bin/bash startprj.sh node_modules"
         volumes:
              - ../www/node:/home/node/app
-        # docker run -it -u root -p 8081:8081 -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  wilsonstart/docker-nodejs bash
+        # docker run -it -u root -p 8081:8081 -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  docker-nodejs bash
+        # docker run -it -u root  -v /home/wilsonsgro/teachprj/www/node:/home/node/app docker-nodejs bash
         # --publish 8080:80
         # root@581c0d5b4e27:/home/node/app# npm --version
         # 10.9.2

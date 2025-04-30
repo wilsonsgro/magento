@@ -136,7 +136,8 @@ services:
             #- "8081:8081"
             - "80"
         working_dir: /home/node/app
-        command: "/usr/local/bin/yarn start"
+        #command: "/usr/local/bin/yarn start"
+        command: "/bin/bash startprj.sh node_modules"
         volumes:
              - ../www/node:/home/node/app
         # docker run -it -u root -p 8081:8081 -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app  wilsonstart/docker-nodejs bash

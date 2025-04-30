@@ -950,8 +950,14 @@ As of version 12.1.0, PWA Studio requires the appropriate PWA metapackage to be 
 For more information, refer to the 12.1.0 release notes here: https://github.com/magento/pwa-studio/releases/tag/v12.1.0
 Error: Cannot query field "newsletter_enabled" on type "StoreConfig". (... 1 errors total)
 
-
 ```
+
+## Pwa  scandipwa
+
+yarn create scandipwa-app scandipwa
+
+https://docs.scandipwa.com/getting-started-1/storefront-mode
+
 ## portainer
 
 >[portainer](https://127.0.0.1:9443)
@@ -1003,6 +1009,9 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 
 [pwa store code issue](https://github.com/magento/pwa-studio/pull/4114)
 
+[developer.adobe.com/commerce/services/graphql](https://developer.adobe.com/commerce/services/graphql/)
+
+[graphql.org/learn/](https://graphql.org/learn/)
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2
 

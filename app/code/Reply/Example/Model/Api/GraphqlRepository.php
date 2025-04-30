@@ -34,4 +34,14 @@ class GraphqlRepository implements GraphqlRepositoryInterface
         $graphqlCutstom->setExecute($input);
         return $graphqlCutstom;
     }    
+    /*
+        curl --request POST \
+        --url http://local.magento.it/it/rest/V1/rest_example/graphql \
+        --header 'Authorization: Bearer eyJraWQiOiIxIiwiYWxnIjoiSFMyNTYifQ.eyJ1aWQiOjEsInV0eXBpZCI6MiwiaWF0IjoxNzQ2MDA5NTY4LCJleHAiOjE3NDYwMTMxNjh9.6UJwpZ8mbtbr-2LZCgpnUihD4N72aZJE7Dut0gS9TLw' \
+        --header 'Content-Type: application/json' \
+        --data ' {
+                "input": "SGEN17416"
+            }
+        '
+    */
 }

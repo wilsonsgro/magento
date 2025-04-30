@@ -1,0 +1,18 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.0.1/schema.json",
+  "changelog": ["@changesets/changelog-github", { "repo": "graphql/graphiql" }],
+  "commit": false,
+  "linked": [],
+  "access": "public",
+  "baseBranch": "main",
+  "ignore": [
+    "example-graphiql-webpack",
+    "example-monaco-graphql-nextjs",
+    "example-monaco-graphql-react-vite",
+    "example-monaco-graphql-webpack"
+  ],
+  "updateInternalDependencies": "patch",
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+    "onlyUpdatePeerDependentsWhenOutOfRange": true
+  }
+}

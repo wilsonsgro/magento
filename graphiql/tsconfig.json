@@ -1,0 +1,15 @@
+{
+  "extends": "./resources/tsconfig.base.cjs.json",
+  "compilerOptions": {
+    "composite": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "resources/tsconfig.build.esm.json"
+    },
+    {
+      "path": "resources/tsconfig.build.cjs.json"
+    }
+  ]
+}

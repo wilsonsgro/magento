@@ -28,6 +28,11 @@ https://local.estero.it/es_gb/
 
 http://local.pwa.it/
 
+http://local.pwa.it/
+http://local.graphiql.it:8082
+
+http://local.graphiql.it:8082/
+
 ## web api
 
 ```bash
@@ -969,6 +974,11 @@ https://docs.scandipwa.com/getting-started-1/storefront-mode
  docker run -it -u root  -v /Users/wilsonsgro/Desktop/magento/www:/home/node/app docker-nodejs bash
 ```
 
+## build graphiql
+
+```bash
+docker run -it -u root -v /home/wilsonsgro/teachprj/www/graphiql:/home/node/app docker-nodejs bash
+```
 ##  teach
 
 https://www.magentiamo.it/gestione-del-catalogo-magento-attributi-categorie-prodotti/
@@ -1017,6 +1027,8 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 [scandipwa.com](https://scandipwa.com/community)
 
 [magento-2-graphql](https://www.cloudways.com/blog/magento-2-graphql/)
+
+[graphql/graphiql](https://github.com/graphql/graphiql?tab=readme-ov-file)
 
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2
 

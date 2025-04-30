@@ -1,0 +1,20 @@
+{
+  "extends": "../../resources/tsconfig.base.cjs.json",
+  "compilerOptions": {
+    "composite": true,
+    "jsx": "react-jsx",
+    "target": "es2017",
+    "strictPropertyInitialization": false,
+    "types": ["@testing-library/jest-dom", "vitest/globals"]
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/*.spec.tsx"],
+  "references": [
+    {
+      "path": "../codemirror-graphql"
+    },
+    {
+      "path": "../graphql-language-service"
+    }
+  ]
+}

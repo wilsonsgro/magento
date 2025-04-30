@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "language": "en",
+  "useGitignore": true,
+  "cache": {
+    "useCache": true
+  },
+  "dictionaries": ["custom-words"],
+  "dictionaryDefinitions": [
+    {
+      "name": "custom-words",
+      "path": "./resources/custom-words.txt",
+      "addWords": true
+    }
+  ],
+  "ignorePaths": [
+    "**/CHANGELOG.md",
+    "**/package.json",
+    "**/esbuild.js",
+    ".eslintrc.js",
+    ".vscode/extensions.json",
+    "working-group"
+  ],
+  "files": ["**/*.{js,cjs,mjs,ts,jsx,tsx,md,mdx,html,json,css,toml,yaml,yml}"]
+}

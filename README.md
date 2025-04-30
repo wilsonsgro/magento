@@ -1016,6 +1016,8 @@ https://www.magentiamo.it/magento-website-store-e-storeview-scopri-le-differenze
 
 [scandipwa.com](https://scandipwa.com/community)
 
+[magento-2-graphql](https://www.cloudways.com/blog/magento-2-graphql/)
+
 https://magento.stackexchange.com/questions/158081/when-should-we-use-a-repository-and-factory-in-magento-2
 
 https://www.bitbull.it/blog/magento-fundamentals-what-differences-between-collections-and-repositories/
